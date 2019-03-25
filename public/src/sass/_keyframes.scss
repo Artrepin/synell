@@ -1,0 +1,288 @@
+@keyframes fadeIn {
+	0%{
+		opacity: 0;
+		visibility: hidden;
+
+	}
+
+	100%{
+		opacity: 1;
+		visibility: visible;
+	}
+}
+@keyframes logoScale {
+	0%{
+		// height: 0%;
+
+	}
+
+	100%{
+		// height: 100%;
+	}
+}
+@keyframes logo_show {
+    from {
+		opacity: .3;
+		filter: grayscale(100%);
+		clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+
+    }
+    50%, 60%{
+		opacity: .3;
+		filter: grayscale(100%);  
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);  	
+    }
+
+    100%{
+		opacity: 1;
+		filter: grayscale(0%);	
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);  	
+    }
+}
+
+
+@keyframes logo_show_safari {
+    from {
+        opacity: .3;
+        filter: grayscale(100%);
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+
+    }
+  
+    50%{
+        opacity: .3;
+        filter: grayscale(100%);  
+        clip-path: polygon(50% 0, 0 0, 0 100%, 50% 100%);    
+    }
+
+    100%{
+        opacity: 1;
+        filter: grayscale(0%);  
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);    
+    }
+}
+
+@keyframes logo_svg_show {
+    from {
+		fill: transparent;
+		stroke: #e8e8e8;
+    }
+
+    100%{
+		fill: #e8e8e8;
+		stroke: transparent;	
+    }
+}
+@keyframes line-in {
+    from {
+    	transform: scale(0, 1);
+    	transform-origin: 100% 0;
+    }
+
+    100%{
+    	transform: scale(1, 1);
+    	transform-origin: 100% 0;
+    }
+}
+@keyframes line-out {
+    from {
+    	transform: scale(1, 1);
+    	transform-origin: 0% 0;
+    }
+
+    100%{
+    	transform: scale(0, 1);
+    	transform-origin: 0% 0;
+    }
+}
+@keyframes line {
+    from {
+    	transform: scale(0, 1);
+    }
+
+
+    50%{
+    	transform: scale(1, 1);
+    	transform-origin: 100% 0;
+    }
+
+    51%{
+		transform-origin: 0% 0;
+    }
+
+    to {
+    	transform: scale(0, 1);
+    	transform-origin: 0% 0;
+	}
+}
+
+@keyframes line-right {
+    from {
+    	transform: scale(0, 1);
+    }
+
+
+    50%{
+    	transform: scale(1, 1);
+    	transform-origin: 0% 0;
+    }
+
+    51%{
+		transform-origin: 100% 0;
+    }
+
+    to {
+    	transform: scale(0, 1);
+    	transform-origin: 100% 0;
+	}
+}
+
+@keyframes line-top {
+    from {
+    	transform: scale(1, 0);
+    }
+
+
+    50%{
+    	transform: scale(1, 1);
+    	transform-origin: 50% 100%;
+    }
+
+    51%{
+		transform-origin: 50% 0%;
+    }
+
+    to {
+    	transform: scale(1, 0);
+	    transform-origin: 50% 0%;
+	}
+}
+@keyframes line-bottom {
+    from {
+    	transform: scale(1, 0);
+    }
+
+
+    50%{
+    	transform: scale(1, 1);
+    	transform-origin: 50% 0%;
+    }
+
+    51%{
+		transform-origin: 50% 100%;
+    }
+
+    to {
+    	transform: scale(1, 0);
+	    transform-origin: 50% 100%;
+	}
+}
+
+@keyframes fadeToTop {
+    from {
+    	transform: translate(0, 1.5rem);
+    	opacity: 0;
+    	visibility: hidden;
+    }
+
+
+    to {
+    	transform: translate(0, 0rem);
+    	opacity: 1;	
+    	visibility: visible;
+    }
+}
+
+@keyframes fadeToBottom {
+    from {
+    	transform: translate(0, -1.5rem);
+    	opacity: 0;
+    	visibility: hidden;
+    }
+
+
+    to {
+    	transform: translate(0, 0rem);
+    	opacity: 1;	
+    	visibility: visible;
+    }
+}
+@keyframes fadeOpacity {
+    from {
+    	opacity: 0;
+    	visibility: hidden;
+    }
+
+
+    to {
+    	opacity: 1;	
+    	visibility: visible;
+    }
+}
+@keyframes fadeOpacityHide {
+    from {
+    	opacity: 1;
+    	visibility: visible;
+    }
+
+
+    to {
+    	opacity: 0;	
+    	visibility: hidden;
+    }
+}
+
+
+@keyframes fadeOpacityTransform {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(50vw);
+    }
+
+
+    to {
+        opacity: 1; 
+        visibility: visible;
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes fadeOpacityTransformHide {
+    from {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0vw);
+    }
+
+
+    to {
+        opacity: 0; 
+        visibility: hidden;
+        transform: translateX(-50vw);
+    }
+}
+
+
+
+@keyframes circleClipPath {
+	0%{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	25%{
+		clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+	}
+
+	50%{
+		clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+	}
+
+	75%{
+		clip-path: polygon(0 50%, 0 50%, 50% 100%, 0 100%);
+	}
+
+	100%{
+		clip-path: polygon(0 100%, 0 100%, 50% 100%, 0 100%);
+	}
+}

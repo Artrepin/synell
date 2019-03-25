@@ -1,0 +1,4304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<title>SYNELL: World-class Software Development, Project Management Office, Design, Business Analysis & Engineering</title>
+
+	<meta name="description" content="Since 2007, we've helped businesses smoothly implement advanced technologies, understand the industry, and determine maximum productivity. Our approach is to work closely with the client through each stage of project, carefully explaining all aspects to create stress-free innovation.">	
+	
+	<link href="/css/preloader.css" rel="stylesheet">
+	<link href="/css/font.css" rel="stylesheet">
+	<link href="/css/libs.css" rel="stylesheet">
+	<link href="/css/main.css" rel="stylesheet">
+
+	<script src="/libs/jquery/dist/jqueryMIN.js"></script>
+
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if IE]>
+
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<!--
+		dev	: cyberless.ru
+			  vlad@cyberless.ru 
+	-->
+
+	<div data-file="/svg.xml" class="svg-container" hidden></div>
+	<script>
+		$(document).ready(function() {
+			var svg_parent = $('.svg-container');
+
+			if(svg_parent.is(":empty")){
+				
+				$.get(svg_parent.data('file'), function(svg){
+				    svg_parent.append(svg)
+				}, 'text');				
+			}	
+		})
+	</script>
+	
+	<script>
+		window.onbeforeunload = function () {
+			window.scrollTo(0, 0);
+			$('.preloader').css('z-index', '10000').show()
+		}
+
+		$('body, html').addClass('js-lock')//.scrollTo(0, 0);
+	</script>
+	<main class="container">
+		<div class="safari-logo">
+			
+			<div class="safari-logo__image">
+				<svg viewBox="0 0 566.37067 120"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-horizontal"></use></svg>	
+			</div>
+
+							
+		</div>
+		<div class="preloader"></div>
+
+		<div class="mobile-nav">
+			<div class="wrap">
+				<div class="mobile-nav__row">
+					<div class="mobile-nav__cell">
+						<div class="mobile-nav__logo">
+							<svg viewBox="0 0 566.37067 120"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-horizontal"></use></svg>	
+						</div>
+						
+					</div>
+					<div class="mobile-nav__cell clear">
+						<div class="inline menu-button js-open-menu clear__right">
+							<div class="menu-button__item menu-button__item_first menu-button__item_green"></div>
+							<div class="menu-button__item menu-button__item_second menu-button__item_yellow"></div>
+							<div class="menu-button__item menu-button__item_third menu-button__item_blue"></div>
+							<div class="menu-button__item menu-button__item_fourth menu-button__item_blue"></div>
+							<div class="menu-button__item menu-button__item_fifth menu-button__item_pink"></div>
+							<div class="menu-button__item menu-button__item_sixth menu-button__item_blue"></div>
+							<div class="menu-button__item menu-button__item_seventh menu-button__item_yellow"></div>
+							<div class="menu-button__item menu-button__item_eighth menu-button__item_blue"></div>
+							<div class="menu-button__item menu-button__item_ninth menu-button__item_green"></div>
+						</div>						
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		<div class="container__logo-column container__logo-column_first" data-to="#vantagesTrack">
+			<div class="css-sticky css-sticky_default-top">
+				<div class="logo logo_favorite">
+					<div class="logo__image">
+						<svg viewBox="0 0 120 566.37067"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>	
+					</div>
+
+					<div class="logo__text">
+						<div class="str">
+							<span>World-class Software Development,</span>
+						</div>
+						<div class="str">
+							<span>Project Management Office, Design,</span>
+						</div>
+						<div class="str">
+							<span>Business Analysis & Engineering</span>
+						</div>						
+					</div>
+				</div>				
+			</div>
+		</div>
+
+		<script>
+			let is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+	 
+			if(is_safari){
+				$('.logo_favorite')
+					.addClass('logo_notransition logo_default logo_passive js-lock')
+					.closest('.container__logo-column')
+					.addClass('js-lock')
+
+				$('.safari-logo').addClass('js-visible safari-logo_start')
+			}			
+		</script>		
+
+		<div class="container__logo-column container__logo-column_third" data-from="#priceCellLeft" data-to="#stepsTitlle" data-disableheight="1">
+			<div class="css-sticky">
+				<div class="logo logo_default">
+					<div class="logo__image">
+						<svg viewBox="0 0 120 566.37067"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>	
+					</div>
+
+					<div class="logo__text">
+						<div class="str">
+							<span>World-class Software Development,</span>
+						</div>
+						<div class="str">
+							<span>Project Management Office, Design,</span>
+						</div>
+						<div class="str">
+							<span>Business Analysis & Engineering</span>
+						</div>						
+					</div>
+				</div>				
+			</div>
+		</div>
+
+		<div class="container__logo-column container__logo-column_fourth" data-from="#workTop" data-to="#workBottom" data-disableheight="1">
+			<div class="css-sticky">
+				<!--  logo_relative -->
+				<div class="logo logo_default">
+					<div class="logo__image">
+						<svg viewBox="0 0 120 566.37067"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>	
+					</div>
+
+					<div class="logo__text">
+						<div class="str">
+							<span>World-class Software Development,</span>
+						</div>
+						<div class="str">
+							<span>Project Management Office, Design,</span>
+						</div>
+						<div class="str">
+							<span>Business Analysis & Engineering</span>
+						</div>						
+					</div>
+				</div>				
+			</div>
+		</div>
+
+		<div class="container__logo-column container__logo-column_sixth" data-from="#caseStart" data-to="#caseEnd">
+			<div class="css-sticky">
+				<div class="logo logo_default">
+					<div class="logo__image">
+						<svg viewBox="0 0 120 566.37067"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>	
+					</div>
+
+					<div class="logo__text">
+						<div class="str">
+							<span>World-class Software Development,</span>
+						</div>
+						<div class="str">
+							<span>Project Management Office, Design,</span>
+						</div>
+						<div class="str">
+							<span>Business Analysis & Engineering</span>
+						</div>						
+					</div>
+				</div>				
+			</div>
+		</div>
+
+		<div class="container__logo-column container__logo-column_seventh" data-from="#supportStart" data-to="#guaranteesEnd" data-disableheight="1">
+			<div class="css-sticky">
+				<div class="logo logo_default">
+					<div class="logo__image">
+						<svg viewBox="0 0 120 566.37067"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>	
+					</div>
+
+					<div class="logo__text">
+						<div class="str">
+							<span>World-class Software Development,</span>
+						</div>
+						<div class="str">
+							<span>Project Management Office, Design,</span>
+						</div>
+						<div class="str">
+							<span>Business Analysis & Engineering</span>
+						</div>						
+					</div>
+				</div>				
+			</div>
+		</div>				
+
+		<section class="main">
+			<div class="wrap wrap_small main__wrap main__wrap_head">
+				<div class="animate animate_line js-set-width js-set-width-right">
+					<div class="main__back">
+						<header class="header">
+							<div class="clear header__row">
+								<div class="header__cell clear__left header__cell_left">
+									<div class="header__lang-parent animate animate_right animate_line" data-delay="1.3s">
+										<div class="inline">
+											<a href="/" class="lang header__lang">
+												<span>RU</span>
+											</a>
+											<a href="/en/" class="lang lang_current header__lang">
+												<span>ENG</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="inline clear__right header__cell header__cell_right">
+									
+									<div class="inline header__phones">
+										<div class="header__call">
+											<a href="tel:+18883177708" class="header__phone link">
+												<span class="header__phone-icon">
+													<span class="link__icon-hover">
+														<svg viewBox="0 0 370.854 511.99939"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tel"></use></svg>	
+													</span>
+													<span class="link__icon-default">
+														<svg viewBox="0 0 370.854 511.99939"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tel"></use></svg>	
+													</span>
+													
+												</span>
+												<span class="link__text">+1 (888) 317-7708</span>
+											</a>
+											<div class="header__call-text">Toll-free from the US and Canada</div>
+										</div>								
+										<div class="header__call">
+											<a href="tel:+19299992271" class="header__phone link">
+												<span class="header__phone-icon">
+													<span class="link__icon-hover">
+														<svg viewBox="0 0 370.854 511.99939"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tel"></use></svg>	
+													</span>
+													<span class="link__icon-default">
+														<svg viewBox="0 0 370.854 511.99939"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tel"></use></svg>	
+													</span>
+														
+												</span>
+												<span class="link__text">+1 (929) 999-2271</span>
+											</a>
+											<div class="header__call-text">Local</div>
+											
+										</div>									
+									</div>
+
+									<button class="flat-button header__button js-popup" data-modal="#consult-modal" data-input="Ask a Question (header)">
+										<span>Ask a Question</span>
+									</button>
+								</div>
+							</div>
+						</header>					
+					</div>
+				</div>
+			</div>
+			<div class="wrap wrap_small">
+				<div class="inline main__bottom">
+					<div class="main__bottom-cell main__bottom-cell_left">
+						<h2 class="title title_big main__title animate animate_fadein" data-delay="0.6s">
+							Since 2007, we have been designing, developing, and implementing products that change the world.
+
+						</h2>
+
+						<p class="p main__text animate animate_fadein" data-delay="0.9s">
+							No missed deadlines, a controlled budget, and detailed progress reports from start to finish.
+						</p>
+						<div class="inline main__recall">
+							<div class="animate animate_line hover-to-hide" data-delay="1.3s">
+								<button class="button main__button js-popup" data-modal="#help-modal" data-input="Discuss the Project (первый блок)" data-text="Discuss the Project">
+									<span class="button__inner">Discuss the Project</span>
+								</button>							
+							</div>
+		
+							<!-- <div class="hide-for-button animate animate_fadein" data-delay="1.3s">
+								<a href="#subscribe" class="download link main__download js-popup" data-delay="1.3s">
+									<span class="download__icon">
+										<span class="link__icon-hover">
+											<svg viewBox="0 0 14 16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use></svg>
+										</span>
+
+										<span class="link__icon-default">
+											<svg viewBox="0 0 14 16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use></svg>
+										</span>
+										
+									</span>
+									<span class="download__text link__text">Скачать пример</span>
+								</a>							
+							</div> -->
+		
+
+
+
+						</div>
+						
+					</div>
+					<!-- <div class="main__bottom-cell main__bottom-cell_right animate animate_line animate_top" data-delay="1.6s">
+						<div class="main__video hide-on-small-mobile">
+
+							<div class="main__video-player">
+								
+							</div>
+
+							<div class="main__video-button">
+								<div class="main__video-play"></div>
+								<div class="main__video-text">Посмотрите <i class="br"></i>2-х минутное видео <i class="br"></i>о компании</div>								
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</section>
+
+
+		<section class="vantages">
+			<div class="vantages__run"></div>
+			<div class="vantages__container flex">
+				<div class="vantages__sticky">
+					<div class="vantages__sticky-inner">
+						<div class="vantages__table">
+							<div class="vantages__table-cell">
+								<div class="wrap wrap_small">
+									<div class="inline vantages__top">
+										<div class="vantages__cell vantages__cell_left">
+											
+											<h2 class="title vantages__title" data-delay="0s">
+												We create goal-orientated<i class="br"></i> IT-solutions
+											</h2>
+										</div>
+										<div class="vantages__cell help vantages__cell_right">
+											
+
+											<div class="inline help__dots help__dots_margin">
+												<div class="help__square help__square_green">
+													<span></span>
+												</div>
+												<div class="help__square help__square_yellow">
+													<span></span>
+												</div>
+												<div class="help__square help__square_blue">
+													<span></span>
+												</div>
+											</div>
+											
+											<div class="help__text" data-delay="0.6s">
+												Transparency and communication yields results						
+											</div>
+											
+										</div>
+									</div>
+
+									<div class="js-set-width js-set-width-right vantages__track-parent" id="vantagesTrack" data-delay="0s">
+										<div class="vantages__track">
+											<div class="vantages__track-scroll"></div>
+										</div>
+									</div>
+
+									<div class="vantages__list">
+										<div class="inline vantages__list-row" id="vantages-list">
+											<div class="vantages__list-item">
+												<div class="vantages__list-inner" data-delay="0.1s">
+													<div class="vantages__complete">
+													
+														<div class="vantages__icon">
+															<figure class="vantages__icon-inner" style="width: 10rem;">
+																<svg viewBox="0 0 16 12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-1"></use></svg>	
+															</figure>
+														</div>									        				
+													
+
+														<div class="p vantages__info">Innovative Products</div>
+													</div>			        			
+												</div>
+												
+											</div>
+											<div class="vantages__list-item">
+												<div class="vantages__list-inner" data-delay="0.1s">
+													<div class="vantages__complete">
+														
+														<div class="vantages__icon vantages__icon_blue">
+															<figure class="vantages__icon-inner" style="width: 8.8rem;">
+																<svg viewBox="0 0 15.987664 16.014437"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-2"></use></svg>	
+															</figure>
+														</div>									        				
+
+														<div class="p vantages__info">Reduce Costs</div>		        			
+													</div>
+
+												</div>			        	
+											</div>
+											<div class="vantages__list-item">
+												<div class="vantages__list-inner" data-delay="0.1s">
+													<div class="vantages__complete">
+														
+														<div class="vantages__icon vantages__icon_yellow">
+															<figure class="vantages__icon-inner" style="width: 8rem;">
+																<svg viewBox="0 0 16 15"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-3"></use></svg>	
+															</figure>
+														</div>									        				
+														
+														<div class="p vantages__info">Increase Efficiency</div>		        			
+													</div>
+
+												</div>			        	
+											</div>			    		       		    				    
+											<div class="vantages__list-item">
+												<div class="vantages__list-inner">
+													<div class="vantages__complete">
+														
+														<div class="vantages__icon">
+															<figure class="vantages__icon-inner" style="width: 7.9rem;">
+																<svg viewBox="0 0 16 16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-4"></use></svg>	
+															</figure>
+														</div>									        				
+														
+
+														<div class="p vantages__info">Grow Profits & Access New Markets</div>		        			
+													</div>
+
+												</div>			        	
+											</div>
+											<div class="vantages__list-item">
+												<div class="vantages__list-inner">
+													<div class="vantages__complete">
+														
+														<div class="vantages__icon vantages__icon_blue">
+															<figure class="vantages__icon-inner" style="width: 7.4rem;">
+																<svg viewBox="0 0 10.666667 10.666667"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-5"></use></svg>
+															</figure>
+														</div>									        				
+														
+
+														<div class="p vantages__info">Improve Customer Service</div>		        			
+													</div>
+
+												</div>			        	
+											</div>	
+											<div class="vantages__list-item">
+												<div class="vantages__list-inner">
+													<div class="vantages__complete">
+														
+														<div class="vantages__icon vantages__icon_yellow">
+															<figure class="vantages__icon-inner" style="width: 8.7rem;">
+																<svg viewBox="0 0 13.333333 8"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-6"></use></svg>
+															</figure>
+														</div>									        				
+												
+
+														<div class="p vantages__info">Gain a Competitive Edge</div>		        			
+													</div>
+
+												</div>			        	
+											</div>										    		    	
+										</div>	    
+									</div>		
+									
+
+								</div>
+
+						
+							</div>
+						</div>					
+					</div>
+
+					
+				</div>
+				
+			</div>
+		
+		</section>
+
+		<section class="dev dev-slider dots" id="dev">	
+			<div class="container__logo-column container__logo-column_second container__logo-column_static">
+				
+				<div class="logo logo_default">
+					<div class="logo__image">
+						<svg viewBox="0 0 120 566.37067"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>	
+					</div>
+
+					<div class="logo__text">
+						<div class="str">
+							<span>World-class Software Development,</span>
+						</div>
+						<div class="str">
+							<span>Project Management Office, Design,</span>
+						</div>
+						<div class="str">
+							<span>Business Analysis & Engineering</span>
+						</div>						
+					</div>
+				</div>				
+				
+			</div>			
+			<div class="wrap">
+				<div class="flex inline dev__fluid-table">
+					<div class="dev__fluid-cell dev__fluid-cell_nav">
+						<div class="css-sticky">
+							<div class="dev__fluid-box">
+								<div class="dev__fluid-icon">
+									<svg viewBox="0 0 41 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dev-icon"></use></svg>	
+								</div>
+								
+								<div class="dev__fluid-text">Effective development based on sound methodology</div>
+
+								<div class="dev__fluid-label">Project Implementation Model:</div>
+							</div>	
+					
+						</div>
+							
+					</div>
+					<div class="dev__fluid-cell dev__fluid-cell_content">
+						<div class="inline dev__top">
+							<h2 class="title dev__title">Turnkey products that represent all of your business and market realities</h2>		
+							<div class="help dev__help">
+								<div class="help__text help__text_margin">Due to in-depth analytics and rigorous testing</div>
+								<div class="inline help__dots">
+									<div class="help__square help__square_green">
+										<span></span>
+									</div>
+									<div class="help__square help__square_yellow">
+										<span></span>
+									</div>
+									<div class="help__square help__square_blue">
+										<span></span>
+									</div>
+								</div>
+							</div>			
+						</div>
+
+						<div class="dev__quote">
+							<p class="p dev__p">Effective Development</p>
+							<div class="big dev__name">Agile <i class="br"></i>(Scrum)</div>
+						</div>	
+
+						<div class="dev__mobile">
+							<svg viewBox="0 0 41 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dev-icon"></use></svg>							
+						</div>
+							
+														
+					</div>
+				</div>
+				<div class="flex inline dev__fluid-table">
+					<div class="dev__fluid-cell dev__fluid-cell_nav"></div>
+					<div class="dev__fluid-cell dev__fluid-cell_content">
+						
+						<div class="dev__bottom">
+							<h2 class="title dev__title">Track progress at each stage of the project.</h2>	
+							<p class="p dev__sub">The main stages of project implementation:</p>	
+									
+						</div>
+
+						<div class="dots__table show-on-large-mobile">
+							<div class="inline dots__table-list">
+								<div class="dots__table-cell dots__table-cell_current">
+									<p class="p dots__nav-num">0</p>
+									<p class="p dots__nav-label">Interview</p>									
+								</div>
+								<div class="dots__table-cell">
+									<p class="p dots__nav-num">1</p>
+									<p class="p dots__nav-label">Business Analysis</p>									
+								</div>
+								<div class="dots__table-cell">
+									<p class="p dots__nav-num">2</p>
+									<p class="p dots__nav-label">Plan</p>									
+								</div>
+								<div class="dots__table-cell">
+									<p class="p dots__nav-num">3</p>
+									<p class="p dots__nav-label">Implementation</p>									
+								</div>
+								<div class="dots__table-cell">
+									<p class="p dots__nav-num">4</p>
+									<p class="p dots__nav-label">Audit</p>										
+								</div>
+								<div class="dots__table-cell">
+									<p class="p dots__nav-num">5</p>
+									<p class="p dots__nav-label">Maintenance</p>								
+								</div>								
+							</div>
+
+						</div>	
+										
+					</div>
+				</div>
+
+
+			</div>
+			<div class="wrap wrap_small">
+				<div class="dev__segment">
+
+					<div class="inline dev__segment-box">
+						<div class="dev__segment-part dev__segment-part_left">
+							<div class="dev__circle">
+
+								<div class="dev__circle-bg">
+									<div class="dev__circle-svg dev__circle-svg_white">
+										<svg viewBox="0 0 468 468"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dev-circle"></use></svg>
+									</div>
+									
+									<div class="dev__circle-svg dev__circle-svg_pink">
+										<svg viewBox="0 0 468 468"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dev-circle"></use></svg>
+									</div>
+								</div>
+
+								<div class="dev__circle-list">
+									<div class="dev__circle-dot">
+										<div class="dev__circle-num">2.1</div>
+									</div>
+									<div class="dev__circle-dot">
+										<div class="dev__circle-num">2.2</div>
+									</div>
+									<div class="dev__circle-dot">
+										<div class="dev__circle-num">2.3</div>
+									</div>
+									<div class="dev__circle-dot">
+										<div class="dev__circle-num">2.4</div>
+									</div>
+									<div class="dev__circle-dot">
+										<div class="dev__circle-num">2.5</div>
+									</div>								
+								</div>
+
+								<div class="help dev__inner-help">
+									<div class="help__big help__big_margin">Cycle <i class="br"></i>2 weeks</div>
+									<div class="inline help__dots help__dots_margin">
+										<div class="help__square help__square_green">
+											<span></span>
+										</div>
+										<div class="help__square help__square_yellow">
+											<span></span>
+										</div>
+										<div class="help__square help__square_blue">
+											<span></span>
+										</div>
+									</div>								
+								</div>
+
+							</div>
+						</div>
+						<div class="dev__segment-part dev__segment-part_right">
+							<div class="dots__slider-box">
+								<div class="dots__slider-list">
+									<div class="inline dots__slider-inner">
+										<div class="dots__slider-item dots__slider-item_current">
+											<div class="dev__big">Interview</div>
+											<div class="dev__text">
+												<p>We conduct key interviews
+												project persons on Skype or in the office.
+												Define goals and criteria
+												project success. </p>
+												<p>We agree on the stages of work and rules
+												communication between all
+												project stakeholders</p>
+											</div>
+
+
+																				
+										</div>
+										<div class="dots__slider-item">
+											<div class="dev__big">Business analysis</div>
+											<div class="dev__text">
+												<p>
+													We analyze in detail the end user of the product and business processes of the company. We select the technologies and identify risks. We perform Story Mapping and define requirements for the product.									
+												</p>
+												<p>
+													We form a team. The result is a clear plan and a strong team for product implementation.
+												</p>
+											</div>									
+
+											<a href="/img/example_1.jpg" target="_blank" class="link-with-arrow link js-open-image">
+
+												<span class="link-with-arrow__icon">
+													<span class="link__icon-hover">
+														<svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg>
+													</span>
+													<span class="link__icon-default">
+														<svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg>
+													</span>											
+												</span>
+												<span class="link-with-arrow__text link__text">Example</span>
+											</a>									
+										</div>
+										<div class="dots__slider-item">
+											<div class="dev__big">Production <i class="br"></i>cycles</div>
+											<ul class="dev__list">
+												<li><span>2.1</span> Design</li>
+												<li><span>2.2</span> Development</li>
+												<li><span>2.3</span> Testing</li>
+												<li><span>2.4</span> Demonstration</li>
+												<li><span>2.5</span> Analysis</li>
+												
+											</ul>									
+										</div>
+										<div class="dots__slider-item">
+											<div class="dev__big">Implementation</div>
+											<div class="dev__text">
+												<p>
+													We launch the infrastructure. Create documentation and knowledge base on the product. Provide training. The result is the finished product which is handed over to the client
+										
+												</p>
+											</div>									
+
+											<a href="/img/example_2.jpg" target="_blank" class="link-with-arrow link js-open-image">
+
+												<span class="link-with-arrow__icon">
+													<span class="link__icon-hover">
+														<svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg>
+													</span>
+													<span class="link__icon-default">
+														<svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg>
+													</span>											
+												</span>
+												<span class="link-with-arrow__text link__text">Example</span>
+											</a>								
+										</div>
+										<div class="dots__slider-item">
+											<div class="dev__big">Audit</div>
+											<div class="dev__text">
+												<p>
+													We install a dashboard. Set the fixation of key product indicators. Supervise how the product performs in actual business.
+												</p>
+												<p>If the product doesn't fulfill the agreed purpose, we make changes to the product. The result is that the product fulfills set goals and is as convenient as possible</p>
+											</div>									
+
+											<a href="/img/example_3.jpg" target="_blank" class="link-with-arrow link js-open-image">
+
+												<span class="link-with-arrow__icon">
+													<span class="link__icon-hover">
+														<svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg>
+													</span>
+													<span class="link__icon-default">
+														<svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg>
+													</span>											
+												</span>
+												<span class="link-with-arrow__text link__text">Example</span>
+											</a>									
+										</div>
+										<div class="dots__slider-item">
+											<div class="dev__big">Maintenance</div>
+											<div class="dev__text">
+												<p>
+													We install a dashboard. Set the fixation of key product indicators. Supervise how the product performs in actual business.									
+												</p>
+												<p>If the product doesn't fulfill the agreed purpose, we make changes to the product. The result is that the product fulfills set goals and is as convenient as possible</p>
+											</div>									
+
+																				
+										</div>										
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+					
+					<div class="dots__segment-path">
+						<div class="dots__segment-list">
+							<div class="dev__segment-dot dots__segment-dot dots__segment-dot_active">
+								<div class="dots__segment-label dots__segment-label_current">Interview</div>
+							</div>
+							<div class="dev__segment-dot dots__segment-dot">
+								<div class="dots__segment-label">Business Analysis</div>
+							</div>
+							<div class="dev__segment-dot dots__segment-dot">
+								<div class="dots__segment-label ">Development</div>
+							</div>
+							<div class="dev__segment-dot dots__segment-dot">
+								<div class="dots__segment-label">Implementation</div>
+							</div>
+							<div class="dev__segment-dot dots__segment-dot">
+								<div class="dots__segment-label">Audit</div>
+							</div>
+							<div class="dev__segment-dot dots__segment-dot">
+								<div class="dots__segment-label">Maintenance</div>
+							</div>
+						</div>
+						<div class="dots__segment-done"></div>					
+					</div>
+				</div>	
+
+				<div class="inline dev__nav js-set-width js-set-width-right">
+					<div class="dev__nav-cell dev__nav-cell_left">
+						<div class="inline nav dev__arrows">
+							<div class="nav__button js-change-part js-change-part-prev nav__button_prev">
+								<span>
+									<svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg>									
+								</span>
+							</div>
+							<div class="nav__button js-change-part js-change-part-next nav__button_next">
+								<span>
+									<svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="dev__nav-cell dev__nav-cell_right">
+						<div class="dots__table hide-on-large-mobile">
+							<div class="inline dots__table-list">
+								<div class="dots__table-cell dots__table-cell_current">
+									<p class="p dots__nav-num">0</p>
+									<p class="p dots__nav-label">Interview</p>									
+								</div>
+								<div class="dots__table-cell">
+									<p class="p dots__nav-num">1</p>
+									<p class="p dots__nav-label">Business analysis</p>									
+								</div>
+								<div class="dots__table-cell">
+									<p class="p dots__nav-num">2</p>
+									<p class="p dots__nav-label">Development</p>									
+								</div>
+								<div class="dots__table-cell">
+									<p class="p dots__nav-num">3</p>
+									<p class="p dots__nav-label">Implementation</p>									
+								</div>
+								<div class="dots__table-cell">
+									<p class="p dots__nav-num">4</p>
+									<p class="p dots__nav-label">Audit</p>										
+								</div>
+								<div class="dots__table-cell">
+									<p class="p dots__nav-num">5</p>
+									<p class="p dots__nav-label">Maintenance</p>								
+								</div>								
+							</div>
+
+						</div>
+					</div>
+				</div>		
+			</div>			
+		
+
+		</section>
+
+		<section class="price">
+			<div class="wrap wrap_small">
+				<div class="inline price__row">
+					<div class="price__cell price__cell_left" id="priceCellLeft">
+						<h2 class="title title_big price__title animate animate_fadein" data-delay="0.1s">Exact Pricing in Advance</h2>
+						<p class="p p_gray price__text animate animate_fadein" data-delay="0.2s">We present a detailed estimate at each stage of the project.</p>
+
+						<div class="inline price__bottom animate animate_fadein" data-delay="0.3s">
+							<button class="button price__button hover-to-hide js-popup" data-modal="#recall-modal" data-input="Get an Estimate" data-text="Get an Estimate">
+								<span class="button__inner">Get an Estimate</span>
+							</button>	
+						</div>
+					</div>
+					<div class="price__cell price__cell_right">
+						<div class="animate animate_line js-set-width js-set-width-right">
+							<img src="/img/price_book2.jpg" alt="" class="price__book">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="steps slider" id="services">
+			<div class="wrap">
+				<div class="flex inline tabs steps__tabs ">
+					<div class="tabs__cell tabs__cell_nav steps__cell-nav">
+						<div class="css-sticky">
+							<div class="clear tabs__nav-parent">
+								<div class="tabs__nav clear__right">
+									<div class="tabs__label">Choose option:</div>
+									
+									<div class="tabs__list slider__dots">
+										<div class="tabs__nav-item js-checked">
+											<div class="tabs__nav-cell">
+												<span class="tabs__nav-text">
+													Project Office
+												</span>
+											</div>
+										</div>
+
+										<div class="tabs__nav-item">
+											<div class="tabs__nav-cell">
+												<span class="tabs__nav-text">
+													Business Analysis <i class="br"></i>& Engineering
+												</span>
+											</div>
+										</div>
+
+										<div class="tabs__nav-item">
+											<div class="tabs__nav-cell">
+												<span class="tabs__nav-text">
+													New Product Development
+												</span>
+											</div>
+										</div>
+
+										<div class="tabs__nav-item">
+											<div class="tabs__nav-cell">
+												<span class="tabs__nav-text">
+													Existing Product Completion
+
+												</span>
+											</div>
+										</div>
+
+										<div class="tabs__nav-item">
+											<div class="tabs__nav-cell">
+												<span class="tabs__nav-text">
+													Update Existing Product
+
+												</span>
+											</div>
+										</div>
+
+				
+									</div>																		
+								</div>						
+							</div>						
+						</div>
+					</div>
+					<div class="tabs__cell tabs__cell_content">
+						<div class="tabs__content">
+							<h2 class="title steps__title" id="stepsTitlle">Our experienced team can handle any problem big or small</h2>
+							<div class="slider__box slider__box_withfade">
+								<div class="slider__list">
+
+									<div class="slider__item slider__item_current">
+										<div class="steps__parent-back">
+											<div class="steps__back" style="background-image: url('/img/steps__back_1.jpg');"></div>
+										</div>
+										
+										
+
+										<div class="big steps__big" data-num="01">Project <i class="br"></i> Office</div>
+
+										<p class="p p_gray steps__text steps__text_padding">From implementation to inception, we handle every step - on time and on budget</p>
+
+										<div class="title steps__title steps__title_withmargin">A team of specialized experts organizes all project work:</div>
+
+										<ul class="inline flex steps__list js-sticky-stop">
+											<li>
+												<p class="p">Analysis, design, and selection of implementers</p>
+											</li>
+											<li>
+												<p class="p">Change and Risk Management</p>
+											</li>									
+											<li>
+												<p class="p">Strict budget, timing, and quality control</p>
+											</li>
+											<li>
+												<p class="p">Organized, clear work and communication with project clients</p>
+											</li>
+											<li>
+												<p class="p">Daily project monitoring and results management</p>
+											</li>
+
+											<li class="last">
+												<button class="button steps__button js-popup" data-modal="#consult-modal" data-input="Get a consultation (Проектный офис)" data-text="Get a consultation">
+													<span class="button__inner">Get a consultation</span>
+												</button>											
+											</li>																											
+										</ul>
+									</div>
+
+									<div class="slider__item">
+										<div class="steps__parent-back steps__parent-back_second">
+											<div class="steps__back" style="background-image: url('/img/steps__back_2.jpg');"></div>
+										</div>
+										
+										
+
+										<div class="big steps__big steps__big_min" data-num="02">Business <i class="br"></i>Analysis <i class="br"></i>and Engineering</div>
+
+										<p class="p p_gray steps__text steps__text_padding">We'll help turn a problem into an opportunity for growth and profit.</p>
+
+										<ul class="inline flex steps__list steps__list_bigmargin">
+											<li>
+												<p class="p">Identification and Development of Relationship</p>
+											</li>
+											<li>
+												<p class="p">Identification of Business Problem and Analysis of Opportunities</p>
+											</li>									
+											<li>
+												<p class="p">Determining requirements for product development, realization, implementation, operation, and disposal</p>
+											</li>
+											<li>
+												<p class="p">Change Management and Monitoring</p>
+											</li>
+											<li>
+												<p class="p">efficiency assessment of implemented solution</p>
+											</li>
+
+											<li>
+												<p class="p">Post-implementation assessment to ensure business goals are met</p>										
+											</li>
+
+											<li>
+												<p class="p">Find solutions to adapt organization to new technology</p>
+											</li>																											
+										</ul>
+									</div>		
+																
+									<div class="slider__item steps__item steps__item_third">
+										<div class="steps__parent-back steps__parent-back_third">
+											<div class="steps__back" style="background-image: url('/img/steps__back_3.jpg');"></div>
+										</div>
+										
+										<div class="big steps__big" data-num="03">
+											New <i class="br"></i>Product <i class="br"></i>Development
+										</div>
+
+										<p class="p p_gray steps__text steps__text_padding">We'll help brainstorm, design, create, and implement the next generation's technology - for your leaders of today and tomorrow.</p>
+
+										<p class="p steps__helpmargin">
+											Combining industry and technical expertise, and taking into account business needs, market demand, and future development strategy, we create digital solutions from scratch or refresh an existing product in any stage of its lifecycle.
+										</p>
+
+										<a href="#products" class="steps__view link js-scroll">
+											<span class="link__text">View all Product Types</span>
+											<span class="steps__view-icon">
+												<span class="link__icon-hover"><svg viewBox="0 0 320 192"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg></span>
+												<span class="link__icon-default"><svg viewBox="0 0 320 192"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg></span>
+												
+											</span>										
+										</a>
+									</div>															
+									<div class="slider__item">
+										<div class="steps__parent-back steps__parent-back_fourth">
+											<div class="steps__back" style="background-image: url('/img/steps__back_4.jpg');"></div>
+										</div>
+										
+										<div class="big steps__big" data-num="04">Existing <i class="br"></i>Product <i class="br"></i>Completion</div>
+
+										<p class="p p_gray steps__text steps__text_padding">We'll modernize your product based on your individual business processes and development strategies. We'll update functionality and enhance the capacity of the IT solution.</p>
+
+										<ul class="inline flex steps__list steps__list_bigmargin">
+											<li>
+												<p class="p">We technically examine and test the system.</p>
+											</li>
+											<li>
+												<p class="p">We analyze the system to ensure its conformity with business processes and business development strategy</p>
+											</li>									
+											<li>
+												<p class="p">We check the convenience for the target audience</p>
+											</li>
+											<li>
+												<p class="p">We create a gradual system modernization plan</p>
+											</li>
+											<li>
+												<p class="p">We'll proceed with development and gradual implementation of the modernized system</p>
+											</li>
+
+											<li class="last">
+												<button class="button steps__button js-popup" data-modal="#consult-modal" data-input="Get Consultation (Доработка существующего)" data-text="Get Consultation">
+													<span class="button__inner">Get Consultation</span>
+												</button>										
+											</li>
+																										
+										</ul>
+									</div>	
+
+									<div class="slider__item">
+										<div class="steps__parent-back steps__parent-back_fifth">
+											<div class="steps__back" style="background-image: url('/img/steps__back_5.jpg');"></div>
+										</div>
+										
+										<div class="big steps__big" data-num="05">Existing <i class="br"></i> Product <i class="br"></i>Update</div>
+
+										<p class="p p_gray steps__text steps__text_padding">We'll fully update or finish your product to help you meet deadlines</p>
+
+										<ul class="inline flex steps__list steps__list_bigmargin">
+											<li>
+												<p class="p">We examine the system and all existing data code and repositories</p>
+											</li>
+											<li>
+												<p class="p">We perform system audit and testing</p>
+											</li>									
+											<li>
+												<p class="p">We create a defect correction plan</p>
+											</li>
+											<li>
+												<p class="p">We eliminate the defects and test the product</p>
+											</li>
+											<li>
+												<p class="p">We issue the first release and together, create a plan to develop the product</p>
+											</li>
+
+											<li class="last">
+												<button class="button steps__button js-popup" data-modal="#consult-modal" data-input="Get Consultation (Обновление существующего продукта)" data-text="Get Consultation">
+													<span class="button__inner">Get Consultation</span>
+												</button>										
+											</li>
+																										
+										</ul>
+									</div>	
+
+								</div>							
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="work slider dots" id="work">
+			<div class="wrap wrap_small">
+				<div class="inline work__top" id="workTop">
+					<div class="work__top-cell work__top-cell_left">
+						<h2 class="title work__title">No need to waste company time and resources. We will choose the most effective tools for the job</h2>
+					</div>
+					<div class="work__top-cell work__top-cell_right help">
+
+						<div class="work__help">
+							<div class="inline">
+								<div class="p p_gray work__label text-right">More than</div>
+								<div class="work__num work__label work__label_center">
+									25
+									<div class="inline work__inside-dots help__dots help__dots_center">
+										<div class="help__square help__square_green">
+											<span></span>
+										</div>
+										<div class="help__square help__square_yellow">
+											<span></span>
+										</div>
+										<div class="help__square help__square_blue">
+											<span></span>
+										</div>
+									</div>	
+								</div>
+								<div class="p p_gray work__label">different product <i class="br"></i>types available</div>
+							</div>
+
+						
+						</div>
+					
+					</div>
+				</div>
+
+				<div class="animate animate_line work__parent js-set-width js-set-width-right">
+					<div class="work__slider slider__box">
+						<div class="slider__line"></div>
+						<div class="inline slider__list">
+							<div class="work__slide slider__item slider__item_current">
+								<img src="/img/work__image_1.jpg" class="work__image object-fit" alt="">
+							</div>	
+							<div class="work__slide slider__item">
+								<img src="/img/work__image_2.jpg" class="work__image object-fit" alt="">
+							</div>	
+							<div class="work__slide slider__item">
+								<img src="/img/work__image_3.jpg" class="work__image object-fit" alt="">
+							</div>	
+							<div class="work__slide slider__item">
+								<img src="/img/work__image_4.jpg" class="work__image object-fit" alt="">
+							</div>	
+							<div class="work__slide slider__item">
+								<img src="/img/work__image_5.jpg" class="work__image object-fit" alt="">
+							</div>	
+							<div class="work__slide slider__item">
+								<img src="/img/work__image_6.jpg" class="work__image object-fit" alt="">
+							</div>	
+							<div class="work__slide slider__item">
+								<img src="/img/work__image_7.jpg" class="work__image object-fit" alt="">
+							</div>	
+
+							<div class="work__slide slider__item">
+								<img src="/img/work__image_9.jpg" class="work__image object-fit" alt="">
+							</div>							
+						</div>
+						<div class="inline nav slider__nav work__arrows work__arrows_fluid show-on-small-tablet">
+							<div class="nav__button nav__button_prev js-prev">
+								<span><svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></span>
+							</div>
+							<div class="nav__button nav__button_next js-next">
+								<span><svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="inline work__bottom">
+					<div class="work__bottom-cell work__bottom-cell_left">
+						<div class="work__nav">
+							<!-- flex -->
+							<ul class=" inline work__list slider__dots">
+								<li class="work__list-item js-checked">
+									<span>Requirements <i class="br"></i>Analysis</span>
+								</li>
+								<li class="work__list-item">
+									<span>
+										Convenient and Modern Interfaces
+									</span>
+								</li>							
+								<li class="work__list-item">
+									<span>MVP Creation</span>
+								</li>
+								<li class="work__list-item">
+									<span>capitalize <i class="br"></i>applications "Applications"</span>
+								</li>
+								<li class="work__list-item">
+									<span>"Application Integration"<i class="br"></i> capitalize</span>
+								</li>
+								<li class="work__list-item">
+									<span>Quality Control <i class="br"></i>and Testing</span>
+								</li>
+								<li class="work__list-item">
+									<span>Support <i class="br"></i>and Service</span>
+								</li>
+								<li class="work__list-item">
+									<span>Post-<i class="br"></i>Implementation Review</span>
+								</li>			
+							</ul>
+
+						</div>
+					</div>
+					<div class="work__bottom-cell work__bottom-cell_center">
+
+						<div class="work__text-slider dots__slider-box">
+							<div class="dots__slider-list work__text-list">
+								<div class="inline dots__slider-inner">
+									<div class="dots__slider-item dots__slider-item_current work__text-item help">
+										<p class="p p_gray">We identify, analyze, check, and record all functional and non-functional requirements, data flows, and prototypes, as well as prepare the product vision and project scope.</p>
+									</div>
+
+									<div class="dots__slider-item work__text-item help">
+										<p class="p p_gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, neque veritatis! Iste quibusdam id, sed aliquam ratione sunt omnis ut recusandae vel nulla repudiandae tenetur, nam adipisci ab. Rem, expedita!</p>
+									</div>
+
+									<div class="dots__slider-item work__text-item help">
+										<p class="p p_gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum atque possimus tempore unde delectus deserunt saepe, libero laborum provident! Et mollitia necessitatibus obcaecati sequi quae qui blanditiis sint accusamus at!</p>
+									</div>
+
+									<div class="dots__slider-item work__text-item help">
+										
+										<p class="p p_gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae aspernatur molestiae modi beatae laboriosam qui suscipit omnis error harum exercitationem, nam nulla, dolor laborum provident, nobis natus porro voluptatum officiis!</p>
+									</div>
+
+
+									<div class="dots__slider-item work__text-item help">
+										
+										<p class="p p_gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio laboriosam quo perspiciatis nostrum soluta asperiores autem doloremque sint saepe quas. In quibusdam a repellendus vitae harum quasi aliquid libero aliquam!</p>
+									</div>
+
+
+									<div class="dots__slider-item work__text-item help">
+										
+										<p class="p p_gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quod distinctio perferendis repellat similique aperiam harum fugiat. Nulla inventore, consequuntur sit doloremque sequi ipsam perspiciatis nemo animi dolore placeat odit.</p>
+									</div>
+
+
+									<div class="dots__slider-item work__text-item help">
+										
+										<p class="p p_gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore rerum, commodi est sit neque vel rem incidunt eum reiciendis illo architecto eaque, nobis vero dolorum iste minima quod possimus quo!</p>
+									</div>
+
+
+									<div class="dots__slider-item work__text-item help">
+										
+										<p class="p p_gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cum sequi, explicabo accusantium. Quia repudiandae dolorem hic sapiente, suscipit reiciendis fuga doloribus corporis maxime praesentium commodi, harum, fugiat iure sunt.</p>
+									</div>
+
+
+								</div>
+
+
+							</div>
+						</div>
+
+						<div class="inline work__dots help__dots help__dots_margin">
+							<div class="help__square help__square_green">
+								<span></span>
+							</div>
+							<div class="help__square help__square_yellow">
+								<span></span>
+							</div>
+							<div class="help__square help__square_blue">
+								<span></span>
+							</div>
+						</div>					
+					</div>
+					<div class="work__bottom-cell work__bottom-cell_right">
+						<div class="inline nav slider__nav work__arrows  hide-on-small-tablet">
+							<div class="nav__button nav__button_prev js-prev">
+								<span><svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></span>
+							</div>
+							<div class="nav__button nav__button_next js-next">
+								<span><svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></span>
+							</div>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="products" id="products">
+			<div class="products__logo-stop" id="workBottom"></div>			
+			<div class="products__container flex">
+				<div class="products__sticky">
+					<div class="products__sticky-inner">
+
+						<div class="products__backgrounds">
+							<div class="products__bg-item products__bg-item_first js-current"></div>	
+							<div class="products__bg-item products__bg-item_second"></div>	
+							<div class="products__bg-item products__bg-item_third"></div>	
+							<div class="products__bg-item products__bg-item_fourth"></div>	
+							<div class="products__bg-item products__bg-item_fifth"></div>	
+							<div class="products__bg-item products__bg-item_sixth"></div>	
+							<div class="products__bg-item products__bg-item_seventh"></div>	
+							<div class="products__bg-item products__bg-item_eighth"></div>	
+							<div class="products__bg-item products__bg-item_ninth"></div>	
+							<div class="products__bg-item products__bg-item_tenth"></div>	
+							<div class="products__bg-item products__bg-item_eleventh"></div>	
+							
+						</div>
+
+
+						<div class="wrap wrap_small products__wrap">
+							<div class="products__box">
+								<div class="big products__big">Products</div>
+								<div class="inline products__row">
+									<div class="products__cell products__cell_first">
+										<div class="js-need-wrap products__name js-current">Cloud <br> Services</div>
+										<div class="js-need-wrap products__name">Mobile <br> Application</div>
+										<div class="js-need-wrap products__name">Web <br> Platform</div>
+										<div class="js-need-wrap products__name">VR and AR</div>
+										<div class="js-need-wrap products__name">Machine <br> Learning</div>
+										<div class="js-need-wrap products__name">Big <br> Data</div>
+										<div class="js-need-wrap products__name">Blockchain</div>
+										<div class="js-need-wrap products__name">SaaS</div>
+										<div class="js-need-wrap products__name">Data <br> Analytics</div>
+										<div class="js-need-wrap products__name">Desktop <br> Application</div>
+										<div class="js-need-wrap products__name">And much <br> more</div>
+									</div>
+									<div class="products__cell products__cell_second">
+										<div class="products__recall link js-popup" data-modal="#consult-modal" data-input="Get a consultation (Продукты)">
+											<div class="products__recall-icon">
+												<div class="link__icon-hover">
+													<svg viewBox="0 -5 448 435.71275"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#message"></use></svg>
+												</div>
+												<div class="link__icon-default">
+													<svg viewBox="0 -5 448 435.71275"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#message"></use></svg>
+												</div>
+													
+											</div>
+											<span class="link__text">Get a consultation</span>
+											
+										</div>
+									</div>
+								</div>				
+							</div>
+
+							<a href="#portfolio" class="products__skip link js-products-skip">
+								<span class="link__text">
+									Skip
+								</span>
+								
+								<div class="products__skip-icon">
+									<div class="link__icon-hover">
+										<svg viewBox="0 0 320 192"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg>
+									</div>
+									<div class="link__icon-default">
+										<svg viewBox="0 0 320 192"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg>
+									</div>
+									
+								</div>
+							</a>
+							<a href="#work" class="products__skip products__skip_top link js-products-skip">
+								<span class="link__text">
+									Skip
+								</span>
+								
+								<div class="products__skip-icon">
+									<div class="link__icon-hover">
+										<svg viewBox="0 0 320 192"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg>
+									</div>
+									<div class="link__icon-default">
+										<svg viewBox="0 0 320 192"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg>
+									</div>
+									
+								</div>
+							</a>
+							<div class="products__list">
+								<div class="products__list-inner">
+									<div class="products__item js-current">
+										<p class="p">Cloud <i class="br"></i> Services</p>
+									</div>
+									<div class="products__item">
+										<p class="p">Mobile <i class="br"></i> Application</p>
+									</div>
+									<div class="products__item">
+										<p class="p">Web <i class="br"></i> Platform</p>
+									</div>	
+
+									<div class="products__item">
+										<p class="p">VR and AR</p>
+									</div>										
+
+									<div class="products__item">
+										<p class="p">Machine <i class="br"></i> Learning</p>
+									</div>															
+
+									<div class="products__item">
+										<p class="p">Big <i class="br"></i> Data</p>
+									</div>															
+									<div class="products__item">
+										<p class="p">Blockchain</p>
+									</div>															
+
+									<div class="products__item">
+										<p class="p">SaaS</p>
+									</div>															
+
+									<div class="products__item">
+										<p class="p">Data <i class="br"></i> Analytics</p>
+									</div>															
+
+									<div class="products__item">
+										<p class="p">Desktop <i class="br"></i> Application</p>
+									</div>															
+
+									<div class="products__item">
+										<p class="p">And much <i class="br"></i> more</p>
+									</div>										
+								</div>
+														
+													
+
+							</div>
+
+							<div class="products__bar">
+								<div class="products__done"></div>
+							</div>
+
+
+						</div>						
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="portfolio" id="portfolio">
+			<div class="wrap wrap_small">
+				<h2 class="title title_big portfolio__title">Over 150 projects <i class="br"></i> from various industries <i class="br"></i>  around the world.</h2>
+			</div>
+
+			<table class="portfolio__table">
+				<tr>
+					<td class="portfolio__cell portfolio__cell_blue">
+						<div class="portfolio__background-parent">
+							<div class="portfolio__background-item" style="background-image: url('/img/portfolio__back_1.jpg'); opacity: .08;">
+							</div>
+						</div>
+						<div class="portfolio__default">
+							<div class="portfolio__str">
+								<div class="portfolio__label">Banking and finance</div>
+							</div>
+							
+						</div>
+						<div class="portfolio__hover">
+							<div class="portfolio__str">
+								<div class="portfolio__label">Banking and finance</div>
+							</div>
+							<div class="portfolio__text js-need-wrap">
+								Convenient, user-friendly, and quickly <br>
+								adapts to any change - our software products are <br>
+								needed in the banking sector.
+							</div>
+						</div>
+						
+					</td>
+					<td class="portfolio__cell portfolio__cell_green">
+						<div class="portfolio__background-parent">
+							<div class="portfolio__background-item" style="background-image: url('/img/portfolio__back_2.jpg'); opacity: .29;">
+							</div>
+						</div>					
+						<div class="portfolio__default">
+							<div class="portfolio__str"><div class="portfolio__label">Insurance</div></div>
+							
+						</div>
+						<div class="portfolio__hover">
+							<div class="portfolio__str"><div class="portfolio__label">Insurance</div></div>
+							
+							<div class="portfolio__text js-need-wrap">
+								Convenient, user-friendly, and quickly <br>
+								adapts to any change - our software products are <br>
+								needed in the banking sector.
+							</div>
+						</div>
+						
+					</td>
+					<td class="portfolio__cell portfolio__cell_pink">
+						<div class="portfolio__background-parent">
+							<div class="portfolio__background-item" style="background-image: url('/img/portfolio__back_3.jpg'); opacity: .14;">
+							</div>
+						</div>					
+						<div class="portfolio__default">
+							<div class="portfolio__str">
+								<div class="portfolio__label">Technology</div>
+							</div>
+							<div class="portfolio__str">
+								<div class="portfolio__label">sector</div>
+							</div>						
+						</div>
+						<div class="portfolio__hover">
+							<div class="portfolio__str">
+								<div class="portfolio__label">Technology sector</div>
+							</div>
+						
+							
+							<div class="portfolio__text js-need-wrap">
+								Convenient, user-friendly, and quickly <br>
+								adapts to any change - our software products are <br>
+								needed in the banking sector.
+							</div>
+						</div>
+						
+					</td>
+					<td class="portfolio__cell portfolio__cell_blue">
+						<div class="portfolio__background-parent">
+							<div class="portfolio__background-item" style="background-image: url('/img/portfolio__back_4.jpg'); opacity: .2;">
+							</div>
+						</div>					
+						<div class="portfolio__default">
+							<div class="portfolio__str">
+								<div class="portfolio__label">Fuel and</div>
+							</div>
+							<div class="portfolio__str">
+								<div class="portfolio__label">energy complex</div>
+							</div>						
+						</div>
+						<div class="portfolio__hover">
+							<div class="portfolio__str">
+								<div class="portfolio__label">Fuel and energy complex</div>
+							</div>
+							
+							<div class="portfolio__text js-need-wrap">
+								Convenient, user-friendly, and quickly <br>
+								adapts to any change - our software products are <br>
+								needed in the banking sector.
+							</div>
+						</div>
+						
+					</td>								
+				</tr>
+				<tr>
+					<td class="portfolio__cell portfolio__cell_green">
+						<div class="portfolio__background-parent">
+							<div class="portfolio__background-item" style="background-image: url('/img/portfolio__back_5.jpg'); opacity: .15;">
+							</div>
+						</div>					
+						<div class="portfolio__default">
+							<div class="portfolio__str">
+								<div class="portfolio__label">Retail and consumer goods</div>
+							</div>
+							
+						</div>
+						<div class="portfolio__hover">
+							<div class="portfolio__str"><div class="portfolio__label">Retail and consumer goods</div></div>
+							<div class="portfolio__text js-need-wrap">
+								Convenient, user-friendly, and quickly <br>
+								adapts to any change - our software products are <br>
+								needed in the banking sector.
+							</div>
+						</div>
+						
+					</td>
+					<td class="portfolio__cell portfolio__cell_yellow">
+						<div class="portfolio__background-parent">
+							<div class="portfolio__background-item" style="background-image: url('/img/portfolio__back_6.jpg'); opacity: .22;">
+							</div>
+						</div>					
+						<div class="portfolio__default">
+							<div class="portfolio__str">
+								<div class="portfolio__label">Education</div>
+							</div>
+							
+						</div>
+						<div class="portfolio__hover">
+							<div class="portfolio__str"><div class="portfolio__label">Education</div></div>
+							<div class="portfolio__text js-need-wrap">
+								Convenient, user-friendly, and quickly <br>
+								adapts to any change - our software products are <br>
+								needed in the banking sector.
+							</div>
+						</div>
+						
+					</td>
+					<td class="portfolio__cell portfolio__cell_green">
+						<div class="portfolio__background-parent">
+							<div class="portfolio__background-item" style="background-image: url('/img/portfolio__back_7.jpg'); opacity: .19;">
+							</div>
+						</div>					
+						<div class="portfolio__default">
+							<div class="portfolio__str">
+								<div class="portfolio__label">Medicine </div>
+							</div>
+							<div class="portfolio__str">
+								<div class="portfolio__label">and biotechnology</div>
+							</div>						
+						</div>
+						<div class="portfolio__hover">
+							<div class="portfolio__str">
+								<div class="portfolio__label">Medicine and biotechnology</div>
+							</div>
+					
+							<div class="portfolio__text js-need-wrap">
+								Convenient, user-friendly, and quickly <br>
+								adapts to any change - our software products are <br>
+								needed in the banking sector.
+							</div>
+						</div>
+						
+					</td>
+					<td class="portfolio__cell portfolio__cell_pink">
+						<div class="portfolio__background-parent">
+							<div class="portfolio__background-item" style="background-image: url('/img/portfolio__back_8.jpg'); opacity: .35;">
+							</div>
+						</div>					
+						<div class="portfolio__default">
+							
+							<div class="portfolio__str">
+								<div class="portfolio__label">Media </div>
+							</div>
+							<div class="portfolio__str">
+								<div class="portfolio__label">and entertainment</div>
+							</div>						
+						</div>
+						<div class="portfolio__hover">
+							<div class="portfolio__str">
+								<div class="portfolio__label">Media and entertainment</div>
+							</div>
+							
+							<div class="portfolio__text js-need-wrap">
+								Convenient, user-friendly, and quickly <br>
+								adapts to any change - our software products are <br>
+								needed in the banking sector.
+							</div>
+						</div>
+						
+					</td>								
+				</tr>
+				<tr>
+					<td class="portfolio__cell portfolio__cell_green">
+						<div class="portfolio__background-parent">
+							<div class="portfolio__background-item" style="background-image: url('/img/portfolio__back_9.jpg'); opacity: .18;">
+							</div>
+						</div>					
+						<div class="portfolio__default">
+						
+							<div class="portfolio__str">
+								<div class="portfolio__label">Cryptocurrency</div>
+							</div>
+							<div class="portfolio__str">
+								<div class="portfolio__label">and blockchain</div>
+							</div>						
+						</div>
+						<div class="portfolio__hover">
+							<div class="portfolio__str">
+								<div class="portfolio__label">Cryptocurrency and blockchain</div>
+							</div>
+							
+							<div class="portfolio__text js-need-wrap">
+								Convenient, user-friendly, and quickly <br>
+								adapts to any change - our software products are <br>
+								needed in the banking sector.
+							</div>
+						</div>
+						
+					</td>
+					<td class="portfolio__cell portfolio__cell_yellow">
+						<div class="portfolio__background-parent">
+							<div class="portfolio__background-item" style="background-image: url('/img/portfolio__back_10.jpg'); opacity: .15;">
+							</div>
+						</div>					
+						<div class="portfolio__default">
+							
+							<div class="portfolio__str">
+								<div class="portfolio__label">Travel</div>
+							</div>
+													
+						</div>
+						<div class="portfolio__hover">
+							<div class="portfolio__str">
+								<div class="portfolio__label">Travel</div>
+							</div>
+							<div class="portfolio__text js-need-wrap">
+						
+								We help introduce an innovative <br>
+								and user-friendly solution.
+							
+								
+							</div>
+						</div>
+						
+					</td>
+					<td class="portfolio__cell portfolio__cell_blue">
+						<div class="portfolio__background-parent">
+							<div class="portfolio__background-item" style="background-image: url('/img/portfolio__back_11.jpg'); opacity: .12;">
+							</div>
+						</div>					
+						<div class="portfolio__default">
+							<div class="portfolio__str">
+								<div class="portfolio__label">Emerging markets</div>
+							</div>						
+							<div class="portfolio__str">
+								<div class="portfolio__label">and startups</div>
+							</div>						
+						</div>
+						<div class="portfolio__hover">
+							<div class="portfolio__str">
+								<div class="portfolio__label">Emerging markets and startups</div>
+							</div>						
+
+							<div class="portfolio__text js-need-wrap">
+								Convenient, user-friendly, and quickly <br>
+								adapts to any change - our software products are <br>
+								needed in the banking sector.
+							</div>
+						</div>
+						
+					</td>
+					<td class="portfolio__cell portfolio__cell_green">
+						<div class="portfolio__background-parent">
+							<div class="portfolio__background-item" style="background-image: url('/img/portfolio__back_12.jpg'); opacity: .10;">
+							</div>
+						</div>					
+						<div class="portfolio__default">
+							<div class="portfolio__str">
+								<div class="portfolio__label">And More!</div>
+							</div>						
+									
+						</div>
+						<div class="portfolio__hover">
+							<div class="portfolio__str">
+								<div class="portfolio__label">And More!</div>
+							</div>	
+							<div class="portfolio__text js-need-wrap">
+								Convenient, user-friendly, and quickly <br>
+								adapts to any change - our software products are <br>
+								needed in the banking sector.
+							</div>
+						</div>
+						
+					</td>								
+				</tr>						
+			</table>
+		</section>
+
+		<section class="case case-slider" id="cases">
+			<div class="wrap wrap_small">
+
+				<div class="dots">
+					<div class="inline dots__nav">
+						<div class="dots__nav-cell dots__nav-cell_left case__arrows-cell">
+							<div class="inline nav dots__arrows">
+								<div class="nav__button nav__button_prev js-change-part js-change-part-prev">
+									<span><svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></span>
+								</div>
+								<div class="nav__button nav__button_next js-change-part js-change-part-next">
+									<span><svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></span>
+								</div>
+							</div>
+						</div>
+						<div class="dots__nav-cell dots__nav-cell_right case__labels-cell">
+							<div class="dots__table">
+								<div class="inline dots__table-list">
+									<div class="dots__table-cell dots__table-cell_current">
+										<p class="p dots__nav-num">1</p>
+										<p class="p dots__nav-label">p1</p>									
+									</div>
+									<div class="dots__table-cell">
+										<p class="p dots__nav-num">2</p>
+										<p class="p dots__nav-label">p2</p>									
+									</div>
+									<div class="dots__table-cell">
+										<p class="p dots__nav-num">3</p>
+										<p class="p dots__nav-label">p3</p>									
+									</div>
+									<div class="dots__table-cell">
+										<p class="p dots__nav-num">4</p>
+										<p class="p dots__nav-label">p4</p>									
+									</div>
+									<div class="dots__table-cell">
+										<p class="p dots__nav-num">5</p>
+										<p class="p dots__nav-label">p5</p>										
+									</div>
+															
+								</div>
+
+							</div>
+						</div>
+					</div>				
+				</div>
+			</div>				
+			<div class="case__list" id="caseStart">
+				<div class="dots__slider-box case__slider-box">
+					<div class="dots__slider-list">
+						<div class="inline dots__slider-inner">
+							<div class="dots__slider-item dots__slider-item_current">
+								<div class="case__item wrap wrap_small">
+									<div class="big case__name">
+										p1
+									</div>
+									<div class="inline case__row">
+										<div class="case__column case__column_left">
+											<div class="case__small">
+												Blockchain: Bitshares (DPOS) <i class="br"></i>
+												Desktop and mobile wallets: C#, Java <i class="br"></i>
+												Android, Objective-C iOS <i class="br"></i>
+												Web: React, Node.js
+											</div>
+										</div>
+										<div class="case__column case__column_center">
+											<div class="p p_gray case__text">
+												Virtual investment fund platform with seamless cryptocurrency (Bitcoin, Ehter, Dash) and payment system (PaylPal, Stripe, BitPay) integration
+											</div>
+										</div>
+										<div class="case__column case__column_right">
+											<a href="http://www.bnktothefuture.com" class="case__link">www.bnktothefuture.com</a>
+										</div>		
+									</div>
+
+									<!-- <div class="js-set-width js-set-width-right case__full"> -->
+									<div class="case__parent">
+										<div class="case__slider">
+											<div class="case__picture">
+												<img src="/img/case__picture_1.jpg" class="object-fit" alt="">
+											</div>							
+										</div>												
+									</div>
+
+
+									<!-- </div> -->
+
+									<div class="flex inline case__bottom">
+										<div class="case__cell case__cell_nav">
+											
+
+										</div>
+										<div class="case__cell case__cell_content">
+											<div class="main__video case__video">
+
+												<div class="main__video-player"></div>
+
+												<div class="main__video-button">
+													<div class="main__video-play main__video-play_withicon">
+														<svg viewBox="0 0 10 16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#project-icon"></use></svg>	
+													</div>
+													<div class="main__video-text">View <i class="br"></i>product <i class="br"></i>demo version</div>								
+												</div>
+											</div>
+
+											<div class="case__info">
+												<div class="title case__label">Project Task:</div>
+												<div class="p p_gray case__text">Automate all business processes, integrate Cryptocoins payment gateways, and implement a modern payment system.
+
+
+												</div>
+											</div>
+
+											<div class="case__info">
+												<div class="title case__label">What happened?</div>
+												<div class="p p_gray case__text">We automated all business processes, integrated Cryptocoins payment gateways and implemented modern payment systems
+
+												</div>
+											</div>
+
+											<div class="title case__label">Results: </div>
+
+											<ul class="inline flex steps__list case__vantages">
+												<li>
+													<p class="p case__text">200% Increase in Sales</p>
+												</li>
+												<li>
+													<p class="p case__text">New Company Management Tool</p>
+												</li>
+												<li>
+													<p class="p case__text">Clear Investment Results</p>
+												</li>
+												<li>
+													<p class="p case__text">Potential clients are easily and quickly acclimated with the company</p>
+												</li>																								
+											</ul>
+
+											<div class="inline">
+												<div class="case__part">
+													
+													<div class="row case__table">
+														<div class="case__td case__td_left row__fitbywidth">
+															<p class="p p_gray case__text">Development<i class="br"></i> period</p>
+														</div>
+														<div class="case__td row__fitbywidth case__td_center help">
+															<div class="big case__num">60</div>
+
+															<div class="inline help__dots help__dots_center">
+																<div class="help__square help__square_green">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_yellow">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_blue">
+																	<span></span>
+																</div>
+															</div>												
+														</div>
+														<div class="case__td">
+															<p class="p p_gray case__text">days</p>
+														</div>
+													</div>
+													
+												</div>
+												<div class="case__part">
+													
+													<div class="row case__table">
+														<div class="case__td case__td_left row__fitbywidth">
+															<p class="p p_gray case__text">Team of</p>
+														</div>
+														<div class="case__td row__fitbywidth case__td_center help">
+															<div class="big case__num">36</div>
+
+															<div class="inline help__dots help__dots_center">
+																<div class="help__square help__square_green">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_yellow">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_blue">
+																	<span></span>
+																</div>
+															</div>												
+														</div>
+														<div class="case__td">
+															<p class="p p_gray case__text">specialists worked on the project</p>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+													
+								</div>									
+							</div>
+							<div class="dots__slider-item dots__slider-item_current">
+								<div class="case__item wrap wrap_small">
+									<div class="big case__name">
+										p2
+									</div>
+									<div class="inline case__row">
+										<div class="case__column case__column_left">
+											<div class="case__small">
+												Blockchain: Bitshares (DPOS) <i class="br"></i>
+												Desktop and mobile wallets: C#, Java <i class="br"></i>
+												Android, Objective-C iOS <i class="br"></i>
+												Web: React, Node.js
+											</div>
+										</div>
+										<div class="case__column case__column_center">
+											<div class="p p_gray case__text">
+												Virtual investment fund platform with seamless cryptocurrency (Bitcoin, Ehter, Dash) and payment system (PaylPal, Stripe, BitPay) integration
+											</div>
+										</div>
+										<div class="case__column case__column_right">
+											<a href="http://www.bnktothefuture.com" class="case__link">www.bnktothefuture.com</a>
+										</div>		
+									</div>
+
+									<!-- <div class="js-set-width js-set-width-right case__full"> -->
+									<div class="case__parent">
+										<div class="case__slider">
+											<div class="case__picture">
+												<img src="/img/case__picture_1.jpg" class="object-fit" alt="">
+											</div>							
+										</div>												
+									</div>
+
+
+									<!-- </div> -->
+
+									<div class="flex inline case__bottom">
+										<div class="case__cell case__cell_nav">
+											
+
+										</div>
+										<div class="case__cell case__cell_content">
+											<div class="main__video case__video">
+
+												<div class="main__video-player"></div>
+
+												<div class="main__video-button">
+													<div class="main__video-play main__video-play_withicon">
+														<svg viewBox="0 0 10 16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#project-icon"></use></svg>	
+													</div>
+													<div class="main__video-text">View <i class="br"></i>product <i class="br"></i>demo version</div>								
+												</div>
+											</div>
+											<div class="case__info">
+												<div class="title case__label">Project Task:</div>
+												<div class="p p_gray case__text">Automate all business processes, integrate Cryptocoins payment gateways, and implement a modern payment system.
+
+
+												</div>
+											</div>
+
+											<div class="case__info">
+												<div class="title case__label">What happened?</div>
+												<div class="p p_gray case__text">We automated all business processes, integrated Cryptocoins payment gateways and implemented modern payment systems
+
+												</div>
+											</div>
+
+											<div class="title case__label">Results: </div>
+
+											<ul class="inline flex steps__list case__vantages">
+												<li>
+													<p class="p case__text">200% Increase in Sales</p>
+												</li>
+												<li>
+													<p class="p case__text">New Company Management Tool</p>
+												</li>
+												<li>
+													<p class="p case__text">Clear Investment Results</p>
+												</li>
+												<li>
+													<p class="p case__text">Potential clients are easily and quickly acclimated with the company</p>
+												</li>																								
+											</ul>
+
+											<div class="inline">
+												<div class="case__part">
+													
+													<div class="row case__table">
+														<div class="case__td case__td_left row__fitbywidth">
+															<p class="p p_gray case__text">Development<i class="br"></i> period</p>
+														</div>
+														<div class="case__td row__fitbywidth case__td_center help">
+															<div class="big case__num">60</div>
+
+															<div class="inline help__dots help__dots_center">
+																<div class="help__square help__square_green">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_yellow">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_blue">
+																	<span></span>
+																</div>
+															</div>												
+														</div>
+														<div class="case__td">
+															<p class="p p_gray case__text">days</p>
+														</div>
+													</div>
+													
+												</div>
+												<div class="case__part">
+													
+													<div class="row case__table">
+														<div class="case__td case__td_left row__fitbywidth">
+															<p class="p p_gray case__text">Team of</p>
+														</div>
+														<div class="case__td row__fitbywidth case__td_center help">
+															<div class="big case__num">36</div>
+
+															<div class="inline help__dots help__dots_center">
+																<div class="help__square help__square_green">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_yellow">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_blue">
+																	<span></span>
+																</div>
+															</div>												
+														</div>
+														<div class="case__td">
+															<p class="p p_gray case__text">specialists worked on the project</p>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+													
+								</div>									
+							</div>
+							<div class="dots__slider-item dots__slider-item_current">
+								<div class="case__item wrap wrap_small">
+									<div class="big case__name">
+										p3
+									</div>
+									<div class="inline case__row">
+										<div class="case__column case__column_left">
+											<div class="case__small">
+												Blockchain: Bitshares (DPOS) <i class="br"></i>
+												Desktop and mobile wallets: C#, Java <i class="br"></i>
+												Android, Objective-C iOS <i class="br"></i>
+												Web: React, Node.js
+											</div>
+										</div>
+										<div class="case__column case__column_center">
+											<div class="p p_gray case__text">
+												Virtual investment fund platform with seamless cryptocurrency (Bitcoin, Ehter, Dash) and payment system (PaylPal, Stripe, BitPay) integration
+											</div>
+										</div>
+										<div class="case__column case__column_right">
+											<a href="http://www.bnktothefuture.com" class="case__link">www.bnktothefuture.com</a>
+										</div>		
+									</div>
+
+									<!-- <div class="js-set-width js-set-width-right case__full"> -->
+									<div class="case__parent">
+										<div class="case__slider">
+											<div class="case__picture">
+												<img src="/img/case__picture_1.jpg" class="object-fit" alt="">
+											</div>							
+										</div>												
+									</div>
+
+
+									<!-- </div> -->
+
+									<div class="flex inline case__bottom">
+										<div class="case__cell case__cell_nav">
+											
+
+										</div>
+										<div class="case__cell case__cell_content">
+											<div class="main__video case__video">
+
+												<div class="main__video-player"></div>
+
+												<div class="main__video-button">
+													<div class="main__video-play main__video-play_withicon">
+														<svg viewBox="0 0 10 16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#project-icon"></use></svg>	
+													</div>
+													<div class="main__video-text">View <i class="br"></i>product <i class="br"></i>demo version</div>								
+												</div>
+											</div>
+
+											<div class="case__info">
+												<div class="title case__label">Project Task:</div>
+												<div class="p p_gray case__text">Automate all business processes, integrate Cryptocoins payment gateways, and implement a modern payment system.
+
+
+												</div>
+											</div>
+
+											<div class="case__info">
+												<div class="title case__label">What happened?</div>
+												<div class="p p_gray case__text">We automated all business processes, integrated Cryptocoins payment gateways and implemented modern payment systems
+
+												</div>
+											</div>
+
+											<div class="title case__label">Results: </div>
+
+											<ul class="inline flex steps__list case__vantages">
+												<li>
+													<p class="p case__text">200% Increase in Sales</p>
+												</li>
+												<li>
+													<p class="p case__text">New Company Management Tool</p>
+												</li>
+												<li>
+													<p class="p case__text">Clear Investment Results</p>
+												</li>
+												<li>
+													<p class="p case__text">Potential clients are easily and quickly acclimated with the company</p>
+												</li>																								
+											</ul>
+
+											<div class="inline">
+												<div class="case__part">
+													
+													<div class="row case__table">
+														<div class="case__td case__td_left row__fitbywidth">
+															<p class="p p_gray case__text">Development<i class="br"></i> period</p>
+														</div>
+														<div class="case__td row__fitbywidth case__td_center help">
+															<div class="big case__num">60</div>
+
+															<div class="inline help__dots help__dots_center">
+																<div class="help__square help__square_green">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_yellow">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_blue">
+																	<span></span>
+																</div>
+															</div>												
+														</div>
+														<div class="case__td">
+															<p class="p p_gray case__text">days</p>
+														</div>
+													</div>
+													
+												</div>
+												<div class="case__part">
+													
+													<div class="row case__table">
+														<div class="case__td case__td_left row__fitbywidth">
+															<p class="p p_gray case__text">Team of</p>
+														</div>
+														<div class="case__td row__fitbywidth case__td_center help">
+															<div class="big case__num">36</div>
+
+															<div class="inline help__dots help__dots_center">
+																<div class="help__square help__square_green">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_yellow">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_blue">
+																	<span></span>
+																</div>
+															</div>												
+														</div>
+														<div class="case__td">
+															<p class="p p_gray case__text">specialists worked on the project</p>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+													
+								</div>									
+							</div>
+							<div class="dots__slider-item dots__slider-item_current">
+								<div class="case__item wrap wrap_small">
+									<div class="big case__name">
+										p4
+									</div>
+									<div class="inline case__row">
+										<div class="case__column case__column_left">
+											<div class="case__small">
+												Blockchain: Bitshares (DPOS) <i class="br"></i>
+												Desktop and mobile wallets: C#, Java <i class="br"></i>
+												Android, Objective-C iOS <i class="br"></i>
+												Web: React, Node.js
+											</div>
+										</div>
+										<div class="case__column case__column_center">
+											<div class="p p_gray case__text">
+												Virtual investment fund platform with seamless cryptocurrency (Bitcoin, Ehter, Dash) and payment system (PaylPal, Stripe, BitPay) integration
+											</div>
+										</div>
+										<div class="case__column case__column_right">
+											<a href="http://www.bnktothefuture.com" class="case__link">www.bnktothefuture.com</a>
+										</div>		
+									</div>
+
+									<!-- <div class="js-set-width js-set-width-right case__full"> -->
+									<div class="case__parent">
+										<div class="case__slider">
+											<div class="case__picture">
+												<img src="/img/case__picture_1.jpg" class="object-fit" alt="">
+											</div>							
+										</div>												
+									</div>
+
+
+									<!-- </div> -->
+
+									<div class="flex inline case__bottom">
+										<div class="case__cell case__cell_nav">
+											
+
+										</div>
+										<div class="case__cell case__cell_content">
+											<div class="main__video case__video">
+
+												<div class="main__video-player"></div>
+
+												<div class="main__video-button">
+													<div class="main__video-play main__video-play_withicon">
+														<svg viewBox="0 0 10 16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#project-icon"></use></svg>	
+													</div>
+													<div class="main__video-text">View <i class="br"></i>product <i class="br"></i>demo version</div>								
+												</div>
+											</div>
+
+											<div class="case__info">
+												<div class="title case__label">Project Task:</div>
+												<div class="p p_gray case__text">Automate all business processes, integrate Cryptocoins payment gateways, and implement a modern payment system.
+
+
+												</div>
+											</div>
+
+											<div class="case__info">
+												<div class="title case__label">What happened?</div>
+												<div class="p p_gray case__text">We automated all business processes, integrated Cryptocoins payment gateways and implemented modern payment systems
+
+												</div>
+											</div>
+
+											<div class="title case__label">Results: </div>
+
+											<ul class="inline flex steps__list case__vantages">
+												<li>
+													<p class="p case__text">200% Increase in Sales</p>
+												</li>
+												<li>
+													<p class="p case__text">New Company Management Tool</p>
+												</li>
+												<li>
+													<p class="p case__text">Clear Investment Results</p>
+												</li>
+												<li>
+													<p class="p case__text">Potential clients are easily and quickly acclimated with the company</p>
+												</li>																								
+											</ul>
+
+											<div class="inline">
+												<div class="case__part">
+													
+													<div class="row case__table">
+														<div class="case__td case__td_left row__fitbywidth">
+															<p class="p p_gray case__text">Development<i class="br"></i> period</p>
+														</div>
+														<div class="case__td row__fitbywidth case__td_center help">
+															<div class="big case__num">60</div>
+
+															<div class="inline help__dots help__dots_center">
+																<div class="help__square help__square_green">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_yellow">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_blue">
+																	<span></span>
+																</div>
+															</div>												
+														</div>
+														<div class="case__td">
+															<p class="p p_gray case__text">days</p>
+														</div>
+													</div>
+													
+												</div>
+												<div class="case__part">
+													
+													<div class="row case__table">
+														<div class="case__td case__td_left row__fitbywidth">
+															<p class="p p_gray case__text">Team of</p>
+														</div>
+														<div class="case__td row__fitbywidth case__td_center help">
+															<div class="big case__num">36</div>
+
+															<div class="inline help__dots help__dots_center">
+																<div class="help__square help__square_green">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_yellow">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_blue">
+																	<span></span>
+																</div>
+															</div>												
+														</div>
+														<div class="case__td">
+															<p class="p p_gray case__text">specialists worked on the project</p>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+													
+								</div>									
+							</div>	
+							<div class="dots__slider-item dots__slider-item_current">
+								<div class="case__item wrap wrap_small">
+									<div class="big case__name">
+										p5
+									</div>
+									<div class="inline case__row">
+										<div class="case__column case__column_left">
+											<div class="case__small">
+												Blockchain: Bitshares (DPOS) <i class="br"></i>
+												Desktop and mobile wallets: C#, Java <i class="br"></i>
+												Android, Objective-C iOS <i class="br"></i>
+												Web: React, Node.js
+											</div>
+										</div>
+										<div class="case__column case__column_center">
+											<div class="p p_gray case__text">
+												Virtual investment fund platform with seamless cryptocurrency (Bitcoin, Ehter, Dash) and payment system (PaylPal, Stripe, BitPay) integration
+											</div>
+										</div>
+										<div class="case__column case__column_right">
+											<a href="http://www.bnktothefuture.com" class="case__link">www.bnktothefuture.com</a>
+										</div>		
+									</div>
+
+									<!-- <div class="js-set-width js-set-width-right case__full"> -->
+									<div class="case__parent">
+										<div class="case__slider">
+											<div class="case__picture">
+												<img src="/img/case__picture_1.jpg" class="object-fit" alt="">
+											</div>							
+										</div>												
+									</div>
+
+
+									<!-- </div> -->
+
+									<div class="flex inline case__bottom">
+										<div class="case__cell case__cell_nav">
+										
+
+										</div>
+										<div class="case__cell case__cell_content">
+											<div class="main__video case__video">
+
+												<div class="main__video-player"></div>
+
+												<div class="main__video-button">
+													<div class="main__video-play main__video-play_withicon">
+														<svg viewBox="0 0 10 16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#project-icon"></use></svg>	
+													</div>
+													<div class="main__video-text">View <i class="br"></i>product <i class="br"></i>demo version</div>								
+												</div>
+											</div>
+											<div class="case__info">
+												<div class="title case__label">Project Task:</div>
+												<div class="p p_gray case__text">Automate all business processes, integrate Cryptocoins payment gateways, and implement a modern payment system.
+
+
+												</div>
+											</div>
+
+											<div class="case__info">
+												<div class="title case__label">What happened?</div>
+												<div class="p p_gray case__text">We automated all business processes, integrated Cryptocoins payment gateways and implemented modern payment systems
+
+												</div>
+											</div>
+
+											<div class="title case__label">Results: </div>
+
+											<ul class="inline flex steps__list case__vantages">
+												<li>
+													<p class="p case__text">200% Increase in Sales</p>
+												</li>
+												<li>
+													<p class="p case__text">New Company Management Tool</p>
+												</li>
+												<li>
+													<p class="p case__text">Clear Investment Results</p>
+												</li>
+												<li>
+													<p class="p case__text">Potential clients are easily and quickly acclimated with the company</p>
+												</li>																								
+											</ul>
+
+											<div class="inline">
+												<div class="case__part">
+													
+													<div class="row case__table">
+														<div class="case__td case__td_left row__fitbywidth">
+															<p class="p p_gray case__text">Development<i class="br"></i> period</p>
+														</div>
+														<div class="case__td row__fitbywidth case__td_center help">
+															<div class="big case__num">60</div>
+
+															<div class="inline help__dots help__dots_center">
+																<div class="help__square help__square_green">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_yellow">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_blue">
+																	<span></span>
+																</div>
+															</div>												
+														</div>
+														<div class="case__td">
+															<p class="p p_gray case__text">days</p>
+														</div>
+													</div>
+													
+												</div>
+												<div class="case__part">
+													
+													<div class="row case__table">
+														<div class="case__td case__td_left row__fitbywidth">
+															<p class="p p_gray case__text">Team of</p>
+														</div>
+														<div class="case__td row__fitbywidth case__td_center help">
+															<div class="big case__num">36</div>
+
+															<div class="inline help__dots help__dots_center">
+																<div class="help__square help__square_green">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_yellow">
+																	<span></span>
+																</div>
+																<div class="help__square help__square_blue">
+																	<span></span>
+																</div>
+															</div>												
+														</div>
+														<div class="case__td">
+															<p class="p p_gray case__text">specialists worked on the project</p>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+													
+								</div>									
+							</div>																																																				
+						</div>
+					</div>
+				</div>
+				<div class="case__nav-parent">
+					<div class="flex wrap wrap_small case__nav-inner">
+						<div class="case__nav-box">
+							
+							<div class="css-sticky">
+								<div class="case__buttons" id="caseEnd">
+									<div class="case__goto case__goto_next js-change-part js-change-part-next">
+										Следующий <i class="br"></i>
+										проект
+									</div>
+									<div class="case__goto case__goto_prev js-change-part js-change-part-prev">
+										Предыдущий <i class="br"></i>
+										проект
+									</div>
+								</div>								
+							</div>						
+						</div>						
+					</div>
+
+				</div>	
+			</div>
+		</section>
+
+		<section class="support">
+			<div class="wrap wrap_small">
+				<div class="support__top" id="supportStart">
+					<h2 class="title title_big support__title">
+						We help implement the product, train employees, and achieve desired results.
+					</h2>
+					<p class="p p_gray">We provide integrated support post-development and implementation.</p>				
+				</div>
+
+			</div>
+			<div class="wrap">
+				<div class="inline support__row">
+					<div class="support__cell support__cell_left">
+						<div class="support__box support__box_pink support__box_multiple">
+							<div class="support__inner support__inner_withicon animate animate_top animate_line">
+								<div class="support__icon">
+									<svg viewBox="0 0 16 16" style="width: 6.2rem;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#support-icon-1"></use></svg>	
+								</div>
+								<p class="p support__inner-text">
+									Detailed, technical documentation of the system
+								</p>
+							</div>
+						</div>
+
+						<div class="support__box support__box_yellow support__box_multiple">
+							<div class="support__inner support__inner_withicon animate animate_top animate_line">
+								<div class="support__icon">
+									
+									<svg viewBox="0 0 455.10892 455.12003" style="width: 6.2rem;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#support-icon-3"></use></svg>	
+								
+								</div>
+								<p class="p support__inner-text">
+									Online employee training and video recordings
+								</p>
+							</div>
+						</div>					
+					</div>
+					<div class="support__cell support__cell_right">
+						<div class="big support__big animate animate_unwrapText js-need-wrap">
+							You <br>get:
+						</div>
+
+						<div class="support__gift support__gift_first animate animate_line">
+							<div class="support__gift-table">
+								<div class="support__gift-cell">
+									<p class="p support__inner-text">Documentation
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="support__box support__box_green">
+							<div class="support__inner support__inner_withicon animate animate_line">
+								<div class="support__icon">
+									<svg viewBox="0 0 12 16" style="width: 4.7rem;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#support-icon-2"></use></svg>	
+								</div>							
+								<p class="p support__inner-text">
+									Assurance that data is safe, secure, and resist to hacker attacks
+								</p>
+							</div>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="overview part-slider dots">
+			<div class="wrap wrap_small">
+				<div class="big overview__big">
+					Post-<i class="br"></i> Implementation<i class="br"></i> Review
+
+				</div>
+
+				<div class="inline overview__top" id="guaranteesEnd">
+					<div class="overview__top-cell overview__top-cell_left">
+						<h2 class="title overview__title">We'll install a dashboard <i class="br"></i>and track on real users</h2>
+					</div>
+					<div class="overview__top-cell overview__top-cell_right help">
+
+						<div class="inline help__dots help__dots_margin">
+							<div class="help__square help__square_green">
+								<span></span>
+							</div>
+							<div class="help__square help__square_yellow">
+								<span></span>
+							</div>
+							<div class="help__square help__square_blue">
+								<span></span>
+							</div>
+						</div>
+					
+						<div class="help__text">
+							We'll install a dashboard and real-time user tracker for product indicators at 3, 6, and 12 months. We'll check to make sure the product fulfills its purpose and make changes as necessary							
+						</div>			
+															
+					</div>
+				</div>
+
+				<div class="dots__table overview__mobile-dots show-on-large-mobile">
+					<div class="inline dots__table-list">
+						<div class="dots__table-cell dots__table-cell_current">
+							<p class="p dots__nav-num">1</p>
+							<p class="p dots__nav-label">3 Months</p>									
+						</div>
+						<div class="dots__table-cell">
+							<p class="p dots__nav-num">2</p>
+							<p class="p dots__nav-label">6 Months</p>									
+						</div>
+						<div class="dots__table-cell">
+							<p class="p dots__nav-num">3</p>
+							<p class="p dots__nav-label">12 Months</p>									
+						</div>									
+					</div>
+	
+				</div>				
+			</div>
+
+			<div class="dots__slider-box">
+				<div class="dots__slider-list">
+					<div class="inline dots__slider-inner">
+						<div class="dots__slider-item dots__slider-item_current">
+							<div class="wrap wrap_small">
+								<div class="inline overview__list">
+									<div class="overview__item">
+										<div class="overview__box overview__box_green">
+											<div class="overview__num">4 100</div>
+											<div class="overview__label">Visits </div>
+										</div>
+									</div>
+
+									<div class="overview__item">
+										<div class="overview__box overview__box_blue">
+											<div class="overview__num">492</div>
+											<div class="overview__label">Users</div>						
+										</div>
+									</div>
+
+									<div class="overview__item">
+										<div class="overview__box overview__box_yellow">
+											<div class="overview__num">5</div>
+											<div class="overview__label">Subscription</div>						
+										</div>
+									</div>
+
+									<div class="overview__item">
+										<div class="overview__center">
+											<div class="overview__center-inner">
+												<div class="overview__count">20<i>%</i></div>
+												<div class="p overview__text">Plan</div>
+												
+											</div>	
+										</div>
+									</div>															
+								</div>							
+							</div>
+								
+						</div>
+						<div class="dots__slider-item">
+							<div class="wrap wrap_small">
+								<div class="inline overview__list">
+									<div class="overview__item">
+										<div class="overview__box overview__box_green">
+											<div class="overview__num">5 511</div>
+											<div class="overview__label">Visits </div>
+										</div>
+									</div>
+
+									<div class="overview__item">
+										<div class="overview__box overview__box_blue">
+											<div class="overview__num">992</div>
+											<div class="overview__label">Users</div>						
+										</div>
+									</div>
+
+									<div class="overview__item">
+										<div class="overview__box overview__box_yellow">
+											<div class="overview__num">49</div>
+											<div class="overview__label">Subscription</div>						
+										</div>
+									</div>
+
+									<div class="overview__item">
+										<div class="overview__center">
+											<div class="overview__center-inner">
+												<div class="overview__count">72<i>%</i></div>
+												<div class="p overview__text">Plan</div>
+												
+											</div>	
+										</div>
+									</div>															
+								</div>							
+							</div>
+							
+						</div>
+						<div class="dots__slider-item">
+							<div class="wrap wrap_small">
+								<div class="inline overview__list">
+									<div class="overview__item">
+										<div class="overview__box overview__box_green">
+											<div class="overview__num">12 812</div>
+											<div class="overview__label">Visits </div>
+										</div>
+									</div>
+
+									<div class="overview__item">
+										<div class="overview__box overview__box_blue">
+											<div class="overview__num">3 075</div>
+											<div class="overview__label">Users</div>						
+										</div>
+									</div>
+
+									<div class="overview__item">
+										<div class="overview__box overview__box_yellow">
+											<div class="overview__num">584</div>
+											<div class="overview__label">Subscription</div>						
+										</div>
+									</div>
+
+									<div class="overview__item">
+										<div class="overview__center">
+											<div class="overview__center-inner">
+												<div class="overview__count">103<i>%</i></div>
+												<div class="p overview__text">Plan</div>
+												
+											</div>	
+										</div>
+									</div>															
+								</div>						
+							</div>
+								
+						</div>						
+					</div>
+
+				</div>
+			</div>			
+		
+
+			
+			<div class="wrap wrap_small">
+				<!-- <div class="dots"> -->
+
+					<div class="dots__segment-path">
+						<div class="dots__segment-list">
+							<div class="dots__segment-dot dots__segment-dot_active">
+								<div class="dots__segment-label dots__segment-label_current">3 Months</div>
+							</div>
+							<div class="dots__segment-dot overview__dot overview__dot_second">
+								<div class="dots__segment-label">6 Months</div>
+							</div>
+							<div class="dots__segment-dot">
+								<div class="dots__segment-label ">12 Months</div>
+							</div>
+						</div>
+						<div class="dots__segment-done"></div>					
+					</div>
+
+					<div class="inline dots__nav overview__dots-nav">
+						<div class="dots__nav-cell dots__nav-cell_left case__arrows-cell">
+							<div class="inline nav dots__arrows">
+								<div class="nav__button js-change-part js-change-part-prev nav__button_prev">
+									<span><svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></span>
+								</div>
+								<div class="nav__button js-change-part js-change-part-next nav__button_next">
+									<span><svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></span>
+								</div>
+							</div>
+						</div>
+						<div class="dots__nav-cell dots__nav-cell_right case__labels-cell">
+							<div class="dots__table hide-on-large-mobile">
+								<div class="inline dots__table-list">
+									<div class="dots__table-cell dots__table-cell_current">
+										<p class="p dots__nav-num">1</p>
+										<p class="p dots__nav-label">3 Months</p>									
+									</div>
+									<div class="dots__table-cell">
+										<p class="p dots__nav-num">2</p>
+										<p class="p dots__nav-label">6 Months</p>									
+									</div>
+									<div class="dots__table-cell">
+										<p class="p dots__nav-num">3</p>
+										<p class="p dots__nav-label">12 Months</p>									
+									</div>									
+								</div>
+				
+							</div>
+						</div>
+					</div>				
+				<!-- </div>			 -->
+			</div>
+		</section>
+
+		<section class="guarantees">
+			<div class="container__logo-column container__logo-column_tenth container__logo-column_static">
+				
+				<div class="logo logo_default">
+					<div class="logo__image">
+						<svg viewBox="0 0 120 566.37067"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>	
+					</div>
+
+					<div class="logo__text">
+						<div class="str">
+							<span>World-class Software Development,</span>
+						</div>
+						<div class="str">
+							<span>Project Management Office, Design,</span>
+						</div>
+						<div class="str">
+							<span>Business Analysis & Engineering</span>
+						</div>						
+					</div>
+				</div>				
+				
+			</div>				
+			<div class="wrap wrap_small">
+				<div class="inline guarantees__top">
+					<div class="guarantees__top-cell guarantees__top-cell_left">
+						<h2 class="title guarantees__title">100% guarantee <i class="br"></i>for on-time delivery <i class="br"></i>and project free of freeze</h2>
+					</div>
+					<div class="guarantees__top-cell guarantees__top-cell_right">
+						<div class="inline help__dots help__dots_margin">
+							<div class="help__square help__square_green">
+								<span></span>
+							</div>
+							<div class="help__square help__square_yellow">
+								<span></span>
+							</div>
+							<div class="help__square help__square_blue">
+								<span></span>
+							</div>
+						</div>
+					
+						<div class="help__text help__text_haveanswer">
+							Lifetime Product Warranty
+
+								
+						</div>						
+					</div>
+				</div>
+
+				<div class="inline guarantees__row">
+					<div class="guarantees__cell guarantees__cell_left">
+						<img src="/img/doc_en.jpg" alt="" class="guarantees__doc">
+					</div>
+					<div class="guarantees__cell guarantees__cell_right">
+						<ul class="inline flex steps__list guarantees__list">
+							<li class="animate animate_fadein">
+								<p class="p guarantees__text"> you are not 100% satisfied <i class="br"></i>with your product, <i class="br"></i>we <span class="yellow">guarantee a full refund</span>
+
+							</li>
+							<li class="animate animate_fadein">
+								<p class="p guarantees__text">We provide a detailed <span class="yellow">development plan</span><i class="br"></i> - so you know in advance what will happen <i class="br"></i>and for how long</p>
+							</li>
+							<li class="animate animate_fadein">
+								<p class="p guarantees__text">You will receive <span class="yellow">weekly progress reports</span><i class="br"></i> and the opportunity to address any comments <i class="br"></i>or concerns that may arise along the way</p>
+							</li>
+																													
+						</ul>						
+					</div>
+				</div>
+
+			
+			</div>
+		</section>
+
+		<section class="author" id="about">
+			<div class="container__logo-column container__logo-column_eight container__logo-column_static">
+				
+				<div class="logo logo_default">
+					<div class="logo__image">
+						<svg viewBox="0 0 120 566.37067"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>	
+					</div>
+
+					<div class="logo__text">
+						<div class="str">
+							<span>World-class Software Development,</span>
+						</div>
+						<div class="str">
+							<span>Project Management Office, Design,</span>
+						</div>
+						<div class="str">
+							<span>Business Analysis & Engineering</span>
+						</div>						
+					</div>
+				</div>				
+				
+			</div>
+			<div class="wrap wrap_small">
+				<div class="author__top">
+					<div class="p">Meet "Synell": Our Founder</div>
+					<div class="big author__name">Denis Gorskin</div>
+					<h2 class="title quote author__quote">You will not only receive a comprehensive IT product with us, but earn thousands more than you paid</h2>
+				</div>
+				<div class="js-set-width js-set-width-right">
+
+				</div>
+			</div>
+
+			<div class="clear author__parent">
+				<div class="author__back clear__right">
+					<div class="author__image js-wrapper"></div>
+								
+					<div class="author__photo">
+						<img src="/img/author2.png" alt="">
+					</div>				
+				</div>			
+			</div>
+		
+			<div class="wrap wrap_small">
+				<div class="clear author__row">
+					<div class="author__content clear__left">
+						<div class="author__message">
+							<p class="p p_gray">We help businesses smoothly implement advanced technologies, understand the industry, and determine maximum productivity.</p>
+							<p class="p p_gray">Our approach is to work closely with the client through each stage of project, carefully explaining all aspects to create stress-free innovation.</p>	
+
+							<div class="line author__line"></div>
+						</div>
+					</div>
+					<div class="author__appeal clear__right">
+						<!-- <div class="main__video author__video">
+							<div class="main__video-play"></div>
+							<div class="main__video-text">Посмотрите <i class="br"></i>видео-обращение руководителя</div>
+						</div>	 -->				
+						<div class="fluid__button-list fluid__button-list_column fluid__button-list_static">	
+							<a href="https://www.instagram.com/denisgorskin/" target="_blank" class="fluid__button fluid__button_darkgreen fluid__button_big">
+								<span class="fluid__button-icon js-current" style="width: 2.3rem">
+									<svg viewBox="0 0 512 512"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#inst-icon"></use></svg>
+								</span>					
+							</a>
+							<a href="https://www.facebook.com/denisgorskin" target="_blank" class="fluid__button fluid__button_yellow fluid__button_big">
+								<span class="fluid__button-icon js-current" style="width: 1.2rem">
+									<svg viewBox="0 0 80.558994 155.139"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fb-icon"></use></svg>
+								</span>				
+							</a>
+							<a href="https://www.linkedin.com/in/denisgorskin/" target="_blank" class="fluid__button fluid__button_blue fluid__button_big">
+								<span class="fluid__button-icon js-current" style="width: 1.9rem">
+									<svg viewBox="0 0 430.117 411.00201"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin-icon"></use></svg>
+								</span>					
+							</a>			
+						</div>							
+					</div>
+				</div>			
+			</div>	
+		</section>
+
+<!-- 		<section class="team part-slider">
+			<div class="wrap wrap_small">
+				<div class="inline team__top">
+					<div class="team__cell team__cell_left">
+						<h2 class="title team__title">SYNELL staff includes more than 120 highly- trained, specialized developers</h2>
+					</div>
+					<div class="help team__cell team__cell_right">
+
+						<div class="inline help__dots help__dots_margin">
+							<div class="help__square help__square_green">
+								<span></span>
+							</div>
+							<div class="help__square help__square_yellow">
+								<span></span>
+							</div>
+							<div class="help__square help__square_blue">
+								<span></span>
+							</div>
+						</div>
+						
+						<div class="help__text" >
+							Our specialists have more than five years of experience in their field
+
+								
+						</div>					
+					</div>
+				</div>
+			</div>
+
+			<div class="dots__slider-box">
+				<div class="inline dots__slider-list">
+					<div class="dots__slider-item dots__slider-item_current">
+						<div class="team__slider owl-carousel">
+							<div class="team__box">
+								<img src="/img/team__people_1.jpg" alt="" class="team__human">
+								<div class="team__info">
+									<div class="title team__name">
+										<div class="team__str"><span>Иван</span></div>
+										<div class="team__str"><span>Иванов</span></div>
+									</div>
+									<div class="p p_gray team__who">
+										<div class="team__str">
+											<span>UX-дизайнер</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team__box">
+								<img src="/img/team__people_1.jpg" alt="" class="team__human">
+								<div class="team__info">
+									<div class="title team__name">
+										<div class="team__str"><span>Иван</span></div>
+										<div class="team__str"><span>Иванов</span></div>
+									</div>
+									<div class="p p_gray team__who">
+										<div class="team__str">
+											<span>UX-дизайнер</span>
+										</div>
+									</div>
+								</div>			
+							</div>
+							<div class="team__box">
+								<img src="/img/team__people_1.jpg" alt="" class="team__human">
+								<div class="team__info">
+									<div class="title team__name">
+										<div class="team__str"><span>Иван</span></div>
+										<div class="team__str"><span>Иванов</span></div>
+									</div>
+									<div class="p p_gray team__who">
+										<div class="team__str">
+											<span>UX-дизайнер</span>
+										</div>
+									</div>
+								</div>				
+							</div>
+							<div class="team__box">
+								<img src="/img/team__people_1.jpg" alt="" class="team__human">
+								<div class="team__info">
+									<div class="title team__name">
+										<div class="team__str"><span>Иван</span></div>
+										<div class="team__str"><span>Иванов</span></div>
+									</div>
+									<div class="p p_gray team__who">
+										<div class="team__str">
+											<span>UX-дизайнер</span>
+										</div>
+									</div>
+								</div>				
+							</div>
+							<div class="team__box">
+								<img src="/img/team__people_1.jpg" alt="" class="team__human">
+								<div class="team__info">
+									<div class="title team__name">
+										<div class="team__str"><span>Иван</span></div>
+										<div class="team__str"><span>Иванов</span></div>
+									</div>
+									<div class="p p_gray team__who">
+										<div class="team__str">
+											<span>UX-дизайнер</span>
+										</div>
+									</div>
+								</div>				
+							</div>						
+						</div>
+						
+					</div>
+					<div class="dots__slider-item">
+						<div class="team__slider owl-carousel">
+							<div class="team__box">
+								<img src="/img/team__people_1.jpg" alt="" class="team__human">
+								<div class="team__info">
+									<div class="title team__name">
+										<div class="team__str"><span>Иван</span></div>
+										<div class="team__str"><span>Иванов</span></div>
+									</div>
+									<div class="p p_gray team__who">
+										<div class="team__str">
+											<span>UX-дизайнер</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team__box">
+								<img src="/img/team__people_1.jpg" alt="" class="team__human">
+								<div class="team__info">
+									<div class="title team__name">
+										<div class="team__str"><span>Иван</span></div>
+										<div class="team__str"><span>Иванов</span></div>
+									</div>
+									<div class="p p_gray team__who">
+										<div class="team__str">
+											<span>UX-дизайнер</span>
+										</div>
+									</div>
+								</div>				
+							</div>
+							<div class="team__box">
+								<img src="/img/team__people_1.jpg" alt="" class="team__human">
+								<div class="team__info">
+									<div class="title team__name">3</div>
+									<div class="p p_gray team__who">U3нер</div>
+								</div>				
+							</div>
+							<div class="team__box">
+								<img src="/img/team__people_1.jpg" alt="" class="team__human">
+								<div class="team__info">
+									<div class="title team__name">
+										<div class="team__str"><span>Иван</span></div>
+										<div class="team__str"><span>Иванов</span></div>
+									</div>
+									<div class="p p_gray team__who">
+										<div class="team__str">
+											<span>UX-дизайнер</span>
+										</div>
+									</div>
+								</div>				
+							</div>
+							<div class="team__box">
+								<img src="/img/team__people_1.jpg" alt="" class="team__human">
+								<div class="team__info">
+									<div class="title team__name">
+										<div class="team__str"><span>Иван</span></div>
+										<div class="team__str"><span>Иванов</span></div>
+									</div>
+									<div class="p p_gray team__who">
+										<div class="team__str">
+											<span>UX-дизайнер</span>
+										</div>
+									</div>
+								</div>			
+							</div>						
+						</div>					
+					</div>
+					<div class="dots__slider-item">
+						<div class="team__slider owl-carousel">
+							<div class="team__box">
+								<img src="/img/team__people_1.jpg" alt="" class="team__human">
+								<div class="team__info">
+									<div class="title team__name">
+										<div class="team__str"><span>Иван</span></div>
+										<div class="team__str"><span>Иванов</span></div>
+									</div>
+									<div class="p p_gray team__who">
+										<div class="team__str">
+											<span>UX-дизайнер</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team__box">
+								<img src="/img/team__people_1.jpg" alt="" class="team__human">
+								<div class="team__info">
+									<div class="title team__name">
+										<div class="team__str"><span>Иван</span></div>
+										<div class="team__str"><span>Иванов</span></div>
+									</div>
+									<div class="p p_gray team__who">
+										<div class="team__str">
+											<span>UX-дизайнер</span>
+										</div>
+									</div>
+								</div>				
+							</div>
+							<div class="team__box">
+								<img src="/img/team__people_1.jpg" alt="" class="team__human">
+								<div class="team__info">
+									<div class="title team__name">
+										<div class="team__str"><span>Иван</span></div>
+										<div class="team__str"><span>Иванов</span></div>
+									</div>
+									<div class="p p_gray team__who">
+										<div class="team__str">
+											<span>UX-дизайнер</span>
+										</div>
+									</div>
+								</div>			
+							</div>
+							<div class="team__box">
+								<img src="/img/team__people_1.jpg" alt="" class="team__human">
+								<div class="team__info">
+									<div class="title team__name">
+										<div class="team__str"><span>Иван</span></div>
+										<div class="team__str"><span>Иванов</span></div>
+									</div>
+									<div class="p p_gray team__who">
+										<div class="team__str">
+											<span>UX-дизайнер</span>
+										</div>
+									</div>
+								</div>			
+							</div>
+							<div class="team__box">
+								<img src="/img/team__people_1.jpg" alt="" class="team__human">
+								<div class="team__info">
+									<div class="title team__name">
+										<div class="team__str"><span>Иван</span></div>
+										<div class="team__str"><span>Иванов</span></div>
+									</div>
+									<div class="p p_gray team__who">
+										<div class="team__str">
+											<span>UX-дизайнер</span>
+										</div>
+									</div>
+								</div>			
+							</div>						
+						</div>					
+					</div>
+				</div>
+			</div>
+
+
+			<div class="wrap wrap_small">
+				<div class="inline dots__nav team__dots-nav">
+					<div class="dots__nav-cell dots__nav-cell_left case__arrows-cell">
+						<div class="inline nav dots__arrows">
+							<div class="nav__button js-change-part js-change-part-prev nav__button_prev">
+								<span><svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></span>
+							</div>
+							<div class="nav__button js-change-part js-change-part-next nav__button_next">
+								<span><svg viewBox="0 0 192 320"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></span>
+							</div>
+						</div>
+					</div>
+					<div class="dots__nav-cell dots__nav-cell_right case__labels-cell">
+						<div class="dots__table">
+							<div class="inline dots__table-list">
+								<div class="dots__table-cell dots__table-cell_current">
+									<p class="p dots__nav-num">1</p>
+									<p class="p dots__nav-label">Development Department</p>									
+								</div>
+								<div class="dots__table-cell">
+									<p class="p dots__nav-num">2</p>
+									<p class="p dots__nav-label">Refinement Department</p>									
+								</div>
+								<div class="dots__table-cell">
+									<p class="p dots__nav-num">3</p>
+									<p class="p dots__nav-label">Other</p>									
+								</div>									
+							</div>
+			
+						</div>
+					</div>
+				</div>			
+			</div>
+		</section> -->
+		<section class="contacts" id="contacts">
+			<div class="wrap">
+				<div class="flex inline tabs contacts__tabs contacts__tabs_top">
+					<div class="tabs__cell tabs__cell_nav">
+						<div class="css-sticky">
+							<div class="clear tabs__nav-parent tabs__nav-parent_absolute">
+								<div class="tabs__nav clear__right">
+									<div class="tabs__label">Choose a country</div>
+									
+									<div class="tabs__list help-modal__list">
+										<label class="radio help-modal__radio">
+											<input type="radio" data-lat="40.759651" checked="" data-lng="-73.978763" name="country" value="США" class="radio__input" data-phone="+1 (888) 317-7708" data-addr="45 Rockefeller Plaza, New York, NY 10111">, 
+
+											<span class="radio__content">
+												<span class="tabs__nav-item">
+													<span class="tabs__nav-cell">
+														<span class="tabs__nav-text">	
+															USA
+														</span>
+													</span>						
+												</span>
+											</span>
+										</label>
+
+										<label class="radio help-modal__radio">
+											<input type="radio" data-lat="53.886379" data-lng="27.536962" name="country" value="Беларусь"  class="radio__input" data-phone="8 (800) 551-60-27" data-addr="220007, Minsk, street Moscowskaya, 22">
+
+
+											<span class="radio__content">
+												<span class="tabs__nav-item">
+													<span class="tabs__nav-cell">
+														<span class="tabs__nav-text">	
+															Belarus
+														</span>
+													</span>						
+												</span>
+											</span>
+										</label>
+
+										<label class="radio help-modal__radio">
+											<input type="radio" data-lat="56.836153" data-lng="60.614536" name="country" value="Россия" class="radio__input" data-phone="8 (800) 551-60-27" data-addr="620075, Ekaterinburg, ul. Malysheva, 51">
+
+											<span class="radio__content">
+												<span class="tabs__nav-item">
+													<span class="tabs__nav-cell">
+														<span class="tabs__nav-text">	
+															Russia
+														</span>
+													</span>						
+												</span>
+											</span>
+										</label>
+									</div>
+																	
+								</div>						
+							</div>						
+						</div>			
+					</div>
+					<div class="tabs__cell tabs__cell_content">
+						<h2 class="title title_large contacts__title">Our Offices</h2>
+
+						<div class="contacts__info">
+							<div class="js-set-width js-set-width-right contacts__full">
+								<div id="map" class="contacts__map"></div>
+							</div>	
+
+							<div class="inline contacts__row">
+								<div class="contacts__part contacts__part_addr">
+									<p class="p p_gray">Address</p>
+									<div class="contacts__bold js-addr">45 Rockefeller Plaza, New York, NY 10111</div>
+								</div>
+								<div class="contacts__part contacts__part_phone">
+									<p class="p p_gray">Contact Us</p>
+									<a href="tel:+18883177708" class="contacts__bold js-contacts-phone">+1 (888) 317-7708</a>
+								</div>
+								<div class="contacts__part contacts__part_mail">
+									<p class="p p_gray">Email Us</p>
+									<a href="mailto:info@synell.com" class="contacts__bold">info@synell.com</a>
+								</div>
+							</div>					
+						</div>
+	 
+
+					</div>
+
+				</div>	
+
+				<div class="flex inline tabs contacts__tabs">
+					<div class="tabs__cell tabs__cell_nav"></div>
+					<div class="tabs__cell tabs__cell_content">
+						<div class="title contacts__help">
+							Send us a message by filling out the form below:
+
+							<div class="inline fluid__button-list fluid__button-list_static">	
+								<a href="https://m.me/synellcom" target="_blank" class="fluid__button fluid__button_darkgreen">
+									<span class="fluid__button-icon js-current" style="width: 2.3rem">
+										<svg viewBox="0 0 223.041 223.041"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#me-icon"></use></svg>
+									</span>					
+								</a>
+								<a href="https://join.skype.com/bot/53dc8db0-acc2-49d3-91fc-44e4de853f67" target="_blank" class="fluid__button fluid__button_yellow">
+									<span class="fluid__button-icon js-current" style="width: 2.1rem">
+										<svg viewBox="0 0 512 512"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#skype-icon"></use></svg>
+									</span>				
+								</a>
+								<a href="https://t.me/SYNELL_bot" target="_blank" class="fluid__button fluid__button_blue">
+									<span class="fluid__button-icon js-current" style="width: 1.9rem">
+										<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tg-icon"></use></svg>
+									</span>					
+								</a>			
+							</div>							
+						</div>
+
+						<a href="tel:+18883177708" class="big contacts__tel js-contacts-phone">+1 (888) 317-7708</a>
+
+						<form action="" class="form contacts__form">
+							<input type="hidden" name="form" value="Контакты (USA)">
+							<div class="form__data">
+								<div class="form__item">
+									<input type="text" autocomplete="off" class="form__input" name="user" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required="">
+									<div class="form__placeholder">Your name</div>
+								</div>
+
+								<div class="form__item">
+									<input type="tel" autocomplete="off" class="form__input" name="phone" required="" pattern="(\+?\d[- .()]*){7,20}">
+									<div class="form__placeholder">Phone</div>
+								</div>
+								
+								<div class="form__item">
+									<input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" autocomplete="off" class="form__input" name="email" required="">
+									<div class="form__placeholder">Email</div>
+								</div>							
+							</div>
+
+
+							<div class="inline form__bottom">
+								<div class="form__button-parent hover-to-hide">
+									<button class="button form__button" data-text="Call Us">
+										<span class="button__inner">Call Us</span>
+									</button>								
+								</div>
+								<div class="form__conf hide-for-button">
+									<p>Terms and Conditions May Apply (<a href="#polit-modal" class="js-popup border-link">Read</a>) </p>
+								</div>
+							</div>
+
+							
+						</form>
+					</div>				
+				</div>		
+
+				<div class="flex inline tabs contacts__tabs">
+					<div class="tabs__cell tabs__cell_nav"></div>
+					<div class="tabs__cell tabs__cell_content">
+						<div class="title contacts__work">Design and development <i class="br"></i>of international software products.</div>
+						
+						<div class="inline contacts__bottom">
+							<div class="contacts__bottom-cell contacts__bottom-cell_left">
+								<a href="#" class="download contacts__download link">
+									<span class="download__icon">
+										<span class="link__icon-hover">
+											<svg viewBox="0 0 14 16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use></svg>
+										</span>
+										<span class="link__icon-default">
+											<svg viewBox="0 0 14 16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use></svg>
+										</span>
+										
+									</span>
+									<span class="download__text link__text">DOWNLOAD PRESENTATION</span>
+								</a>	
+
+								<ul class="contacts__list">
+									<li><a href="#polit-modal" class="link js-popup"><span class="link__text">PRIVACY POLICY</span></a></li>
+									<!-- <li><a href="#" class="link"><span class="link__text">Реквизиты</span></a></li> -->
+								</ul>							
+							</div>
+							<div class="contacts__bottom-cell contacts__bottom-cell_right">
+								<a href="https://artrepin.ru" target="_blank" class="creator link">
+									<span class="creator__logo">
+										<span class="link__icon-hover">
+											<svg viewBox="0 0 75.063 81.267"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#creator-logo"></use></svg>
+										</span>
+										<span class="link__icon-default">
+											<svg viewBox="0 0 75.063 81.267"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#creator-logo"></use></svg>
+										</span>
+									</span>
+									
+
+									<span class="creator__text link__text">Artrepin Studio made it</span>
+								</a>
+							</div>
+						</div>
+						
+					</div>				
+				</div>				
+			</div>
+			<div class="container__logo-column container__logo-column_ninth	 container__logo-column_static">
+				
+				<div class="logo logo_relative logo_default">
+					<div class="logo__image">
+						<svg viewBox="0 0 120 566.37067"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>	
+					</div>
+
+					<div class="logo__text">
+						<div class="str">
+							<span>World-class Software Development,</span>
+						</div>
+						<div class="str">
+							<span>Project Management Office, Design,</span>
+						</div>
+						<div class="str">
+							<span>Business Analysis & Engineering</span>
+						</div>						
+					</div>
+				</div>				
+				
+			</div>			
+		</section>
+
+		
+	</main>
+
+	<div class="menu">
+		<ul class="menu__list">
+			<li class="menu__item">
+				<a href="#dev" class="menu__link" data-text="How We Work">
+					<span class="menu__label">How We Work</span>
+				</a>
+			</li>
+			<li class="menu__item">
+				<a href="#services" class="menu__link menu__link_pink" data-text="Options ">
+					<span class="menu__label">Options </span>
+				</a>
+			</li>
+			<li class="menu__item">
+				<a href="#cases" class="menu__link menu__link_blue" data-text="Projects">
+					<span class="menu__label">Projects</span>
+				</a>
+			</li>
+			<li class="menu__item">
+				<a href="#about" class="menu__link menu__link_blue" data-text="About">
+					<span class="menu__label">About</span>
+				</a>
+			</li>			
+			<!-- <li class="menu__item">
+				<a href="#" class="menu__link" data-text="Команда">
+					<span class="menu__label">Команда</span>
+				</a>
+			</li> -->
+			<li class="menu__item">
+				<a href="#contacts" class="menu__link menu__link_green" data-text="Contacts">
+					<span class="menu__label">Contacts</span>
+				</a>
+			</li>												
+		</ul>
+
+		<div class="menu__close js-close-menu">
+			<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
+		</div>
+	</div>
+
+	<div class="fluid fluid_top fluid_default-hide js-hide">
+		<div class="inline menu-button js-open-menu">
+			<div class="menu-button__item menu-button__item_first menu-button__item_green"></div>
+			<div class="menu-button__item menu-button__item_second menu-button__item_yellow"></div>
+			<div class="menu-button__item menu-button__item_third menu-button__item_blue"></div>
+			<div class="menu-button__item menu-button__item_fourth menu-button__item_blue"></div>
+			<div class="menu-button__item menu-button__item_fifth menu-button__item_pink"></div>
+			<div class="menu-button__item menu-button__item_sixth menu-button__item_blue"></div>
+			<div class="menu-button__item menu-button__item_seventh menu-button__item_yellow"></div>
+			<div class="menu-button__item menu-button__item_eighth menu-button__item_blue"></div>
+			<div class="menu-button__item menu-button__item_ninth menu-button__item_green"></div>
+		</div>		
+	</div>
+
+	<div class="fluid">
+		<div class="fluid__parent">
+			<div class="inline fluid__button-list">	
+				<a href="https://m.me/synellcom" target="_blank" class="fluid__button fluid__button_darkgreen">
+					<span class="fluid__button-icon js-current" style="width: 2.3rem">
+						<svg viewBox="0 0 223.041 223.041"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#me-icon"></use></svg>
+					</span>					
+				</a>
+				<a href="https://join.skype.com/bot/53dc8db0-acc2-49d3-91fc-44e4de853f67" target="_blank" class="fluid__button fluid__button_yellow">
+					<span class="fluid__button-icon js-current" style="width: 2.1rem">
+						<svg viewBox="0 0 512 512"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#skype-icon"></use></svg>
+					</span>				
+				</a>
+				<a href="https://t.me/SYNELL_bot" target="_blank" class="fluid__button fluid__button_blue">
+					<span class="fluid__button-icon js-current" style="width: 1.9rem">
+						<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tg-icon"></use></svg>
+					</span>					
+				</a>
+
+				<div class="fluid__button fluid__button_open">
+					<div class="fluid__button-icon fluid__button-icon_open js-current" style="width: 1.8rem;">
+						<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tg-icon"></use></svg>
+					</div>
+				</div>				
+			</div>
+		</div>	
+	</div>
+
+	<div class="modal">
+		
+		<div class="modal__item modal__item_image" id="image-modal">
+			
+			<img src="" alt="" class="modal__image">
+			
+			<div class="modal__close modal__close_fluid">
+				<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
+			</div>			
+		</div>
+
+		<div class="modal__item polit-modal" id="polit-modal">
+			<div class="container__logo-column container__logo-column_static polit-modal__logo">
+				
+				<div class="logo logo_relative logo_default">
+					<div class="logo__image">
+						<svg viewBox="0 0 120 566.37067"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>	
+					</div>
+				</div>				
+				
+			</div>	
+
+			<div class="wrap wrap_small">
+				<div class="modal__close">
+					<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
+				</div>
+				<div class="modal__content">
+					<div class="modal__content-polit">
+						<div class="polit-modal__content custom-scroll">
+							<h2 class="title polit-modal__title">Consent to processing of personal data</h2>
+							<p class="p p_gray">By providing their personal data User agrees to processing, holding and usage of their personal data by operation of Federal Law № 152 «Personal Data Usage» 2006, July, 27th, for the following purposes:</p>
+
+							<ol class="ol">
+								<li>Implementation of client support</li>
+								<li>Mailout of marketing events information</li>
+								<li>Performance of an audit and other kind of research for the purpose of provided services' refinement</li>
+							</ol>
+
+							<p class="p p_gray">By personal data we mean any kind of personal information that helps establish identity of User/Customer, namely:</p>
+							<ol class="ol ol_list">
+								<li>Surname, Name, Patronymic Name</li>
+								<li>Date of Birth</li>
+								<li>Telephone Number</li>
+								<li>E-mail Address</li>
+								<li>Post Address</li>
+
+							</ol>
+
+							<p class="p p_gray">Users' personal data are entirely stored on the electronic media and processed with the use of automated systems, except for the situations when manual processing of personal data is needed due to the requirements of legislation. The company is obliged not to pass received personal data to a third party, except for the following cases:</p>
+
+							<ol class="ol ol_largelh">
+								<li>Appropriate Russian governmental authorities' inquiries on the ground of and in accordance with the Constitution of the Russian Federation.
+								</li>
+								<li>Strategic partners that work with the Company, grant their products and services and help the Company to deliver products and services to the customers. We pass the minimum dose of personal data to the third party, if the data are necessary for service delivery of implementation of a transaction.
+								</li>
+							</ol>
+
+							<p class="p p_gray">The company reserves the right to amend in the existing rules on a unilateral basis, upon condition, that the changes don't contradict with the present Russian Law. The change in present rules comes into effect post-publication on the web-site.</p>
+						</div>						
+					</div>
+				</div>
+
+			</div>
+		</div>	
+
+		<div class="modal__item info-modal" id="info-modal">
+			<div class="wrap wrap_small">
+				<div class="modal__close">
+					<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
+				</div>
+				<div class="inline info-modal__row">
+					<div class="info-modal__cell info-modal__cell_left">
+						<h2 class="title title_big info-modal__title">Реквизиты компании</h2>
+
+						<button class="button info-modal__button" data-text="Скачать реквизиты компании">
+							<span class="button__inner">Скачать реквизиты компании</span>
+						</button>							
+					</div>
+					<div class="info-modal__cell info-modal__cell_right">
+						<ul class="inline info-modal__list">
+							<li class="info-modal__item">
+								<div class="bold">ИНН</div>
+								<div class="small">2366006696</div>
+							</li>
+							<li class="info-modal__item">
+								<div class="bold">ОГРН</div>
+								<div class="small">1182375068303</div>								
+							</li>
+							<li class="info-modal__item">
+								<div class="bold">КПП</div>
+								<div class="small">236601001</div>								
+							</li>
+							<li class="info-modal__item">
+								<div class="bold">Расч/счет</div>
+								<div class="small">40702810430060006627</div>								
+							</li>
+							<li class="info-modal__item">
+								<div class="bold">БИК</div>
+								<div class="small">046015602</div>								
+							</li>
+							<li class="info-modal__item">
+								<div class="bold">Ген. директор</div>
+								<div class="small">Иванов Иван Иванович</div>								
+							</li>
+							<li class="info-modal__item">
+								<div class="bold">Юр. Адрес</div>
+								<div class="small">354053, Москва, ул. Фадеева, <i class="br"></i>д. 32/1, помещение 1</div>								
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal__item questions-modal" id="questions-modal">
+			<div class="wrap wrap_small">
+				<div class="modal__close">
+					<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
+				</div>
+				
+			
+				<h2 class="title title_big questions-modal__title">Остались вопросы?</h2>
+			
+				<div class="questions-modal__text">
+					<p class="p p_gray">Сэкономьте своё время и получите подробную  консультацию от специалиста<i class="br"></i> в области проектирования и разработки программных решений</p>
+				</div>
+			
+
+				<button class="button questions-modal__button" data-text="Получить консультацию">
+					<span class="button__inner">Получить консультацию</span>
+				</button>							
+			
+					
+			
+			</div>
+		</div>		
+
+		<div class="modal__item subscribe-modal" id="subscribe-modal">
+			<div class="wrap wrap_small">
+				<div class="modal__close">
+					<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
+				</div>
+			
+				<h2 class="title title_big questions-modal__title">Подписывайтесь на обновления</h2>
+			
+				<div class="questions-modal__text">
+					<p class="p p_gray">Сэкономьте своё время и получите подробную  консультацию от специалиста<i class="br"></i> в области проектирования и разработки программных решений</p>
+				</div>
+
+				<form action="" class="form subscribe-modal__form">
+					<input type="hidden" name="form" value="">
+
+					<div class="form__data">
+						<div class="form__item" data-placeholder="">
+							<input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" class="form__input" placeholder="Email" name="email" required="">
+						</div>							
+					</div>
+					<div class="inline form__bottom">
+						<div class="form__button-parent hover-to-hide">
+							<button class="button form__button" data-text="Подписаться">
+								<span class="button__inner">Подписаться</span>
+							</button>								
+						</div>
+						<div class="form__conf hide-for-button">
+							<p>Вы соглашаетесь с условиями  обработки <i class="br"></i>персональных данных (ознакомиться)  </p>
+						</div>
+					</div>
+				</form>							
+			</div>
+		</div>
+
+
+		<div class="modal__item help-modal" id="help-modal">
+
+			<div class="help-modal__bg">
+				<div class="help-modal__back js-visible" style="background-image: url('/img/modals/help_bg_0.jpg');"></div>
+				<div class="help-modal__back" style="background-image: url('/img/modals/help_bg_2.jpg');"></div>
+				<div class="help-modal__back" style="background-image: url('/img/modals/help_bg_3.jpg');"></div>
+				<div class="help-modal__back" style="background-image: url('/img/modals/help_bg_1.jpg');"></div>
+			</div>
+
+			<div class="container__logo-column container__logo-column_static help-modal__logo">
+				
+				<div class="logo logo_default">
+					<div class="logo__image">
+						<svg viewBox="0 0 120 566.37067"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>	
+					</div>
+
+					<div class="logo__text">
+						<div class="str">
+							<span>World-class Software Development,</span>
+						</div>
+						<div class="str">
+							<span>Project Management Office, Design,</span>
+						</div>
+						<div class="str">
+							<span>Business Analysis & Engineering</span>
+						</div>						
+					</div>
+				</div>				
+				
+			</div>			
+
+			<div class="wrap">
+				<div class="modal__close">
+					<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
+				</div>
+				<div class="modal__content">
+					<div class="modal__content-polit js-hide"></div>
+					<div class="modal__content-default">
+						<h2 class="title help-modal__title show-on-large-mobile">Fill out the form and we will contact you soon</h2>	
+						<div class="flex inline tabs">
+							<div class="tabs__cell tabs__cell_nav">
+						
+								<div class="clear tabs__nav-parent">
+									<div class="tabs__nav clear__right">
+										<div class="tabs__label">What can we do for you?</div>
+										
+										<div class="tabs__list help-modal__list">
+											
+											<label class="radio help-modal__radio">
+												<input type="radio" name="scope" value="Business analysis" checked="" class="radio__input">
+
+												<span class="radio__content">
+													<span class="tabs__nav-item">
+														<span class="tabs__nav-cell">
+															<span class="tabs__nav-text">	
+																Business analysis
+															</span>
+														</span>						
+													</span>
+												</span>
+											</label>
+											
+											<label class="radio help-modal__radio">
+												<input type="radio" name="scope" value="Development of an IT product" class="radio__input">
+
+												<span class="radio__content">
+													<span class="tabs__nav-item">
+														<span class="tabs__nav-cell">
+															<span class="tabs__nav-text">	
+																Development of an IT product
+															</span>
+														</span>						
+													</span>
+												</span>
+											</label>
+
+											
+											<label class="radio help-modal__radio">
+												<input type="radio" name="scope" value="Project office" class="radio__input">
+
+												<span class="radio__content">
+													<span class="tabs__nav-item">
+														<span class="tabs__nav-cell">
+															<span class="tabs__nav-text">	
+																Project office
+															</span>
+														</span>						
+													</span>
+												</span>
+											</label>
+											
+											<label class="radio help-modal__radio">
+												<input type="radio" name="scope" value="Other" class="radio__input">
+
+												<span class="radio__content">
+													<span class="tabs__nav-item">
+														<span class="tabs__nav-cell">
+															<span class="tabs__nav-text">	
+																Other
+															</span>
+														</span>						
+													</span>
+												</span>
+											</label>																		
+										</div>																		
+									</div>						
+								</div>						
+								
+							</div>			
+							<div class="tabs__cell tabs__cell_content">
+								<h2 class="title help-modal__title hide-on-large-mobile">Fill out the form and we will contact you soon</h2>	
+
+								<form action="" class="form help-modal__form">
+									<input type="hidden" name="form" value="">
+
+									<div class="inline modal__row form__data">
+										<div class="modal__cell">
+											<div class="form__item">
+												<input type="text" autocomplete="off" class="form__input" name="user" required="" pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+												<div class="form__placeholder">Name</div>
+											</div>									
+										</div>
+										<div class="modal__cell">
+											<div class="form__item">
+												<input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" autocomplete="off" class="form__input" name="email" required="">
+												<div class="form__placeholder">Email</div>
+											</div>									
+										</div>
+										<div class="modal__cell">
+											<div class="form__item">
+												<input type="tel" autocomplete="off" class="form__input" name="phone" required="" pattern="(\+?\d[- .()]*){7,20}">
+												<div class="form__placeholder">Phone</div>
+											</div>									
+										</div>
+										<div class="modal__cell">
+											<div class="form__item">
+												<input type="text" autocomplete="off" class="form__input" name="message">
+												<div class="form__placeholder">Message</div>
+
+												<div class="info info_white form__info form__info_right">
+													<div class="info__content info__content_rtl">
+														Write in your own words everything that will help us when discussing your project.											
+													</div>
+												</div>												
+											</div>									
+										</div>
+									</div>	
+
+									<div class="inline form__bottom">
+										<div class="form__button-parent hover-to-hide">
+											<button class="button form__button" data-text="Leave a request">
+												<span class="button__inner">Leave a request</span>
+											</button>								
+										</div>
+										<div class="form__conf hide-for-button">
+											<p>You agree to the terms of personal data processing <i class="br"></i> (<a href="#" data-polit="1" class="js-popup border-link">view the policy</a>)  </p>
+										</div>
+									</div>
+
+								</form>										
+							</div>
+						</div>							
+					</div>
+					
+				</div>
+								
+			</div>
+		</div>
+
+		<div class="modal__item recall-modal" id="recall-modal">
+			<div class="container__logo-column container__logo-column_static estimate-modal__logo">
+				
+				<div class="logo logo_relative logo_default">
+					<div class="logo__image">
+						<svg viewBox="0 0 120 566.37067"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>	
+					</div>
+
+					<div class="logo__text">
+						<div class="str">
+							<span>World-class Software Development,</span>
+						</div>
+						<div class="str">
+							<span>Project Management Office, Design,</span>
+						</div>
+						<div class="str">
+							<span>Business Analysis & Engineering</span>
+						</div>						
+					</div>
+				</div>				
+				
+			</div>				
+			<div class="wrap wrap_small">
+				<div class="modal__close">
+					<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
+				</div>
+
+				<div class="modal__content">
+					<div class="modal__content-polit js-hide"></div>
+					<div class="modal__content-default">
+						<div class="inline recall-modal__top">
+							<div class="recall-modal__cell recall-modal__cell_left">
+								<h2 class="title recall-modal__title">We will help you create a world-changing product for your leadership today and tomorrow</h2>
+							</div>
+
+						</div>
+						<form action="" class="form recall-modal__form">
+							<input type="hidden" name="form" value="">
+							<div class="form__data">
+								<div class="form__item">
+									<input type="text" autocomplete="off" class="form__input" name="user" required="" pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+									<div class="form__placeholder">Your name</div>
+								</div>	
+								<div class="form__item">
+									<input type="tel" autocomplete="off" pattern="(\+?\d[- .()]*){7,20}" class="form__input" name="phone" required="">
+									<div class="form__placeholder">Phone</div>
+								</div>	
+								<div class="form__item">
+									<input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" autocomplete="off" class="form__input" name="email" required="">
+									<div class="form__placeholder">Email</div>
+								</div>									
+																											
+							</div>
+
+
+							<div class="inline form__bottom recall-modal__bottom">
+								<div class="form__button-parent hover-to-hide recall-modal__button">
+									<button class="button form__button" data-text="Get a cost calculation">
+										<span class="button__inner">Get a cost calculation</span>
+									</button>								
+								</div>
+								<div class="form__conf hide-for-button recall-modal__conf">
+									<p>Terms and Conditions May Apply(<a href="#" data-polit="1" class="js-popup border-link">Read</a>)</p>
+								</div>
+							</div>					
+						</form>								
+					</div>
+				</div>
+
+				
+			</div>
+		</div>	
+
+
+
+		<div class="modal__item estimate-modal" id="estimate-modal">
+			<div class="wrap wrap_small">
+				<div class="modal__close">
+					<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
+				</div>
+				<div class="inline modal__box">
+					<div class="modal__column modal__column_left">
+						<h2 class="title estimate-modal__title">
+							Получите подробную смету <i class="br"></i>
+							с описанием стоимости <i class="br"></i>
+							каждого этапа работы
+						</h2>
+						<div class="small">Специалист перезвонит вам, чтобы уточнить детали по проекту</div>
+
+						<form action="" class="form estimate-modal__form">
+							<input type="hidden" name="form" value="">
+							<div class="form__data">
+								<div class="form__item" data-placeholder="">
+									<input type="text" class="form__input" placeholder="Ваше имя" name="user" required="" pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+								</div>	
+								<div class="form__item" data-placeholder="">
+									<input type="tel" class="form__input" pattern="(\+?\d[- .()]*){7,20}" name="phone" required="">
+								</div>																	
+								<div class="form__item" data-placeholder="">
+									<input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" class="form__input" placeholder="Email" name="email" required="">
+								</div>							
+							</div>
+							<div class="inline form__bottom">
+								<div class="form__button-parent hover-to-hide">
+									<button class="button form__button" data-text="Получить смету">
+										<span class="button__inner">Получить смету</span>
+									</button>								
+								</div>
+								<div class="form__conf hide-for-button">
+									<p>Вы соглашаетесь с условиями  обработки <i class="br"></i>персональных данных (ознакомиться)  </p>
+								</div>
+							</div>
+						</form>							
+					</div>
+					<div class="modal__column modal__column_right">
+						<div class="modal__bold">Также вы получите:</div>
+						<ul class="modal__list">
+							<li>Презентацию о компании<i class="br"></i>
+							с подробным описанием
+							выполненных проектов</li>
+							<li>Точное понимание по срокам
+							разработки, тестирования<i class="br"></i>
+							и внедрения программного
+							решения </li>
+							<li>Коммерческое предложения<i class="br"></i>
+							с решением вашей задачи</li>
+						</ul>
+					</div>
+				</div>							
+			</div>
+		</div>	
+
+
+		<div class="modal__item estimate-modal" id="examples-modal" style="background-image: url('/img/modals/examples.jpg');">
+			<div class="wrap wrap_small">
+				<div class="modal__close">
+					<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
+				</div>
+				<div class="inline modal__box">
+					<div class="modal__column modal__column_left">
+						<h2 class="title estimate-modal__title">
+							Примеры отчетов, образец плана
+							разработки програмного решения<i class="br"></i>
+							и выполненные проекты из вашей
+							отрасли
+						</h2>
+						
+
+						<form action="" class="form estimate-modal__form">
+							<input type="hidden" name="form" value="">
+							<div class="form__data">
+								<div class="form__item" data-placeholder="">
+									<input type="text" class="form__input" placeholder="Ваше имя" name="user" required="" pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+								</div>	
+								<div class="form__item" data-placeholder="">
+									<input type="tel" class="form__input" pattern="(\+?\d[- .()]*){7,20}" name="phone" required="">
+								</div>																	
+								<div class="form__item" data-placeholder="">
+									<input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" class="form__input" placeholder="Email" name="email" required="">
+								</div>							
+							</div>
+							<div class="inline form__bottom estimate-modal__bottom">
+								<div class="form__button-parent estimate-modal__button-parent estimate-modal__button-parent_second hover-to-hide">
+									<button class="button estimate-modal__button" data-text="Скачать материал одним архивом">
+										<span class="button__inner">Скачать материал одним архивом</span>
+									</button>								
+								</div>
+								<div class="form__conf hide-for-button">
+									<p>Вы соглашаетесь с условиями  обработки <i class="br"></i>персональных данных (ознакомиться)  </p>
+								</div>
+							</div>
+						</form>							
+					</div>
+					<div class="modal__column modal__column_right">
+						<div class="modal__bold">Также вы получите:</div>
+						<ul class="modal__list">
+							<li>Презентацию о компании</li>
+							<li>Подробную консультацию специалиста по вашему проекту </li>
+							
+						</ul>
+					</div>
+				</div>							
+			</div>
+		</div>	
+
+		<div class="modal__item estimate-modal" id="consult-modal" style="background-image: url('/img/modals/recall.jpg');">
+			<div class="container__logo-column container__logo-column_static estimate-modal__logo">
+				
+				<div class="logo logo_relative logo_default">
+					<div class="logo__image">
+						<svg viewBox="0 0 120 566.37067"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>	
+					</div>
+
+					<div class="logo__text">
+						<div class="str">
+							<span>World-class Software Development,</span>
+						</div>
+						<div class="str">
+							<span>Project Management Office, Design,</span>
+						</div>
+						<div class="str">
+							<span>Business Analysis & Engineering</span>
+						</div>						
+					</div>
+				</div>				
+				
+			</div>			
+			<div class="wrap wrap_small">
+				<div class="modal__close">
+					<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
+				</div>
+				<div class="modal__content">
+					<div class="modal__content-polit js-hide"></div>
+					<div class="modal__content-default">
+						<div class="inline modal__box">
+							<div class="modal__column modal__column_left">
+								<h2 class="title estimate-modal__title">
+									Fill out the form and we will contact you soon
+								</h2>
+								
+
+								<form action="" class="form estimate-modal__form">
+									<input type="hidden" name="form" value="">
+									<div class="form__data">
+										<div class="form__item">
+											<input type="text" autocomplete="off" class="form__input" name="user" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required="">
+											<div class="form__placeholder">Your name</div>
+										</div>	
+										<div class="form__item">
+											<input type="tel" autocomplete="off" pattern="(\+?\d[- .()]*){7,20}" class="form__input" name="phone" required="">
+											<div class="form__placeholder">Phone</div>
+										</div>	
+										<div class="form__item">
+											<input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" autocomplete="off" class="form__input" name="email" required="">
+											<div class="form__placeholder">Email</div>
+										</div>											
+										<div class="form__item">
+											<div class="info form__info">
+												<div class="info__content info__content_ltr">
+													Write in your own words everything that will help us when discussing your project.												
+												</div>
+											</div>
+											<input type="text" autocomplete="off" class="form__input" name="message">
+											<div class="form__placeholder">What you want to discuss?</div>
+										</div>																											
+									</div>
+									
+									
+
+									<div class="inline form__bottom estimate-modal__bottom">
+										<div class="form__button-parent estimate-modal__button-parent estimate-modal__button-parent_third hover-to-hide">
+											<button class="button estimate-modal__button" data-text="SEND">
+												<span class="button__inner">SEND</span>
+											</button>								
+										</div>
+										<div class="form__conf hide-for-button">
+											<p>You agree to the terms of personal data processing (<a href="#" data-polit="1" class="js-popup border-link">view the policy</a>)  </p>
+										</div>
+									</div>
+								</form>							
+							</div>
+							<div class="modal__column modal__column_right">
+								<div class="modal__bold">As a result of the consultation <i class="br"></i>you will get: </div>
+								<ul class="modal__list">
+									<li>Guidelines for creating a product </li>
+									<li>Audit of your task and what solutions are available</li>
+									<li>Cost and Terms</li>
+									
+								</ul>
+							</div>
+						</div>						
+					</div>
+				</div>
+							
+			</div>
+		</div>	
+
+
+
+		<div class="modal__item thank-modal" id="thank-modal">
+			<div class="wrap wrap_small">
+				<div class="modal__close">
+					<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
+				</div>
+				<div class="inline thank-modal__row">
+					<div class="thank-modal__cell thank-modal__cell_left">
+						<h2 class="title thank-modal__title">Thank you for request. <i class="br"></i>Our manager will call you back <i class="br"></i> as soon as possible.</h2>
+					</div>
+					<div class="thank-modal__cell thank-modal__cell_right">
+				
+						<div class="inline help__dots help__dots_margin">
+							<div class="help__square help__square_green">
+								<span></span>
+							</div>
+							<div class="help__square help__square_yellow">
+								<span></span>
+							</div>
+							<div class="help__square help__square_blue">
+								<span></span>
+							</div>
+						</div>
+												
+						<div class="help__text" data-delay="0.6s">
+							Subscribe to our social networks and keep up with the latest news in our company					
+						</div>
+															
+					</div>
+				</div>	
+
+				<div class="inline social">
+					<a href="https://vk.com/synell/" target="blank" class="social__item">
+						<div class="social__name">VK</div>
+						<div class="social__label">
+							VK
+						</div>
+						<div class="social__link"><span>Subscribe</span></div>
+					</a>
+					<a href="https://www.instagram.com/synellcom/" target="blank" class="social__item social__item_inst">
+						<div class="social__name">INSTA</div>
+						<div class="social__label">
+							Instagram
+						</div>
+						<div class="social__link"><span>Subscribe</span></div>
+					</a>
+					<a href="https://www.facebook.com/synellcom/" target="blank" class="social__item social__item_fb">
+						<div class="social__name">FB</div>
+						<div class="social__label">
+							Facebook
+						</div>
+						<div class="social__link"><span>Subscribe</span></div>
+					</a>
+					<a href="https://www.linkedin.com/company/synell" target="blank" class="social__item social__item_linkedin">
+						<div class="social__name">LINK</div>
+						<div class="social__label">
+							Linkedln
+						</div>
+						<div class="social__link"><span>Subscribe</span></div>
+					</a>										
+				</div>					
+			</div>
+		</div>								
+	</div>
+
+
+
+	
+	<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAetwwsyPCTKToG9NeAIzDEvg6TS07m6oc&language=en"></script>
+	<script src="/js/libs.js"></script>
+	<script src="/js/main.js"></script>	
+	<script src="/js/modal.js"></script>	
+	<script src="/js/form.js"></script>	
+	<script src="/js/products.js"></script>	
+	<script src="/libs/send/send.js"></script>
+</body>
+</html>

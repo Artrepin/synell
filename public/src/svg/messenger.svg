@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 46 46.655998"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="messenger.svg"
+   width="46"
+   height="46.655998"
+   inkscape:version="0.92.1 r15371">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="751"
+     inkscape:window-height="480"
+     id="namedview7"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="4.72"
+     inkscape:cx="23"
+     inkscape:cy="23.656"
+     inkscape:window-x="916"
+     inkscape:window-y="89"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg5" />
+  <path
+     d="M 23,0 C 10.348,0 0,9.598 0,21.5 0,28.008 3.133,33.785 8,37.719 v 8.937 l 1.469,-0.781 7.219,-3.75 C 18.703,42.665 20.8,43 23,43 35.652,43 46,33.402 46,21.5 46,9.598 35.652,0 23,0 Z m 0,2 C 34.645,2 44,10.758 44,21.5 44,32.242 34.645,41 23,41 20.836,41 18.742,40.687 16.781,40.125 L 16.406,40.031 16.063,40.219 10,43.375 V 36.812 L 9.625,36.532 C 4.961,32.941 2,27.538 2,21.5 2,10.758 11.355,2 23,2 Z M 20.719,15.719 8.687,28.469 19.5,22.406 25.281,28.594 37.156,15.719 26.625,21.625 Z"
+     id="surface1"
+     inkscape:connector-curvature="0" />
+  <metadata
+     id="metadata3">
+    <rdf:RDF>
+      <rdf:Description
+         about="https://iconscout.com/legal#licenses"
+         dc:title="facebook,messenger"
+         dc:description="facebook,messenger"
+         dc:publisher="Iconscout"
+         dc:date="2017-12-09"
+         dc:format="image/svg+xml"
+         dc:language="en">
+        <dc:creator>
+          <rdf:Bag>
+            <rdf:li>Icons8</rdf:li>
+          </rdf:Bag>
+        </dc:creator>
+      </rdf:Description>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

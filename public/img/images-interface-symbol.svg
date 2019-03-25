@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="612px" height="558px" viewBox="0 0 612 558" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>images-interface-symbol</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="images-interface-symbol" fill="#444444" fill-rule="nonzero">
+            <rect id="Rectangle-path" x="27.818" y="56.455" width="556.363" height="27.818"></rect>
+            <rect id="Rectangle-path" x="55.636" y="0.818" width="500.727" height="27.818"></rect>
+            <path d="M414.741,328.099 C412.348,324.344 407.536,323.453 403.948,325.986 L327.086,380.036 C325.306,381.288 322.886,380.788 321.773,378.868 L231.197,222.419 C229.027,218.636 225.55,218.608 223.519,222.502 L55.581,490.696 C53.55,494.619 55.414,497.761 59.726,497.761 L550.884,497.761 C555.057,497.761 556.753,494.757 554.389,491.057 L414.741,328.099 Z" id="Shape"></path>
+            <circle id="Oval" cx="486.818" cy="209.454" r="41.727"></circle>
+            <path d="M0,115.68 L0,553.594 C0,555.569 1.752,557.182 3.922,557.182 L608.105,557.182 C610.247,557.182 612,555.569 612,553.594 L612,115.68 C612,113.704 610.247,112.091 608.105,112.091 L3.922,112.091 C1.752,112.091 0,113.704 0,115.68 Z M27.818,139.909 L584.181,139.909 L584.181,529.363 L27.818,529.363 L27.818,139.909 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

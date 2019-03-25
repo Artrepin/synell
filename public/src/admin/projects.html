@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<title>SYNELL: admin</title>
+
+	<link href="/css/font.css" rel="stylesheet">
+	<link href="/css/main.css" rel="stylesheet">
+	<link href="/css/admin.css" rel="stylesheet">
+
+	<script src="/libs/jquery/dist/jqueryMIN.js"></script>
+
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if IE]>
+
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="black">
+
+	<!--
+		Author: cyberless.ru
+				vlad@cyberless.ru 
+	-->
+
+	<div data-file="/admin-svg.xml" class="svg-container" hidden></div>
+	<script>
+		$(document).ready(function() {
+			var svg_parent = $('.svg-container');
+
+			if(svg_parent.is(":empty")){
+				
+				$.get(svg_parent.data('file'), function(svg){
+				    svg_parent.append(svg)
+				}, 'text');				
+			}	
+		})
+	</script>
+
+
+
+	<main class="container">
+		<section class="admin">
+			<div class="wrap">
+				<div class="flex admin__row">
+					<div class="admin__part admin__part_top">
+						<header class="admin-head">
+							<div class="flex admin-head__row">
+								
+								<div class="admin__cell admin__cell_sidebar admin-head__logo">
+									<img src="/img/admin/logo.png" alt="" class="admin-head__logo-image">
+									<div class="admin-head__small-logo">
+										<img src="/img/admin/logo-small.png" alt="">
+									</div>
+								</div>
+								<div class="admin__cell admin-head__content admin__cell_content">
+									
+									<div class="flex admin__mobile-head">
+										<div class="admin-head__cell admin-head__logo">
+											<img src="/img/admin/logo.png" alt="" class="admin-head__logo-image">
+										</div>
+										<div class="admin-head__cell admin-head__cell_padding">
+											<div class="user__name">Денис Горскин</div>
+											<button class="button admin-head__mobile-button js-popup js-create-case" data-modal="#case-edit" data-text="создать проект">
+												<span class="button__inner">создать проект</span>
+											</button>												
+										</div>
+									</div>
+									<div class="inline admin-head__bottom">
+										<div class="admin-head__cell">
+											<div class="title admin-head__label">Проекты</div>
+										</div>
+										<div class="admin-head__cell">
+											<form action="" class="search">
+												<input type="text" name="q" class="search__input" placeholder="Поиск по сайту" autocomplete="off">
+
+												<button class="search__button">
+													<svg viewBox="0 0 54.998211 56.966"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use></svg>
+												</button>
+											</form>
+										</div>										
+									</div>
+
+								</div>
+								
+							</div>
+						</header>
+					</div>
+					<div class="flex admin__part admin__part_middle">
+						<div class="sidebar admin__cell admin__cell_sidebar">
+							<div class="user">
+								<div class="user__name">Денис Горскин</div>
+								<div class="user__type">BOSS</div>
+							</div>
+
+							<button class="button sidebar__button js-popup js-create-case" data-modal="#case-edit" data-text="создать проект">
+								<span class="button__inner">создать проект</span>
+							</button>	
+
+							<div class="sidebar__info">
+								<div class="inline admin-logo">
+									<img src="/img/admin/bottom-logo.png" alt="" class="admin-logo__image">
+									<div class="admin-logo__label">SYNELL</div>
+									
+								</div>
+								<div class="sidebar__small">Money making company </div>
+								<div class="sidebar__small">2019</div>
+							</div>					
+						</div>
+						<div class="admin__cell admin__cell_content base">
+							<div class="base__empty js-show"> <!--  -->
+								<div class="base__empty-icon">
+									<img src="/img/admin/pc.png" alt="">
+								</div>
+								<div class="base__empty-text">Создайте ваш первый кейс</div>
+							</div>
+							<div class="base__list admin-case">
+
+								<div class="inline admin-case__inner custom-scroll custom-scroll_withbg">
+									<!-- <div class="admin-case__item">
+										<div class="admin-case__edit js-popup js-case-edit" data-modal="#case-edit" data-type="edit" data-id="1"></div>
+										<div class="admin-case__preview">
+											<img src="/img/admin/case-small.jpg" class="object-fit" alt="">
+										</div>
+
+										<div class="admin-case__name">Банк Открытие</div>
+										<div class="admin-case__info">Создал: <span class="admin-case__border">Денис Горскин</span></div>
+									</div>	 -->
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</section>
+	</main>
+
+
+	<div class="modal">
+	
+		<div class="modal__item admin-modal" id="case-edit">
+			<div class="wrap">
+				<div class="modal__close admin-modal__close">
+					<svg viewBox="0 0 357 357"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
+				</div>
+				<div class="modal__content">
+					<div class="modal__content-default">
+						<ul class="inline admin__language-list text-center">
+							<li class="admin__language-item">
+								<label class="admin__radio">
+									<input type="radio" checked="" name="language" class="admin__radio-input" value="ru">
+									<span class="admin__radio-text">РУС</span>
+								</label>
+							</li>
+							<li class="admin__language-item">
+								<label class="admin__radio">
+									<input type="radio" name="language" class="admin__radio-input" value="en">
+									<span class="admin__radio-text">ENG</span>
+								</label>
+							</li>							
+						</ul>
+						<form action="" class="admin-modal__form form">
+							<input type="hidden" name="admin-type" value="create">
+							<input type="hidden" name="case-id" value="">
+
+							<div class="inline">
+								<div class="admin-modal__column">
+									<div class="admin-modal__row">
+										<figure class="admin-modal__preview">
+											<img src="/img/admin/case-middle.jpg" class="object-fit" alt="">
+										</figure>
+									</div>
+
+									<div class="inline admin-modal__row">
+										
+										<div class="admin-modal__cell admin-modal__cell_middle">
+											<input type="file" name="case-preview" hidden="" class="js-preview-image-select">
+											<a href="#" target="_blank" class="link-with-arrow admin-modal__link link js-file-link">
+
+												<span class="link-with-arrow__icon">
+													<span class="link__icon-hover">
+														<svg viewBox="0 0 14 16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use></svg>
+													</span>
+													<span class="link__icon-default">
+														<svg viewBox="0 0 14 16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use></svg>
+													</span>											
+												</span>
+												<span class="link-with-arrow__text link__text">Загрузить обложку</span>
+											</a>
+										</div>
+
+										<div class="admin-modal__cell admin-modal__cell_middle">
+											<input type="text" placeholder="Ссылка на demo" name="en-case-link-demo" class="form__default-input js-language-input js-ru js-current">
+											<input type="text" placeholder="Ссылка на demo" name="en-case-link-demo" class="form__default-input js-language-input js-en">
+										</div>
+									</div>									
+
+									<div class="inline admin-modal__row admin-modal__row_small">
+										
+										<div class="admin-modal__cell">
+											<div class="clear">
+												<label class="form__label clear__left">Название</label>
+												<label class="form__label clear__right">0 / 60</label>
+											</div>
+											
+											<input type="text" class="form__default-input js-case-name js-language-input js-ru js-current" maxlength="60" required="" name="ru-case-name">
+											<input type="text" class="form__default-input js-case-name js-language-input js-en" maxlength="60" required="" name="en-case-name">
+										</div>
+
+										<div class="admin-modal__cell">
+											<label class="form__label">Ссылка на результат</label>
+											<input type="text" name="ru-case-link-result" class="js-language-input js-ru js-current form__default-input">
+											<input type="text" name="en-case-link-result" class="js-language-input js-en form__default-input">
+										</div>
+
+									</div>
+
+									<div class="admin-modal__row admin-modal__row_small">
+										<label class="form__label clear__left">Стек технологий</label>
+
+										<input type="text" class="form__default-input js-language-input js-ru js-current" name="ru-case-stack">
+										<input type="text" class="form__default-input js-language-input js-en" name="en-case-stack">
+										
+									</div>		
+
+									<div class="admin-modal__row admin-modal__row_small">
+										<label class="form__label clear__left">Короткое описание</label>
+
+										<textarea name="ru-case-small-desc" class="js-language-input form__default-textarea js-ru js-current"></textarea>
+										<textarea name="en-case-small-desc" class="js-language-input form__default-textarea js-en"></textarea>
+										
+									</div>																	
+								</div>
+								<div class="admin-modal__column">
+									<div class="admin-modal__row">
+										<label class="form__label clear__left">Задача проекта</label>
+
+										<textarea name="ru-case-target" class="form__default-textarea js-language-input js-ru js-current"></textarea>
+										<textarea name="en-case-target" class="form__default-textarea js-language-input js-en"></textarea>
+										
+									</div>	
+
+									<div class="admin-modal__row">
+										<label class="form__label clear__left">Что было сделано</label>
+
+										<textarea name="ru-case-done" class="js-ru js-language-input js-current form__default-textarea"></textarea>
+										<textarea name="en-case-done" class="js-en js-language-input form__default-textarea"></textarea>
+										
+									</div>														
+									<div class="admin-modal__row">
+										<label class="form__label clear__left">Какой результат получен</label>
+
+										<textarea name="ru-case-result" class="js-ru js-language-input js-current form__default-textarea"></textarea>
+										<textarea name="en-case-result" class="js-en js-language-input form__default-textarea"></textarea>
+										
+									</div>	
+
+									<div class="inline admin-modal__row">
+										
+										<div class="admin-modal__cell">
+											<label class="form__label">Срок разработки</label>
+											
+											<input type="text" class="js-ru js-language-input js-current form__default-input" name="ru-case-time">
+											<input type="text" class="js-en js-language-input form__default-input" name="en-case-time">
+										</div>
+
+										<div class="admin-modal__cell">
+											<label class="form__label">Количество специалистов</label>
+											<input type="text" name="ru-case-developers" class="js-ru js-language-input js-current  form__default-input">
+											<input type="text" name="en-case-developers" class="js-en js-language-input form__default-input">
+										</div>
+
+									</div>
+
+									<div class="inline admin-modal__row">
+										<div class="admin-modal__button-parent hover-to-hide">
+											<button class="button form__button" data-text="создать кейс">
+												<span class="button__inner">создать кейс</span>
+											</button>								
+										</div>
+										<div class="form__conf hide-for-button text-left">
+											<a href="#" class="link-with-arrow admin-modal__default link js-modal-close">
+												<span class="link-with-arrow__text link__text">Отменить</span>
+											</a>
+										</div>											
+									</div>
+						
+																						
+								</div>
+							</div>							
+						</form>
+			
+					</div>
+				</div>
+
+			</div>
+		</div>		
+
+	</div>
+
+
+	<script src="/js/form.js"></script>	
+	<script src="/js/modal.js"></script>	
+	<script src="/js/admin.js"></script>	
+</body>
+</html>

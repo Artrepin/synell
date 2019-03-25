@@ -1,0 +1,40 @@
+{
+    "lang": "en",
+    "meta": {
+        "title": "SYNELL: World-class Software Development, Project Management Office, Design, Business Analysis & Engineering",
+        "description": "Since 2007, we've helped businesses smoothly implement advanced technologies, understand the industry, and determine maximum productivity. Our approach is to work closely with the client through each stage of project, carefully explaining all aspects to create stress-free innovation."
+    },
+    "logo": {
+        "str": [
+            "World-class Software Development,",
+            "Project Management Office, Design,",
+            "Business Analysis & Engineering"
+        ]
+    },
+    "phone": [
+        {
+            "tel": "+1 (888) 317-7708",
+            "link": "+18883177708",
+            "desc": "Toll-free from the US and Canada"
+        },
+        {
+            "tel": "+1 (929) 999-2271",
+            "link": "+19299992271",
+            "desc": "Local"
+        }
+    ],
+    "header": {
+        "button": "Ask a Question"
+    },
+    "index": {
+        "section": {
+            "main": {
+                "title": "Since 2007, we have been designing, developing, and implementing products that change the world.",
+                "text": "No missed deadlines, a controlled budget, and detailed progress reports from start to finish.",
+                "button": "Discuss the Project"
+            }
+        }
+    },
+    "case_count_days_string": ["days", "days", "days"],
+    "case_count_staff_string": ["specialists worked on the project", "specialists worked on the project", "specialists worked on the project"]
+}

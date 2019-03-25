@@ -1,0 +1,58 @@
+{
+  "name": "synell",
+  "version": "1.0.0",
+  "description": "https://synell.com/",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artrepin/synell.git"
+  },
+  "keywords": [
+    "synell"
+  ],
+  "author": "ilya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Artrepin/synell/issues"
+  },
+  "homepage": "https://github.com/Artrepin/synell#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cookie-session": "^1.3.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "locale": "^0.1.0",
+    "multer": "^1.4.1",
+    "mysql2": "^1.6.5",
+    "pug": "^2.0.3",
+    "sequelize": "^5.1.1",
+    "vue": "^2.6.10",
+    "vue-picture-input": "^2.1.6",
+    "vue-router": "^3.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "del": "^2.2.2",
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-file": "^0.3.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-inject": "^4.2.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "imagemin-pngquant": "^5.0.1",
+    "mime": "^1.3.6",
+    "sort-stream": "^1.0.1"
+  }
+}
