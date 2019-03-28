@@ -107,12 +107,12 @@ app.post('/mail', async (req, res) => {
         })
     }
 
-    var custom_fields_email = {}
+    var custom_fields_scope = {}
     if (req.body.email) {
-        custom_fields_email.id = 441687
-        custom_fields_email.values = []
-        custom_fields_email.values.push({
-            value: req.body.email,
+        custom_fields_scope.id = 637143
+        custom_fields_scope.values = []
+        custom_fields_scope.values.push({
+            value: req.body.scope,
             enum: "WORK"
         })
     }
@@ -142,7 +142,7 @@ app.post('/mail', async (req, res) => {
                         contacts: [
                             {
                                 name: (req.body.user) ? req.body.user : "Имя не указано",
-                                custom_fields: [ custom_fields_phone, custom_fields_email, custom_fields_message ]
+                                custom_fields: [ custom_fields_phone, custom_fields_email, custom_fields_message, custom_fields_scope ]
                             }
                         ]
                     },

@@ -1922,48 +1922,49 @@ block main
                     .modal__content-polit.js-hide
                     .modal__content-default
                         h2.title.help-modal__title.show-on-large-mobile !{lang.modal.help_modal.modal__title}
-                        .flex.inline.tabs
-                            .tabs__cell.tabs__cell_nav
-                                .clear.tabs__nav-parent
-                                    .tabs__nav.clear__right
-                                        .tabs__label !{lang.modal.help_modal.tabs__label}
-                                        each item, index in lang.modal.help_modal.list
-                                            .tabs__list.help-modal__list
-                                                label.radio.help-modal__radio
-                                                    input.radio__input(type='radio', name='scope', value= item, checked= !index)
-                                                    span.radio__content
-                                                        span.tabs__nav-item
-                                                            span.tabs__nav-cell
-                                                                span.tabs__nav-text !{item}
-                            .tabs__cell.tabs__cell_content
-                                h2.title.help-modal__title.hide-on-large-mobile !{lang.modal.help_modal.modal__title}
-                                form.form.help-modal__form(action='')
-                                    input(type='hidden', name='form', value='')
-                                    .inline.modal__row.form__data
-                                        .modal__cell
-                                            .form__item
-                                                input.form__input(type='text', autocomplete='off', required='', name='user', pattern='^[A-Za-zА-Яа-яЁёs]+$')
-                                                .form__placeholder !{lang.modal.help_modal.form__placeholder1}
-                                        .modal__cell
-                                            .form__item
-                                                input.form__input(type='email', pattern='[^@]+@[^@]+.[a-zA-Z]{2,6}', autocomplete='off', required='', name='email')
-                                                .form__placeholder !{lang.modal.help_modal.form__placeholder2}
-                                        .modal__cell
-                                            .form__item
-                                                input.form__input(type='tel', autocomplete='off', pattern='(+?d[- .()]*){7,20}', name='phone', required='')
-                                                .form__placeholder !{lang.modal.help_modal.form__placeholder3}
-                                        .modal__cell
-                                            .form__item
-                                                input.form__input(type='text', autocomplete='off', name='message')
-                                                .form__placeholder !{lang.modal.help_modal.form__placeholder4}
-                                                .info.info_white.form__info.form__info_right
-                                                    .info__content.info__content_rtl !{lang.modal.help_modal.form__placeholder4desc}
-                                    .inline.form__bottom
-                                        .form__button-parent.hover-to-hide
-                                            button.button.form__button(data-text= lang.modal.help_modal.button)
-                                                span.button__inner !{lang.modal.help_modal.button}
-                                        .form__conf.hide-for-button
-                                            p !{lang.modal.help_modal.polit}
+                        form.form(action='')
+                            .flex.inline.tabs
+                                .tabs__cell.tabs__cell_nav
+                                    .clear.tabs__nav-parent
+                                        .tabs__nav.clear__right
+                                            .tabs__label !{lang.modal.help_modal.tabs__label}
+                                            each item, index in lang.modal.help_modal.list
+                                                .tabs__list.help-modal__list
+                                                    label.radio.help-modal__radio
+                                                        input.radio__input(type='radio', name='scope', value= item, checked= !index)
+                                                        span.radio__content
+                                                            span.tabs__nav-item
+                                                                span.tabs__nav-cell
+                                                                    span.tabs__nav-text !{item}
+                                .tabs__cell.tabs__cell_content
+                                    h2.title.help-modal__title.hide-on-large-mobile !{lang.modal.help_modal.modal__title}
+                                    .help-modal__form
+                                        input(type='hidden', name='form', value='')
+                                        .inline.modal__row.form__data
+                                            .modal__cell
+                                                .form__item
+                                                    input.form__input(type='text', autocomplete='off', required='', name='user', pattern='^[A-Za-zА-Яа-яЁёs]+$')
+                                                    .form__placeholder !{lang.modal.help_modal.form__placeholder1}
+                                            .modal__cell
+                                                .form__item
+                                                    input.form__input(type='email', pattern='[^@]+@[^@]+.[a-zA-Z]{2,6}', autocomplete='off', required='', name='email')
+                                                    .form__placeholder !{lang.modal.help_modal.form__placeholder2}
+                                            .modal__cell
+                                                .form__item
+                                                    input.form__input(type='tel', autocomplete='off', pattern='(+?d[- .()]*){7,20}', name='phone', required='')
+                                                    .form__placeholder !{lang.modal.help_modal.form__placeholder3}
+                                            .modal__cell
+                                                .form__item
+                                                    input.form__input(type='text', autocomplete='off', name='message')
+                                                    .form__placeholder !{lang.modal.help_modal.form__placeholder4}
+                                                    .info.info_white.form__info.form__info_right
+                                                        .info__content.info__content_rtl !{lang.modal.help_modal.form__placeholder4desc}
+                                        .inline.form__bottom
+                                            .form__button-parent.hover-to-hide
+                                                button.button.form__button(data-text= lang.modal.help_modal.button)
+                                                    span.button__inner !{lang.modal.help_modal.button}
+                                            .form__conf.hide-for-button
+                                                p !{lang.modal.help_modal.polit}
         #recall-modal.modal__item.recall-modal
             .container__logo-column.container__logo-column_static.estimate-modal__logo
                 .logo.logo_relative.logo_default

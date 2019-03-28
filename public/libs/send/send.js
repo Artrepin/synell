@@ -5,6 +5,8 @@ $( "input" ).focus(function() {
 $(document).on('submit', "form", function(e) {
   e.preventDefault()
 
+  console.log(this)
+
   var $form = $(this),
       msg = $form.serialize(),
       stop = false;
