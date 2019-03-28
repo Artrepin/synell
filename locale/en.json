@@ -32,9 +32,525 @@
                 "title": "Since 2007, we have been designing, developing, and implementing products that change the world.",
                 "text": "No missed deadlines, a controlled budget, and detailed progress reports from start to finish.",
                 "button": "Discuss the Project"
+            },
+            "vantages": {
+                "title": "We create goal-orientated<i class=\"br\"></i> IT-solutions",
+                "text": "Transparency and communication yields results",
+                "list": [
+                    "Innovative Products",
+                    "Reduce Costs",
+                    "Increase Efficiency",
+                    "Grow Profits & Access New Markets",
+                    "Improve Customer Service",
+                    "Gain a Competitive Edge"
+                ]
+            },
+            "dev": {
+                "logo__text": [
+                    "World-class Software Development,",
+                    "Project Management Office, Design,",
+                    "Business Analysis & Engineering "
+                ],
+                "dev__fluid_text": "Effective development based on sound methodology",
+                "dev__fluid_label": "Project Implementation Model:",
+                "dev__title": "Turnkey products that represent all of your business and market realities",
+                "help__text_margin": "Due to in-depth analytics and rigorous testing",
+                "dev__p": "Effective Development",
+                "dev__name": "Agile <i class=\"br\"></i>(Scrum)",
+                "dev__title2": "Track progress at each stage of the project.",
+                "dev__sub": "The main stages of project implementation:",
+                "dots": [
+                    "Interview",
+                    "Business Analysis",
+                    "Plan",
+                    "Implementation",
+                    "Audit",
+                    "Maintenance"
+                ],
+                "help__big_margin": "Cycle <i class=\"br\"></i>2 weeks",
+                "list": [
+                    {
+                        "dev__big": "Interview",
+                        "dev__text": "<p>We conduct key interviews project persons on Skype or in the office. Define goals and criteria project success. </p><p>We agree on the stages of work and rules communication between all project stakeholders</p>"
+                    },
+                    {
+                        "dev__big": "Business Analysis",
+                        "dev__text": "<p>Our team selects technologies that are best suited for the consumer and the company's business processes. We identify any risks, perform Story Mapping, and define product requirements. The result is a clear plan and a strong team in place for product implementation.</p>",
+                        "link": "Example"
+                    },
+                    {
+                        "dev__big": "Production Cycles",
+                        "dev__text": "<li><span>2.1</span> Design</li><li><span>2.2</span> Development</li><li><span>2.3</span> Testing</li><li><span>2.4</span> Demonstration</li><li><span>2.5</span> Analysis</li>"
+                    },
+                    {
+                        "dev__big": "Implementation",
+                        "dev__text": "<p>Through documentation and a product knowledge base, we create the infrastructure. Next, we provide training. Finally, we hand over the finished product.</p>",
+                        "link": "Example"
+                    },
+                    {
+                        "dev__big": "Audit",
+                        "dev__text": "<p>We'll install a dashboard and set the fixation of key product indicators. We then supervise how the product performs in actual business and make changes as necessary. The result? A product that fulfills the client's set goals and is as convenient as possible.</p>",
+                        "link": "Example"
+                    },
+                    {
+                        "dev__big": "Maintenance",
+                        "dev__text": "<p>We set up monitoring. We form a team for technical support. We correct errors in due time. We are developing new features. The result is uninterrupted product operation.</p>"
+                    }
+                ],
+                "list2": [
+                    "Interview",
+                    "Business Analysis",
+                    "Development",
+                    "Implementation",
+                    "Audit",
+                    "Maintenance"
+                ]
+            },
+            "price": {
+                "title": "Exact Pricing in Advance",
+                "text": "We present a detailed estimate at each stage of the project.",
+                "button": "Get an Estimate"
+            },
+            "services": {
+                "tabs__label": "Choose option:",
+                "tabs__list": [
+                    "Project Office",
+                    "Business Analysis <i class=\"br\"></i>& Engineering",
+                    "New Product Development",
+                    "Existing Product Completion",
+                    "Update Existing Product"
+                ],
+                "steps__title": "Our experienced team can handle any problem big or small",
+                "slider__list": [
+                    {
+                        "steps__big": "Project <i class=\"br\"></i> Office",
+                        "steps__text": "From implementation to inception, we handle every step - on time and on budget",
+                        "steps__title": "A team of specialized experts organizes all project work:",
+                        "steps__list": [
+                            "Analysis, design, and selection of implementers",
+                            "Change and Risk Management",
+                            "Strict budget, timing, and quality control",
+                            "Organized, clear work and communication with project clients",
+                            "Daily project monitoring and results management",
+                            "Get a consultation"
+                        ]
+                    },
+                    {
+                        "steps__big": "Business <i class=\"br\"></i>Analysis <i class=\"br\"></i>and Engineering",
+                        "steps__text": "We'll help turn a problem into an opportunity for growth and profit.",
+                        "steps__list": [
+                            "Identification and Development of Relationship",
+                            "Identification of Business Problem and Analysis of Opportunities",
+                            "Determining requirements for product development, realization, implementation, operation, and disposal",
+                            "Change Management and Monitoring",
+                            "efficiency assessment of implemented solution",
+                            "Post-implementation assessment to ensure business goals are met",
+                            "Find solutions to adapt organization to new technology"
+                        ]
+                    },
+                    {
+                        "steps__big": "New <i class=\"br\"></i>Product <i class=\"br\"></i>Development",
+                        "steps__text": "We'll help brainstorm, design, create, and implement the next generation's technology - for your leaders of today and tomorrow.",
+                        "steps__helpmargin": "Combining industry and technical expertise, and taking into account business needs, market demand, and future development strategy, we create digital solutions from scratch or refresh an existing product in any stage of its lifecycle.",
+                        "link__text": "View all Product Types"
+                    },
+                    {
+                        "steps__big": "Existing <i class=\"br\"></i>Product <i class=\"br\"></i>Completion",
+                        "steps__text": "We'll modernize your product based on your individual business processes and development strategies. We'll update functionality and enhance the capacity of the IT solution.",
+                        "steps__list": [
+                            "We technically examine and test the system.",
+                            "We analyze the system to ensure its conformity with business processes and business development strategy",
+                            "We check the convenience for the target audience",
+                            "We create a gradual system modernization plan",
+                            "We'll proceed with development and gradual implementation of the modernized system",
+                            "Get Consultation"
+                        ]
+                    },
+                    {
+                        "steps__big": "Existing <i class=\"br\"></i> Product <i class=\"br\"></i>Update",
+                        "steps__text": "We'll fully update or finish your product to help you meet deadlines",
+                        "steps__list": [
+                            "We examine the system and all existing data code and repositories",
+                            "We perform system audit and testing",
+                            "We create a defect correction plan",
+                            "We eliminate the defects and test the product",
+                            "We issue the first release and together, create a plan to develop the product",
+                            "Get Consultation"
+                        ]
+                    }
+                ]
+            },
+            "work": {
+                "work__title": "No need to waste company time and resources. We will choose the most effective tools for the job",
+                "text_right": "More than",
+                "work__label_center": "25",
+                "work__label": "different product <i class=\"br\"></i>types available",
+                "work__list": [
+                    "Requirements<i class=\"br\"></i> Analysis",
+                    "Convenient and<i class=\"br\"></i> Modern<i class=\"br\"></i> Interfaces",
+                    "MVP<i class=\"br\"></i> Creation",
+                    "Apps",
+                    "Apps<i class=\"br\"></i> Integration",
+                    "Quality<i class=\"br\"></i> Control and<i class=\"br\"></i> Testing",
+                    "Support and<i class=\"br\"></i> Service",
+                    "Post-Implementation<i class=\"br\"></i> Review"
+                ],
+                "dots__slider": [
+                    "We Identify, Analyze, Check and Document all Functional and Non-Functional Requirements, Data Flows and User Interface Components. We create Prototypes. We describe Product Vision and Development Strategy.",
+                    "Product development through Holistic Comprehension of needs and emotions of people. Simplifying Complexity by allowing businesses to develop more Valuable Relationships between you and your Users.",
+                    "We help to Determine Product Scope Without Excessive Development. We form Product Development Stages. And we create Product Itself with Minimal but Sufficient Functions for the First Users.",
+                    "Development of Products and Applications that Simplify, Automate and Optimize Business Processes in the company which leads to Increased Efficiency, Costs Reduction and Human Factor Reduction in the company.",
+                    "We organize Collaboration of all your Software Products through Integration at the Server Level, Sata, Services and API. Usually to increase Efficiency of Company and Transparency of Managers.",
+                    "Quality Control at every stage of product creation. Manual and Automatic Testing for Errors in code, for Convenience of Working with product, for Safety from High Loads and Hacking.",
+                    "After Implementation of Product, we organize Technical Support and Ensure Product Smooth Operation. Any errors are fixed for free. If necessary, Further Development of Product is Possible.",
+                    "We Monitor Key Indicators of product on Real Users, and Check how Product Fulfills its Purpose."
+                ]
+            },
+            "products": {
+                "products__big": "Products",
+                "products__cell": [
+                    "Cloud <br> Services",
+                    "Mobile <br> Application",
+                    "Web <br> Platform",
+                    "VR and AR",
+                    "Machine <br> Learning",
+                    "Big <br> Data",
+                    "Blockchain",
+                    "SaaS",
+                    "Data <br> Analytics",
+                    "Desktop <br> Application",
+                    "And much <br> more"
+                ],
+                "link__text": "Get a consultation",
+                "products__skip": "Skip",
+                "products__list": [
+                    "Cloud <i class=\"br\"></i> Services",
+                    "Mobile <i class=\"br\"></i> Application",
+                    "Web <i class=\"br\"></i> Platform",
+                    "VR and AR",
+                    "Machine <i class=\"br\"></i> Learning",
+                    "Big <i class=\"br\"></i> Data",
+                    "Blockchain",
+                    "SaaS",
+                    "Data <i class=\"br\"></i> Analytics",
+                    "Desktop <i class=\"br\"></i> Application",
+                    "And much <i class=\"br\"></i> more"
+                ]
+            },
+            "portfolio": {
+                "portfolio__title": "Over 150 projects <i class=\"br\"></i> from various industries <i class=\"br\"></i>  around the world.",
+                "portfolio__cell": [
+                    {
+                        "portfolio__label": "BANKING & FINANCE",
+                        "portfolio__text": "Cost Reduction through Operating Performance Increase and Automation, Innovations and Business Process Transformation."
+                    },
+                    {
+                        "portfolio__label": "INSURANCE",
+                        "portfolio__text": "Online- and Mobile Insurance, Accounting for Insurance Contracts, Analytics and Big Data, b2b-systems, Personalised Service and etc."
+                    },
+                    {
+                        "portfolio__label": "ECHNOLOGY SECTOR",
+                        "portfolio__text": "New Solutions and Platforms for both developing and already well-established IT companies around the world."
+                    },
+                    {
+                        "portfolio__label": "FUEL AND ENERGY COMPLEX",
+                        "portfolio__text": "Customization of ERP Software, industry-specific Analytical Applications and Control Panels Development, Budgeting Systems Construction and Logistics Support, Implementation of Solutions for Project and Investment Management."
+                    },
+                    {
+                        "portfolio__label": "RETAIL AND CONSUMER GOODS",
+                        "portfolio__text": "Omnichannel Customer Service, Digital Strategies Development , Analytics and Marketing Platforms Implementation."
+                    },
+                    {
+                        "portfolio__label": "EDUCATION",
+                        "portfolio__text": "Development of platforms and mobile applications for online learning, Analytical Applications and Control Panels, Solutions for Analytics and Marketing."
+                    },
+                    {
+                        "portfolio__label": "MEDICINE AND BIOTECHNOLOGY",
+                        "portfolio__text": "Big Data, Data Science, Digital Interaction and Predictive Analytics."
+                    },
+                    {
+                        "portfolio__label": "MEDIA AND ENTERTAINMENT",
+                        "portfolio__text": "Media Strategies Development, Implementation of Advanced Technologies for organization of TV Everywhere, Audience Analysis and Content Distribution through Digital Channels."
+                    },
+                    {
+                        "portfolio__label": "CRYPTOCURRENCY AND BLOCKCHAIN",
+                        "portfolio__text": "Development and Interaction with Blockchain Ecosystems, Cryptocurrency Services, Mobile Applications, Blockchain-based Business Solutions."
+                    },
+                    {
+                        "portfolio__label": "TRAVEL",
+                        "portfolio__text": "Omnichannel Customer Service Solutions, Online and Mobile Sales, Digital Marketing and Loyalty Management."
+                    },
+                    {
+                        "portfolio__label": "EMERGING MARKETS AND STARTUPS",
+                        "portfolio__text": "We help companies Implement Innovations and move forward faster than their competitors."
+                    },
+                    {
+                        "portfolio__label": "AND MORE",
+                        "portfolio__text": "We create Optimal Solutions for many Business Problems, helping companies Reduce Costs, Increase Profit and Operational Efficiency, Improve Interaction Quality with Customers."
+                    }
+                ]
+            },
+            "cases": {
+                "main__video": "View <i class=\"br\"></i>product <i class=\"br\"></i>demo version",
+                "case__label": "Project Task:",
+                "case__label2": "What happened?",
+                "case__label3": "Results:",
+                "case__text": "Development<i class=\"br\"></i> period",
+                "case__text2": "Team of",
+                "case__goto_next": "Next <i class=\"br\"></i> project",
+                "case__goto_prev": "Prev <i class=\"br\"></i> project"
+            },
+            "support": {
+                "support__title": "We help implement the product, train employees, and achieve desired results.",
+                "p_gray": "We provide integrated support post-development and implementation.",
+                "support__inner": "Detailed, technical documentation of the system",
+                "support__inner2": "Online employee training and video recordings",
+                "animate_unwrapText": "You <br>get:",
+                "support__inner3": "Documentation",
+                "support__inner4": "Assurance that data is safe, secure, and resist to hacker attacks"
+            },
+            "overview": {
+                "overview__big": "Post-<i class=\"br\"></i> Implementation<i class=\"br\"></i> Review",
+                "overview__title": "We'll install a dashboard <i class=\"br\"></i>and track on real users",
+                "help__text": "We'll install a dashboard and real-time user tracker for product indicators at 3, 6, and 12 months. We'll check to make sure the product fulfills its purpose and make changes as necessary",
+                "list": [
+                    {
+                        "num": 1,
+                        "label": "3 Months",
+                        "overview": [
+                            {
+                                "num": "4 100",
+                                "label": "Visits",
+                                "color": "overview__box_green"
+                            },
+                            {
+                                "num": "492",
+                                "label": "Users",
+                                "color": "overview__box_blue"
+                            },
+                            {
+                                "num": "5",
+                                "label": "Subscription",
+                                "color": "overview__box_yellow"
+                            }
+                        ],
+                        "count": "20<i>%</i>",
+                        "text": "Plan"
+                    },
+                    {
+                        "num": 2,
+                        "label": "6 Months",
+                        "overview": [
+                            {
+                                "num": "5 511",
+                                "label": "Visits",
+                                "color": "overview__box_green"
+                            },
+                            {
+                                "num": "992",
+                                "label": "Users",
+                                "color": "overview__box_blue"
+                            },
+                            {
+                                "num": "49",
+                                "label": "Subscription",
+                                "color": "overview__box_yellow"
+                            }
+                        ],
+                        "count": "72<i>%</i>",
+                        "text": "Plan"
+                    },
+                    {
+                        "num": 3,
+                        "label": "12 Months",
+                        "overview": [
+                            {
+                                "num": "12 812",
+                                "label": "Visits",
+                                "color": "overview__box_green"
+                            },
+                            {
+                                "num": "3 075",
+                                "label": "Users",
+                                "color": "overview__box_blue"
+                            },
+                            {
+                                "num": "584",
+                                "label": "Subscription",
+                                "color": "overview__box_yellow"
+                            }
+                        ],
+                        "count": "103<i>%</i>",
+                        "text": "Plan"
+                    }
+                ]
+            },
+            "guarantees": {
+                "logo__text": [
+                    "World-class Software Development,",
+                    "Project Management Office, Design,",
+                    "Business Analysis & Engineering"
+                ],
+                "guarantees__title": "100% guarantee <i class=\"br\"></i>for on-time delivery <i class=\"br\"></i>and project free of freeze",
+                "help__text": "Lifetime Product Warranty",
+                "list": [
+                    "<p class=\"p guarantees__text\"> you are not 100% satisfied <i class=\"br\"></i>with your product, <i class=\"br\"></i>we <span class=\"yellow\">guarantee a full refund</span>",
+                    "<p class=\"p guarantees__text\">We provide a detailed <span class=\"yellow\">development plan</span><i class=\"br\"></i> - so you know in advance what will happen <i class=\"br\"></i>and for how long</p>",
+                    "<p class=\"p guarantees__text\">You will receive <span class=\"yellow\">weekly progress reports</span><i class=\"br\"></i> and the opportunity to address any comments <i class=\"br\"></i>or concerns that may arise along the way</p>"
+                ]
+            },
+            "about": {
+                "author__top": "Meet \"Synell\": Our Founder",
+                "author__name": "Denis Gorskin",
+                "author__quote": "You will not only receive a comprehensive IT product with us, but earn thousands more than you paid",
+                "author__message": "<p class=\"p p_gray\">We help businesses smoothly implement advanced technologies, understand the industry, and determine maximum productivity.</p><p class=\"p p_gray\">Our approach is to work closely with the client through each stage of project, carefully explaining all aspects to create stress-free innovation.</p><div class=\"line author__line\"></div>"
+            },
+            "contacts": {
+                "tabs__label": "Choose a country",
+                "country": [
+                    {
+                        "lat": "40.759651",
+                        "lng": "-73.978763",
+                        "value": "USA",
+                        "homephone": "+1 (929) 999-2271",
+                        "homephonestr": "+19299992271",
+                        "phone": "+1 (888) 317-7708",
+                        "addr": "45 Rockefeller Plaza, New York, NY 10111",
+                        "checked": true
+                    },
+                    {
+                        "lat": "53.886379",
+                        "lng": "27.536962",
+                        "value": "Belarus",
+                        "homephone": "+7 (495) 266-64-68",
+                        "homephonestr": "+74952666468",
+                        "phone": "8 (800) 551-60-27",
+                        "addr": "220007, Minsk, street Moscowskaya, 22",
+                        "checked": false
+                    },
+                    {
+                        "lat": "56.836153",
+                        "lng": "60.614536",
+                        "value": "Russia",
+                        "homephone": "+7 (495) 266-64-68",
+                        "homephonestr": "+74952666468",
+                        "phone": "8 (800) 551-60-27",
+                        "addr": "620075, Ekaterinburg, ul. Malysheva, 51",
+                        "checked": false
+                    }
+                ],
+                "contacts__title": "Our Offices",
+                "p_gray1": "Address",
+                "p_gray2": "Contact Us",
+                "p_gray3": "Email Us",
+                "contacts__help": "Send us a message by filling out the form below:",
+                "placeholder1": "Your name",
+                "placeholder2": "Phone",
+                "placeholder3": "Email",
+                "button": "Call Us",
+                "polit": "Terms and Conditions May Apply (<a href=\"#polit-modal\" class=\"js-popup border-link\">Read</a>)",
+                "contacts__work": "Design and development <i class=\"br\"></i>of international software products.",
+                "link__text": "DOWNLOAD PRESENTATION",
+                "polit2": "PRIVACY POLICY",
+                "creator__text": "Artrepin Studio made it"
             }
         }
     },
     "case_count_days_string": ["days", "days", "days"],
-    "case_count_staff_string": ["specialists worked on the project", "specialists worked on the project", "specialists worked on the project"]
+    "case_count_staff_string": ["specialists worked on the project", "specialists worked on the project", "specialists worked on the project"],
+    "menu": [
+        {
+            "text": "How We Work",
+            "href": "#dev",
+            "color": ""
+        },
+        {
+            "text": "Options",
+            "href": "#services",
+            "color": "menu__link_pink"
+        },
+        {
+            "text": "Projects",
+            "href": "#cases",
+            "color": "menu__link_blue"
+        },
+        {
+            "text": "About",
+            "href": "#about",
+            "color": "menu__link_blue"
+        },
+        {
+            "text": "Contacts",
+            "href": "#contacts",
+            "color": "menu__link_green"
+        }
+    ],
+    "modal": {
+        "polit": "<h2 class=\"title polit-modal__title\">Consent to processing of personal data</h2><p class=\"p p_gray\">By providing their personal data User agrees to processing, holding and usage of their personal data by operation of Federal Law № 152 «Personal Data Usage» 2006, July, 27th, for the following purposes:</p><ol class=\"ol\"><li>Implementation of client support</li><li>Mailout of marketing events information</li><li>Performance of an audit and other kind of research for the purpose of provided services' refinement</li></ol><p class=\"p p_gray\">By personal data we mean any kind of personal information that helps establish identity of User/Customer, namely:</p><ol class=\"ol ol_list\"><li>Surname, Name, Patronymic Name</li><li>Date of Birth</li><li>Telephone Number</li><li>E-mail Address</li><li>Post Address</li></ol><p class=\"p p_gray\">Users' personal data are entirely stored on the electronic media and processed with the use of automated systems, except for the situations when manual processing of personal data is needed due to the requirements of legislation. The company is obliged not to pass received personal data to a third party, except for the following cases:</p><ol class=\"ol ol_largelh\"><li>Appropriate Russian governmental authorities' inquiries on the ground of and in accordance with the Constitution of the Russian Federation.</li><li>Strategic partners that work with the Company, grant their products and services and help the Company to deliver products and services to the customers. We pass the minimum dose of personal data to the third party, if the data are necessary for service delivery of implementation of a transaction.</li></ol><p class=\"p p_gray\">The company reserves the right to amend in the existing rules on a unilateral basis, upon condition, that the changes don't contradict with the present Russian Law. The change in present rules comes into effect post-publication on the web-site.</p>",
+        "estimate": {
+            "modal__title": "Получите подробную смету <i class=\"br\"></i> с описанием стоимости <i class=\"br\"></i> каждого этапа работы",
+            "small": "Специалист перезвонит вам, чтобы уточнить детали по проекту"
+        },
+        "consult_modal": {
+            "modal__title": "Fill out the form and we will contact you soon",
+            "form__placeholder1": "Your name",
+            "form__placeholder2": "Phone",
+            "form__placeholder3": "Email",
+            "info__content": "Write in your own words everything that will help us when discussing your project.",
+            "form__placeholder4": "What you want to discuss?",
+            "button": "SEND",
+            "polit": "You agree to the terms of personal data processing (<a href=\"#\" data-polit=\"1\" class=\"js-popup border-link\">view the policy</a>)",
+            "modal__bold": "As a result of the consultation <i class=\"br\"></i>you will get:",
+            "modal__list": "<li>Guidelines for creating a product </li><li>Audit of your task and what solutions are available</li><li>Cost and Terms</li>"
+        },
+        "help_modal": {
+            "modal__title": "Fill out the form and we will contact you soon",
+            "tabs__label": "What can we do for you?",
+            "list": [
+                "Business Analysis",
+                "Development of an IT product",
+                "Project Office",
+                "Other"
+            ],
+            "form__placeholder1": "Name",
+            "form__placeholder2": "Email",
+            "form__placeholder3": "Phone",
+            "form__placeholder4": "Message",
+            "form__placeholder4desc": "Write in your own words everything that will help us when discussing your project.",
+            "button": "Request",
+            "polit": "You agree to the terms of personal data processing <i class=\"br\"></i> (<a href=\"#\" data-polit=\"1\" class=\"js-popup border-link\">view the policy</a>)"
+        },
+        "recall": {
+            "modal__title": "Fill out the form and we will contact you soon",
+            "form__placeholder1": "Your name",
+            "form__placeholder2": "Phone",
+            "form__placeholder3": "Email",
+            "button": "Get a cost calculation",
+            "polit": "Terms and Conditions May Apply(<a href=\"#\" data-polit=\"1\" class=\"js-popup border-link\">Read</a>)"
+        },
+        "thank": {
+            "modal__title": "Thank you for request. <i class=\"br\"></i>Our manager will call you back <i class=\"br\"></i> as soon as possible.",
+            "help__text": "Subscribe and keep up with our latest company news.",
+            "vk": {
+                "social__name": "VK",
+                "social__label": "VK",
+                "social__link": "Subscribe"
+            },
+            "inst": {
+                "social__name": "INSTA",
+                "social__label": "Instagram",
+                "social__link": "Subscribe"
+            },
+            "fb": {
+                "social__name": "FB",
+                "social__label": "Facebook",
+                "social__link": "Subscribe"
+            },
+            "link": {
+                "social__name": "LINK",
+                "social__label": "Linkedln",
+                "social__link": "Subscribe"
+            }
+        }
+    }
 }

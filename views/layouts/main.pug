@@ -12,7 +12,18 @@ html(lang='ru')
     link(href='/css/libs.css', rel='stylesheet')
     link(href='/css/main.css', rel='stylesheet')
     script(src='/libs/jquery/dist/jqueryMIN.js')
-    link(rel='shortcut icon', href='/src/img/favicon.png', type='image/png')
+    link(rel='shortcut icon', href='/img/favicon.png', type='image/png')
+
+    meta(itemprop="name" content= lang.meta.title)
+    meta(itemprop="description" content= lang.meta.description)
+    meta(itemprop="image" content="http://synell.com/img/avatar.jpg")
+
+    meta(property="og:url" content="http://synell.com")
+    meta(property="og:type" content="website")
+    meta(property="og:title" content= lang.meta.title)
+    meta(property="og:description" content= lang.meta.description)
+    meta(property="og:image" content="http://synell.com/img/avatar.jpg")
+
     // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
     // WARNING: Respond.js doesn't work if you view the page via file://
     //if IE

@@ -367,9 +367,10 @@ $(document).ready(function() {
 		let addr = $(this).data('addr');
 		let phone = $(this).data('phone');
 		let homephone = $(this).data('homephone');
+		let homephonestr = $(this).data('homephonestr');
 
-		$('.js-contacts-phone').text(phone).attr('href', "tel:+"+ phone.replace("8 (", "7").replace(/[^0-9]/g,''))
-		$('.js-contacts-homephone').text(homephone).attr('href', "tel:+"+ phone.replace("8 (", "7").replace(/[^0-9]/g,''))
+		$('.js-contacts-phone').text(phone).attr('href', "tel:"+ homephonestr)
+		$('.js-contacts-homephone').text(homephone).attr('href', "tel:"+ homephonestr)
 		$('.js-addr').text(addr)
 		$('.contacts__form input[name="form"]').val("Контакты (" + country + ")")
 	

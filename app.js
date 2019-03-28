@@ -8,6 +8,8 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.json({ limit: '50mb' }))
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }))
 const multer = require('multer')
+require('dotenv').config()
+app.locals.env = process.env;
 
 
 const cookieSession = require('cookie-session')
@@ -43,18 +45,20 @@ function declOfNum(number, titles) {
 app.all('*', (req, res, next) => {
     var locales = new locale.Locales(req.headers["accept-language"])
     if (!req.session.lang) {
-        default_lang = locales.best(supported).toString()
-        req.session.lang = require('./locale/' + default_lang + '.json')
+        req.session.lang = locales.best(supported).toString()
+        // req.session.lang = require('./locale/' + default_lang + '.json')
     } else {
-        req.session.lang = require('./locale/' + req.session.lang.lang + '.json')
+        
     }
     
-    data.lang = req.session.lang
+    
+    data.lang = require('./locale/' + req.session.lang + '.json')
+
     next()
 })
 
 app.get('/lang/:lang', (req, res) => {
-    req.session.lang = require('./locale/' + req.params.lang + '.json')
+    req.session.lang = req.params.lang
     res.redirect('/')
 })
 
@@ -79,6 +83,87 @@ app.get('/', async (req, res) => {
     });
     res.render('welcome', data)
 })
+app.post('/mail', async (req, res) => {
+
+    var request = require('request')
+
+    var custom_fields_phone = {}
+    if (req.body.phone) {
+        custom_fields_phone.id = 441685
+        custom_fields_phone.values = []
+        custom_fields_phone.values.push({
+            value: Number(req.body.phone.replace(/\D+/g,"")),
+            enum: "WORK"
+        })
+    }
+
+    var custom_fields_email = {}
+    if (req.body.email) {
+        custom_fields_email.id = 441687
+        custom_fields_email.values = []
+        custom_fields_email.values.push({
+            value: req.body.email,
+            enum: "WORK"
+        })
+    }
+
+    var custom_fields_email = {}
+    if (req.body.email) {
+        custom_fields_email.id = 441687
+        custom_fields_email.values = []
+        custom_fields_email.values.push({
+            value: req.body.email,
+            enum: "WORK"
+        })
+    }
+
+    var custom_fields_message = {}
+    if (req.body.message) {
+        custom_fields_message.id = 637067
+        custom_fields_message.values = []
+        custom_fields_message.values.push({
+            value: req.body.message,
+            enum: "WORK"
+        })
+    }
+
+    var amoDataJson = {
+        json: {
+            add: [
+                {
+                    source_name: (req.body.form) ? req.body.form : "Тема обращения отсутсвует",
+                    created_at: new Date().getTime(),
+                    incoming_entities: {
+                        leads: [
+                            {
+                                name: (req.body.form) ? req.body.form : "Тема обращения отсутсвует",
+                            }
+                        ],
+                        contacts: [
+                            {
+                                name: (req.body.user) ? req.body.user : "Имя не указано",
+                                custom_fields: [ custom_fields_phone, custom_fields_email, custom_fields_message ]
+                            }
+                        ]
+                    },
+                    incoming_lead_info: {
+                        form_id: "1",
+                        form_page: "http://synell.com",
+                    }
+                }
+            ]
+        }
+    }
+
+    request.post('https://' + process.env.AMOCRM_DOMAIN + '.amocrm.ru/api/v2/incoming_leads/form?login=' + process.env.AMOCRM_LOGIN + '&api_key=' + process.env.AMOCRM_HASH + '&', amoDataJson, function (error, response, body) {
+        res.send(200)
+    })
+
+
+    
+})
+
+
 
 app.get('/admin', async (req, res) => {
     res.render('admin')
@@ -169,6 +254,6 @@ app.post('/admin/ProjectUpdate', async (req, res) => {
     res.json(iProjectID)
 })
 
-app.listen(3000, () => {
-    console.log('Server is running http://localhost:3000')
+app.listen(process.env.PORT, () => {
+    console.log('Server is running http://localhost:' + process.env.PORT)
 })

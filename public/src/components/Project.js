@@ -381,14 +381,16 @@ export default {
                                         </div>
 
                                         <div class="inline admin-modal__row">
+
                                             <div class="admin-modal__button-parent hover-to-hide">
-                                                <button v-if="projects[project].iProjectID" class="button form__button" data-text="сохранить кейс">
-                                                    <span class="button__inner">сохранить кейс</span>
-                                                </button>
-                                                <button v-else class="button form__button" data-text="создать кейс">
-                                                    <span class="button__inner">создать кейс</span>
+                                                <button class="button form__button" v-bind:data-text="projects[project].iProjectID ? 'сохранить кейс' : 'создать кейс'">
+                                                    <span class="button__inner">
+                                                        <template v-if="projects[project].iProjectID">сохранить кейс</template>
+                                                        <template v-else>создать кейс</template>                                                        
+                                                    </span>
                                                 </button>
                                             </div>
+                                            
                                             <div class="form__conf hide-for-button text-left" v-if="projects[project].iProjectID">
                                                 <a href="#" class="link-with-arrow admin-modal__default link" v-on:click="del">
                                                     <span class="link-with-arrow__text link__text">Удалить</span>

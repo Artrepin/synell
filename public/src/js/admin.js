@@ -41,6 +41,8 @@ $(document).ready(function() {
    // $('.admin-modal__form').on('submit', function(e) {
    $('.admin-modal__form .button').on('click', function(e) {
 
+		alert(1)
+
 	   	e.preventDefault()
 
 		var $form = $('.admin-modal__form'), // $(this)
@@ -89,24 +91,24 @@ $(document).ready(function() {
 	
    })
 
-   $(document).on('click', '.js-case-edit', function () {
-   		$('.admin-modal__form input[name="admin-type"]').val($(this).data('type'))
+//    $(document).on('click', '.js-case-edit', function () {
+//    		$('.admin-modal__form input[name="admin-type"]').val($(this).data('type'))
 
-   		$('.admin-modal__form input[name="case-id"]').val($(this).data('id'))
+//    		$('.admin-modal__form input[name="case-id"]').val($(this).data('id'))
 
-   		$('.admin-modal__form button')
-   			.attr('data-text', "Изменить кейс")
-   			.find('span')
-   			.text('Изменить кейс')   		
-   })
+//    		$('.admin-modal__form button')
+//    			.attr('data-text', "Изменить кейс")
+//    			.find('span')
+//    			.text('Изменить кейс')   		
+//    })
 
-   $(document).on('click', '.js-create-case', function () {
-   		$('.admin-modal__form input[name="admin-type"]').val("create")
-   		$('.admin-modal__form input[name="case-id"]').val('')
+//    $(document).on('click', '.js-create-case', function () {
+//    		$('.admin-modal__form input[name="admin-type"]').val("create")
+//    		$('.admin-modal__form input[name="case-id"]').val('')
 
-   		$('.admin-modal__form button')
-   			.attr('data-text', "создать кейс")
-   			.find('span')
-   			.text('создать кейс')   		
-   })   
+//    		$('.admin-modal__form button')
+//    			.attr('data-text', "создать кейс")
+//    			.find('span')
+//    			.text('создать кейс')   		
+//    })   
 })
