@@ -41,17 +41,17 @@ const session = Vue.prototype.$session;
 
 router.beforeEach((to, from, next) => {
     
-    const requiresAuth = to.matched.some(record => record.meta.auth)
+    const auth = to.matched.some(record => record.meta.auth)
     var iUserID = Number.isInteger(session.get('iUserID'))
+    console.log(auth)
+    console.log(iUserID)
 
-    if (requiresAuth && !iUserID) {
-        next('/auth')
-    } else {
+    if (auth === true && iUserID === true) {
         next()
-    }
-
-    if (!requiresAuth && iUserID) {
-        next('/project')
+    } else if (auth === true && iUserID === false) {
+        next('/auth')
+    } else if (auth === false && iUserID === true) {
+        next('/')
     } else {
         next()
     }
