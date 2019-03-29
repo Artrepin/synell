@@ -11,7 +11,6 @@ const multer = require('multer')
 require('dotenv').config()
 app.locals.env = process.env;
 
-
 const cookieSession = require('cookie-session')
 app.use(cookieSession({ name: 'session', keys: ['shakalaka'], maxAge: 1000 * 60 * 60 * 24 * 30 }))
 
@@ -20,8 +19,10 @@ const Sequelize = require('sequelize')
 const Project = require('./models').project
 const Project_ru = require('./models').project_ru
 const Project_en = require('./models').project_en
+const User = require('./models').user
 
 app.use('/vue', express.static(__dirname + '/node_modules/vue/dist'))
+app.use('/vue-session', express.static(__dirname + '/node_modules/vue-session'))
 app.use('/axios', express.static(__dirname + '/node_modules/axios/dist'))
 app.use('/vue-router', express.static(__dirname + '/node_modules/vue-router/dist'))
 app.use('/vue-picture-input', express.static(__dirname + '/node_modules/vue-picture-input/umd'))
@@ -107,8 +108,18 @@ app.post('/mail', async (req, res) => {
         })
     }
 
+    var custom_fields_nameform = {}
+    if (req.body.form) {
+        custom_fields_nameform.id = 637407
+        custom_fields_nameform.values = []
+        custom_fields_nameform.values.push({
+            value: req.body.form,
+            enum: "WORK"
+        })
+    }
+
     var custom_fields_scope = {}
-    if (req.body.email) {
+    if (req.body.scope) {
         custom_fields_scope.id = 637143
         custom_fields_scope.values = []
         custom_fields_scope.values.push({
@@ -131,24 +142,25 @@ app.post('/mail', async (req, res) => {
         json: {
             add: [
                 {
-                    source_name: (req.body.form) ? req.body.form : "Тема обращения отсутсвует",
+                    source_name: "Новая заявка",
                     created_at: new Date().getTime(),
                     incoming_entities: {
                         leads: [
                             {
-                                name: (req.body.form) ? req.body.form : "Тема обращения отсутсвует",
+                                name: "Новая заявка",
+                                tags: "synell.com"
                             }
                         ],
                         contacts: [
                             {
                                 name: (req.body.user) ? req.body.user : "Имя не указано",
-                                custom_fields: [ custom_fields_phone, custom_fields_email, custom_fields_message, custom_fields_scope ]
+                                custom_fields: [ custom_fields_phone, custom_fields_email, custom_fields_message, custom_fields_scope, custom_fields_nameform ]
                             }
                         ]
                     },
                     incoming_lead_info: {
                         form_id: "1",
-                        form_page: "http://synell.com",
+                        form_page: "https://synell.com",
                     }
                 }
             ]
@@ -167,6 +179,28 @@ app.post('/mail', async (req, res) => {
 
 app.get('/admin', async (req, res) => {
     res.render('admin')
+})
+app.post('/admin/auth', async (req, res) => {
+    var sUserEmail = req.body.name
+    var sUserPass = req.body.password
+    var user = await User.findAll({
+        where: {
+            sUserEmail: sUserEmail,
+            sUserPass: sUserPass
+        }
+    })
+    if (user[0]) {
+        res.json({
+            iUserID: user[0].iUserID,
+            sUserEmail: user[0].sUserEmail
+        })
+        // var admin = {
+        // }
+        // req.session.admin = admin
+        // app.use(cookieSession({ name: 'admin', keys: ['shakalaka'], maxAge: 1000 * 60 * 60 * 24 * 30 }))
+    } else {
+        res.json(false)
+    }    
 })
 app.post('/admin/project', async (req, res) => {
     var where = null

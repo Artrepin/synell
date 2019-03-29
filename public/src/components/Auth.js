@@ -1,16 +1,34 @@
 export default {
     name: 'Auth',
     created: function () {
-
+        // this.$session.remove('asdf')
     },
     data: function () {
         return {
-
+            name: null,
+            password: null,
         }
     },
     methods: {
         auth: function () {
+            axios.post('/admin/auth', {
+                name: this.name,
+                password: this.password
+            })
+            .then( (response) => {
+                if (response.data.iUserID) {
+                    this.$session.set('iUserID', response.data.iUserID)
+                    this.$router.push('/project')
+                } else {
+                    Vue.set(this, 'password', null)
 
+                    const element =  document.querySelector('.wrap')
+                    element.classList.add('animated', 'shake')
+                    element.addEventListener('animationend', function() { 
+                        element.classList.remove('animated', 'shake')
+                    })
+                }
+            })
         }
     },
     template: `
@@ -49,12 +67,12 @@ export default {
                             <form action="#" class="form auth__form" @submit.prevent="auth">
                                 <div class="form__data">
                                     <div class="form__item">
-                                        <input type="text" autocomplete="off" class="form__input" name="email" value="ilya.soloveyv@gmail.com" required="">
+                                        <input type="email" autocomplete="off" class="form__input" v-model="name" required>
                                         <div class="form__placeholder">Email</div>
                                     </div>	
 
                                     <div class="form__item">
-                                        <input type="password" autocomplete="off" class="form__input form__input_withicon" value="250487" name="password" required="">
+                                        <input type="password" autocomplete="off" class="form__input form__input_withicon"  v-model="password" required="">
                                         <div class="form__placeholder">Пароль</div>
 
                                         <div class="form__password">

@@ -5,11 +5,11 @@ $( "input" ).focus(function() {
 $(document).on('submit', "form", function(e) {
   e.preventDefault()
 
-  console.log(this)
-
   var $form = $(this),
       msg = $form.serialize(),
       stop = false;
+
+      open_modal($('#thank-modal'))
 
     $.ajax({
       type: 'POST',
@@ -17,7 +17,7 @@ $(document).on('submit', "form", function(e) {
       data: msg,
       success: function(data) {
 
-        open_modal($('#thank-modal'))
+        
 
       }
     });  

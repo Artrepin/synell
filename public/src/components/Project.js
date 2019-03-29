@@ -172,6 +172,7 @@ export default {
                         <div class="flex admin__part admin__part_middle">
                             <div class="sidebar admin__cell admin__cell_sidebar">
                                 <div class="user">
+                                    <div class="user__logout"><router-link to="/logout">Выйти</router-link></div>
                                     <div class="user__name">Денис Горскин</div>
                                     <div class="user__type">BOSS</div>
                                 </div>
