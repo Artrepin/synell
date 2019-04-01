@@ -857,7 +857,20 @@ $(document).ready(function() {
 				$(this).attr('data-offset', $(this).position().left)
 			})
 
-			$(window).on('resize', function () {
+			$(window).on('load resize', function () {
+				let outWidth = slider.find('.dots__table').outerWidth(),
+					innertWidth = slider.find('.dots__table-list')[0].scrollWidth;
+					
+				if(innertWidth > outWidth){
+					slider
+						.find('.dots')
+						.addClass('js-rebuild')
+				}else{
+					slider
+						.find('.dots')					
+						.removeClass('js-rebuild')
+				}
+
 				slider.find('.dots__table-cell').each(function() {
 					$(this).attr('data-offset', $(this).position().left)
 				})
@@ -929,11 +942,16 @@ $(document).ready(function() {
 					.eq(slide_current)
 					.addClass('dots__table-cell_current')
 
+
+
 				if(navScorll){
-					if($(window).width() <= 860){
+					// if($(window).width() <= 860){
+					// 				
+
+					if(slider.find('.dots').hasClass('js-rebuild')){
 						var item = slider.find('.dots__table:visible .dots__table-cell_current')
 						var pos = parseInt(item.attr('data-offset')) + item.outerWidth() / 4 - $(window).width()/2
-						
+
 						slider.find('.dots__table-list').animate({scrollLeft: pos}, 600);
 					}else{
 						slider.find('.dots__table-list').scrollLeft(0);

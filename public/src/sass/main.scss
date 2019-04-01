@@ -2871,6 +2871,101 @@ img, svg{
 
 .dots{
 
+	&.js-rebuild{
+		.dots{
+			&__table{
+				padding-top: .6rem;
+				overflow: hidden;
+				position: relative;
+
+
+				&:before{
+					content: '';
+					display: block;
+					position: absolute;
+					left: 0;
+					// bottom: 16px;
+					bottom: 0;
+					width: 100%;
+					height: 1px;
+					z-index: 2;
+					background-color: #989898;
+				}
+
+
+				&:after{
+					content: '';
+					display: block;
+					position: absolute;
+					right: 0;
+					pointer-events: none;
+					width: 1px;
+					top: 0;
+					z-index: 1;
+					height: 100%;
+					opacity: 1;
+					// background-color: red;
+					width: 5rem;
+					
+					// box-shadow: 0px 0px 100px 20px red;
+					background: linear-gradient(to left, #101010 10%, transparent);
+					// box-shadow: 0px 0px 25px 5px #101010;
+				}								
+			}
+
+			&__table-list{
+				overflow: scroll;
+			    width: 100%;
+			    height: 100%;				
+				// margin-bottom: -17px;
+				// padding-bottom: 17px;
+				// padding-right: 17px;
+				// box-sizing: content-box;		
+
+				scrollbar-width: none;
+				-ms-overflow-style: none;
+				&::-webkit-scrollbar { 
+				    display: none;  // Safari and Chrome
+				}
+			}
+
+			&__table-cell{
+				padding-right: 3.5rem;
+				vertical-align: bottom;
+				position: relative;
+
+				
+				padding-bottom: 2rem;
+				// margin-bottom: 1rem;
+				&:after{
+					content: '';
+					position: absolute;
+					opacity: 0;
+					left: 0;
+					bottom: -1px;
+					height: 4px;
+					right: 3.5rem;
+					z-index: 2;
+					background-color: #c4004b;
+				}			
+
+				&:last-child{
+					padding-right: 0;
+					&:after{
+						right: 0;
+					}
+				}
+
+				&_current{
+					&:after{
+						opacity: 1;
+					}						
+				}
+
+			}
+		}
+	}
+
 	&__nav{
 		margin-top: 7rem;
 		white-space: nowrap;
@@ -2941,20 +3036,20 @@ img, svg{
 		// }
 
 		@include max-screen($large_tablet) {
-			padding-top: .6rem;
-			overflow: hidden;
-			position: relative;
+			// padding-top: .6rem;
+			// overflow: hidden;
+			// position: relative;
 
-			&:before{
-				content: '';
-				display: block;
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				width: 100%;
-				height: 1px;
-				background-color: #989898;
-			}
+			// &:before{
+			// 	content: '';
+			// 	display: block;
+			// 	position: absolute;
+			// 	left: 0;
+			// 	bottom: 0;
+			// 	width: 100%;
+			// 	height: 1px;
+			// 	background-color: #989898;
+			// }
 			// border-bottom: 1px solid #989898;
 
 			// overflow: scroll;
@@ -2965,14 +3060,14 @@ img, svg{
 		white-space: nowrap;
 		position: relative;
 	
-		@include max-screen($large_tablet) {
-			overflow: scroll;
-			margin-bottom: -10px;
-			padding-bottom: 10px;
+		// @include max-screen($large_tablet) {
+		// 	overflow: scroll;
+		// 	margin-bottom: -10px;
+		// 	padding-bottom: 10px;
 
 
 
-		}
+		// }
 	}
 
 	&__table-cell{
@@ -2998,29 +3093,29 @@ img, svg{
 		}
 
 		@include max-screen($large_tablet) {
-			padding-right: 3.5rem;
-			vertical-align: bottom;
-			position: relative;
+			// padding-right: 3.5rem;
+			// vertical-align: bottom;
+			// position: relative;
 			
-			padding-bottom: 2rem;
-			// margin-bottom: 1rem;
-			&:after{
-				content: '';
-				position: absolute;
-				opacity: 0;
-				left: 0;
-				bottom: -1px;
-				height: 4px;
-				right: 3.5rem;
-				background-color: #c4004b;
-			}			
+			// padding-bottom: 2rem;
+			// // margin-bottom: 1rem;
+			// &:after{
+			// 	content: '';
+			// 	position: absolute;
+			// 	opacity: 0;
+			// 	left: 0;
+			// 	bottom: -1px;
+			// 	height: 4px;
+			// 	right: 3.5rem;
+			// 	background-color: #c4004b;
+			// }			
 
-			&:last-child{
-				padding-right: 0;
-				&:after{
-					right: 0;
-				}
-			}
+			// &:last-child{
+			// 	padding-right: 0;
+			// 	&:after{
+			// 		right: 0;
+			// 	}
+			// }
 
 
 			&_current{
@@ -3029,9 +3124,9 @@ img, svg{
 
 				}	
 
-				&:after{
-					opacity: 1;
-				}			
+				// &:after{
+				// 	opacity: 1;
+				// }			
 			}
 		}	
 
@@ -6327,7 +6422,8 @@ img, svg{
 		&_left{
 			width: 22.62%;
 			margin-right: 7.76%;
-			margin-bottom: 0.4rem;
+			margin-top: 0.5rem;
+			vertical-align: top;
 		}
 
 		&_center{
