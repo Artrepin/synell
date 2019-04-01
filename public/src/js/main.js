@@ -947,10 +947,12 @@ $(document).ready(function() {
 				if(navScorll){
 					// if($(window).width() <= 860){
 					// 				
-
+					let outWidth = slider.find('.dots__table').outerWidth(),
+						innertWidth = slider.find('.dots__table-list')[0].scrollWidth;
+						
 					if(slider.find('.dots').hasClass('js-rebuild')){
 						var item = slider.find('.dots__table:visible .dots__table-cell_current')
-						var pos = parseInt(item.attr('data-offset')) + item.outerWidth() / 4 - $(window).width()/2
+						var pos = parseInt(item.attr('data-offset')) + item.outerWidth() / 4 - outWidth/2
 
 						slider.find('.dots__table-list').animate({scrollLeft: pos}, 600);
 					}else{
