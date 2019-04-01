@@ -1,5 +1,6 @@
 const gulp          = require('gulp')
 const sass          = require('gulp-sass')
+const autoprefixer	= require('gulp-autoprefixer')
 // 	concat       = require('gulp-concat'),
 // 	uglify       = require('gulp-uglifyjs'),
 // 	replace 	 = require('gulp-replace'),
@@ -150,6 +151,7 @@ gulp.task('my_sass', function () {
 					'public/src/sass/**/*.scss'
 			])
 			.pipe(sass())
+			.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8'], { cascade: true }))
 			.pipe(gulp.dest('public/css'))
 })
 
