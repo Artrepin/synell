@@ -1799,11 +1799,17 @@ img, svg {
     top: 0;
     width: 100%;
     display: none;
-    -webkit-transition: width .3s ease-out .3s, -webkit-clip-path .3s ease-out .7s;
-    transition: width .3s ease-out .3s, -webkit-clip-path .3s ease-out .7s;
-    -o-transition: width .3s ease-out .3s, clip-path .3s ease-out .7s;
-    transition: width .3s ease-out .3s, clip-path .3s ease-out .7s;
-    transition: width .3s ease-out .3s, clip-path .3s ease-out .7s, -webkit-clip-path .3s ease-out .7s;
+    -webkit-transition: width .3s ease-out .3s,
+ -webkit-clip-path .3s ease-out .7s;
+    transition: width .3s ease-out .3s,
+ -webkit-clip-path .3s ease-out .7s;
+    -o-transition: width .3s ease-out .3s,
+ clip-path .3s ease-out .7s;
+    transition: width .3s ease-out .3s,
+ clip-path .3s ease-out .7s;
+    transition: width .3s ease-out .3s,
+ clip-path .3s ease-out .7s,
+ -webkit-clip-path .3s ease-out .7s;
     height: 45rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 5%, 0 5%);
             clip-path: polygon(0 0, 100% 0, 100% 5%, 0 5%);
@@ -5293,7 +5299,7 @@ img, svg {
     overflow: hidden; }
     .team__str span {
       display: block;
-      -webkit-transition: ease .5s;
+      -webkit-transition: ease .55s;
       -o-transition: ease .5s;
       transition: ease .5s;
       -webkit-transform: translate(0, 100%);

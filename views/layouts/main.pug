@@ -2,12 +2,13 @@ doctype html
 html(lang='ru')
   head
 
-    script(src="https://www.googletagmanager.com/gtag/js?id=UA-137399371-1", async)
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-137399371-1');
+    if env.NODE_ENV != 'development'
+      script(src="https://www.googletagmanager.com/gtag/js?id=UA-137399371-1", async)
+      script.
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-137399371-1');
 
     meta(name='format-detection', content='telephone=no')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -15,11 +16,16 @@ html(lang='ru')
     meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
     title= lang.meta.title
     meta(name='description', content= lang.meta.description)
-    link(href='/css/preloader.css', rel='stylesheet')
-    link(href='/css/font.css', rel='stylesheet')
-    link(href='/css/libs.css', rel='stylesheet')
-    link(href='/css/main.css', rel='stylesheet')
-    script(src='/libs/jquery/dist/jqueryMIN.js')
+
+    if env.NODE_ENV == 'development'
+      link(href='/css/preloader.css', rel='stylesheet')
+      link(href='/css/font.css', rel='stylesheet')
+      //- link(href='/css/libs.css', rel='stylesheet')
+      link(href='/libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css', rel='stylesheet')
+      link(href='/css/main.css', rel='stylesheet')
+    else
+      link(rel="stylesheet", href="/build/app.min.css")
+
     link(rel='shortcut icon', href='/img/favicon.png', type='image/png')
 
     meta(itemprop="name" content= lang.meta.title)
@@ -38,28 +44,34 @@ html(lang='ru')
       script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
       script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
 
-    script(type="text/javascript").
-      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-      ym(53053711, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-      });
-    noscript
-      div
-        img(src="https://mc.yandex.ru/watch/53053711" style="position:absolute; left:-9999px;" alt="")
+    script(src='/libs/jquery/dist/jqueryMIN.js')
+
+    if env.NODE_ENV != 'development'
+      script(type="text/javascript").
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(53053711, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+        });
+      noscript
+        div
+          img(src="https://mc.yandex.ru/watch/53053711" style="position:absolute; left:-9999px;" alt="")
 
   body
 
     block main
     
     script(src='https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBN9VqzHdRedeGxyP-1owKg4aDwNjnmW_E')
-    script(src='/src/js/libs.js')
-    script(src='/src/js/main.js')
-    script(src='/src/js/modal.js')
-    script(src='/src/js/form.js')
-    script(src='/src/js/products.js')
-    script(src='/libs/send/send.js')
+    if env.NODE_ENV == 'development'
+      script(src='/src/js/libs.js')
+      script(src='/src/js/main.js')
+      script(src='/src/js/modal.js')
+      script(src='/src/js/form.js')
+      script(src='/src/js/products.js')
+      script(src='/libs/send/send.js')
+    else
+      script(src='/build/app.min.js')

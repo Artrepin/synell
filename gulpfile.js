@@ -1,6 +1,24 @@
 const gulp          = require('gulp')
 const sass          = require('gulp-sass')
 const autoprefixer	= require('gulp-autoprefixer')
+
+const cleanCSS      = require('gulp-clean-css')
+const concat        = require('gulp-concat')
+
+const minify_js     = require('gulp-minify')
+const del           = require('del')
+
+const rev           = require('gulp-rev')
+
+const revCollector  = require('gulp-rev-collector')
+
+const gutil         = require('gulp-util')
+const rimraf        = require('rimraf')
+const revOutdated   = require('gulp-rev-outdated')
+const path          = require('path')
+const through       = require('through2')
+
+
 // 	concat       = require('gulp-concat'),
 // 	uglify       = require('gulp-uglifyjs'),
 // 	replace 	 = require('gulp-replace'),
@@ -141,11 +159,95 @@ const autoprefixer	= require('gulp-autoprefixer')
 
 
 
+function cleaner() {
+    return through.obj(function(file, enc, cb){
+        rimraf( path.resolve( (file.cwd || process.cwd()), file.path), function (err) {
+            if (err) {
+                this.emit('error', new gutil.PluginError('Cleanup old files', err));
+            }
+            this.push(file);
+            cb();
+        }.bind(this));
+    });
+}
+
+gulp.task('css_min', (done) => {
+    gulp
+        .src([
+			'public/css/preloader.css',
+			'public/css/font.css',
+			'public/libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css',
+			'public/css/main.css',
+        ])
+        .pipe(concat('app.min.css'))
+        .pipe(cleanCSS())
+        .pipe(gulp.dest('public/build/'))
+        .on('end', done)
+})
+
+gulp.task('js_min', (done) => {
+    gulp
+        .src([
+            'public/src/js/libs.js',
+			'public/src/js/main.js',
+			'public/src/js/modal.js',
+			'public/src/js/form.js',
+			'public/src/js/products.js',
+			'public/libs/send/send.js',
+        ],{
+            allowEmpty: true 
+        })
+        .pipe(concat('app.js'))
+        .pipe(minify_js({
+            ext:{
+                min:'.min.js'
+            }
+        }))
+        .pipe(gulp.dest('public/build/'))
+        .on('end', () => {
+            del.sync([
+                'public/build/app.js',
+            ], done());
+        })
+})
+
+gulp.task('rev', (done) => {
+    gulp.src(['public/build/app.min.css', 'public/build/app.min.js'])
+        .pipe(rev())
+        .pipe(gulp.dest('public/build/'))
+        .pipe(rev.manifest())
+        .pipe(gulp.dest('public/manifest/'))
+        .on('end', done)
+})
+
+gulp.task('rev_collector', (done) => {
+    gulp.src(['public/manifest/**/*.json', 'views/layouts/main.pug'])
+        .pipe( revCollector({
+            replaceReved: true
+        }))
+        .pipe( gulp.dest('views/layouts/') )
+        .on('end', done)
+})
+
+gulp.task('rev_clean', function(done) {
+    return gulp.src( ['public/build/*.*'], {read: false})
+        .pipe( revOutdated(1) )
+        .pipe( cleaner() )
+        .on('end', done)
+});
+
+gulp.task('production', gulp.series(
+    'js_min',
+    'css_min',
+    'rev',
+    'rev_collector',
+    'rev_clean',
+))
 
 
 
 
-gulp.task('my_sass', function () {
+gulp.task('sass', function () {
 	return gulp
 			.src([
 					'public/src/sass/**/*.scss'
@@ -155,6 +257,6 @@ gulp.task('my_sass', function () {
 			.pipe(gulp.dest('public/css'))
 })
 
-gulp.task('my_watch', () => {
-	gulp.watch('public/src/sass/**/*.scss', gulp.series('my_sass'))
+gulp.task('watch', () => {
+	gulp.watch('public/src/sass/**/*.scss', gulp.series('sass'))
 })
