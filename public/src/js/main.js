@@ -352,9 +352,7 @@ $(document).ready(function() {
 	});	
 
 	$('input[name="scope"]').on('change', function() {
-
 		let ind = $(this).parent().index()
-
 		$('.help-modal__back')
 			.removeClass('js-visible')
 			.eq(ind)

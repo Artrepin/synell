@@ -1928,8 +1928,8 @@ block main
                                     .clear.tabs__nav-parent
                                         .tabs__nav.clear__right
                                             .tabs__label !{lang.modal.help_modal.tabs__label}
-                                            each item, index in lang.modal.help_modal.list
-                                                .tabs__list.help-modal__list
+                                            .tabs__list.help-modal__list
+                                                each item, index in lang.modal.help_modal.list
                                                     label.radio.help-modal__radio
                                                         input.radio__input(type='radio', name='scope', value= item, checked= !index)
                                                         span.radio__content

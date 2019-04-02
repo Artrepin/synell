@@ -1,6 +1,14 @@
 doctype html
 html(lang='ru')
   head
+
+    script(src="https://www.googletagmanager.com/gtag/js?id=UA-137399371-1", async)
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-137399371-1');
+
     meta(name='format-detection', content='telephone=no')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(charset='UTF-8')
@@ -29,6 +37,21 @@ html(lang='ru')
     //if IE
       script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
       script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+
+    script(type="text/javascript").
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(53053711, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+      });
+    noscript
+      div
+        img(src="https://mc.yandex.ru/watch/53053711" style="position:absolute; left:-9999px;" alt="")
+
   body
 
     block main
