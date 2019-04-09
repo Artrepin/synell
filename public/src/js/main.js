@@ -362,6 +362,8 @@ $(document).ready(function() {
 	$('input[name="country"]').on('change', function() {
 
 		let country = $(this).val();
+		let formname = $(this).attr('data-formname')
+		// alert(formname)
 		let addr = $(this).data('addr');
 		let phone = $(this).data('phone');
 		let homephone = $(this).data('homephone');
@@ -370,7 +372,8 @@ $(document).ready(function() {
 		$('.js-contacts-phone').text(phone).attr('href', "tel:"+ homephonestr)
 		$('.js-contacts-homephone').text(homephone).attr('href', "tel:"+ homephonestr)
 		$('.js-addr').text(addr)
-		$('.contacts__form input[name="form"]').val("Контакты (" + country + ")")
+		// $('.contacts__form input[name="form"]').val("Контакты (" + country + ")")
+		$('.contacts__form input[name="form"]').val(formname)
 	
 	})
 	$(function () {

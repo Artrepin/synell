@@ -1660,7 +1660,7 @@ block main
                                     .tabs__list.help-modal__list
                                         each item in lang.index.section.contacts.country
                                             label.radio.contacts__radio
-                                                input.radio__input(type='radio', data-lat= item.lat, data-lng= item.lng, name='country', data-homephone= item.homephone, data-homephonestr= item.homephonestr, value= item.value, data-phone= item.phone, data-addr= item.addr, checked= item.checked)
+                                                input.radio__input(type='radio', data-lat= item.lat, data-lng= item.lng,, data-formname= item.formname, name='country', data-homephone= item.homephone, data-homephonestr= item.homephonestr, value= item.value, data-phone= item.phone, data-addr= item.addr, checked= item.checked)
                                                 span.radio__content
                                                     span.tabs__nav-item
                                                         span.tabs__nav-cell
@@ -1703,7 +1703,9 @@ block main
                             if item.checked
                                 a.big.contacts__tel.js-contacts-phone(href='tel:+78005516027') !{item.phone}
                         form.form.contacts__form(action='')
-                            input(type='hidden', name='form', value='Контакты (Беларусь)')
+                            each item in lang.index.section.contacts.country
+                                if item.checked
+                                    input(type='hidden', name='form', value= item.formname)
                             .form__data
                                 .form__item
                                     input.form__input(type='text', autocomplete='off', name='user', pattern='^[A-Za-zА-Яа-яЁёs]+$', required='')
@@ -1793,7 +1795,7 @@ block main
                     span.fluid__button-icon.js-current(style='width: 2.3rem;')
                         svg(viewBox='0 0 223.041 223.041')
                             use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#me-icon')
-                a.fluid__button.fluid__button_blue(href='https://teleg.run/SYNELL_bot', target='_blank')
+                a.fluid__button.fluid__button_blue(href= lang.soc.telegram, target='_blank')
                     span.fluid__button-icon.js-current(style='width: 1.9rem;')
                         svg(viewBox='0 0 357 357')
                             use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#tg-icon')
