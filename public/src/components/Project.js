@@ -273,7 +273,7 @@ export default {
                                                             <svg viewBox="0 0 14 16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use></svg>
                                                         </span>											
                                                     </span>
-                                                    <span class="link-with-arrow__text link__text">Загрузить обложку</span>
+                                                    <span class="link-with-arrow__text link__text">Загрузить обложку <span class="upload_image_help_size">(1145 x 460)</span></span>
                                                 </div>
                                             </label>
 

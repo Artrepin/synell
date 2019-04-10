@@ -565,3 +565,8 @@
   display: none; }
   .js-language-input.js-current {
     display: block; }
+
+.upload_image_help_size {
+  font-size: 9px;
+  font-weight: normal;
+  opacity: .5; }

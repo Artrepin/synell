@@ -934,7 +934,7 @@ block main
                                         .flex.inline.case__bottom
                                             .case__cell.case__cell_nav
                                             .case__cell.case__cell_content
-                                                if project.sProjectLinkDemo.length
+                                                if project.sProjectLinkDemo && project.sProjectLinkDemo.length
                                                     .main__video.case__video
                                                         .main__video-player
                                                         .main__video-button(onclick="window.open('" + project.sProjectLinkDemo + "')")
@@ -1695,7 +1695,7 @@ block main
                                     span.fluid__button-icon.js-current(style='width: 2.1rem;')
                                         svg(viewBox='0 0 512 512')
                                             use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#skype-icon')
-                                a.fluid__button.fluid__button_blue(href='https://teleg.run/SYNELL_bot', target='_blank')
+                                a.fluid__button.fluid__button_blue(href= lang.soc.telegram, target='_blank')
                                     span.fluid__button-icon.js-current(style='width: 1.9rem;')
                                         svg(viewBox='0 0 357 357')
                                             use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#tg-icon')
@@ -2162,7 +2162,7 @@ block main
                                 span
                         .help__text(data-delay='0.6s') !{lang.modal.thank.help__text}
                 .inline.social
-                    a.social__item(href='https://vk.com/synell/', target='blank')
+                    a.social__item(href='https://vk.com/synell', target='blank')
                         .social__name !{lang.modal.thank.vk.social__name}
                         .social__label !{lang.modal.thank.vk.social__label}
                         .social__link
