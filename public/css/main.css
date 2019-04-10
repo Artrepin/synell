@@ -1448,6 +1448,8 @@ img, svg {
   height: 6.8rem;
   padding: 0rem;
   max-width: 100%;
+  -webkit-transform: translateZ(-1px);
+          transform: translateZ(-1px);
   position: relative;
   -webkit-clip-path: inset(-100vw -100vw -100vw 0);
           clip-path: inset(-100vw -100vw -100vw 0); }
@@ -1459,9 +1461,8 @@ img, svg {
     transition: all .5s;
     font-size: 3.6rem;
     line-height: 2.8rem;
-    -webkit-transform: translateX(-101%);
-        -ms-transform: translateX(-101%);
-            transform: translateX(-101%); }
+    -webkit-transform: translateX(-101%) translateZ(-1px);
+            transform: translateX(-101%) translateZ(-1px); }
   .button:after {
     position: absolute;
     left: 0;
@@ -1473,6 +1474,8 @@ img, svg {
     background-color: #c4004b;
     color: #e9e9e9;
     font-size: 1.4rem;
+    -webkit-transform: translateZ(-1px);
+            transform: translateZ(-1px);
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
@@ -1799,17 +1802,11 @@ img, svg {
     top: 0;
     width: 100%;
     display: none;
-    -webkit-transition: width .3s ease-out .3s,
- -webkit-clip-path .3s ease-out .7s;
-    transition: width .3s ease-out .3s,
- -webkit-clip-path .3s ease-out .7s;
-    -o-transition: width .3s ease-out .3s,
- clip-path .3s ease-out .7s;
-    transition: width .3s ease-out .3s,
- clip-path .3s ease-out .7s;
-    transition: width .3s ease-out .3s,
- clip-path .3s ease-out .7s,
- -webkit-clip-path .3s ease-out .7s;
+    -webkit-transition: width .3s ease-out .3s, -webkit-clip-path .3s ease-out .7s;
+    transition: width .3s ease-out .3s, -webkit-clip-path .3s ease-out .7s;
+    -o-transition: width .3s ease-out .3s, clip-path .3s ease-out .7s;
+    transition: width .3s ease-out .3s, clip-path .3s ease-out .7s;
+    transition: width .3s ease-out .3s, clip-path .3s ease-out .7s, -webkit-clip-path .3s ease-out .7s;
     height: 45rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 5%, 0 5%);
             clip-path: polygon(0 0, 100% 0, 100% 5%, 0 5%);
@@ -5299,7 +5296,7 @@ img, svg {
     overflow: hidden; }
     .team__str span {
       display: block;
-      -webkit-transition: ease .55s;
+      -webkit-transition: ease .5s;
       -o-transition: ease .5s;
       transition: ease .5s;
       -webkit-transform: translate(0, 100%);
