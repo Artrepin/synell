@@ -1492,6 +1492,29 @@ img, svg{
 		}
 	}
 }
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+
+    .button{
+    	span{
+    		display: none;
+    	}
+
+    	&:after{
+			transition: .3s background .3s, .3s transform .0s;
+    		clip-path: polygon(0 0,100% 0,100% 100%,0 100%)!important; 
+    	}
+
+    	&:hover{
+    		&:after{
+    			transition: .3s background .0s, .3s transform .3s;
+    			// font-size: 1.6rem;
+    			transform: scale(1.3);
+    			background: transparent;
+    		}
+    	}
+    }
+}}
 .hover-to-hide{
 
 	@include min-screen($large_mobile) {

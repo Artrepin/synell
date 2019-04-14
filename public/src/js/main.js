@@ -47,7 +47,7 @@ function hidePreloader() {
 		})
 
 
-	$('.preloader').hide()
+	$('.preloader').hide().addClass('preloader_hidden')
 
 	inView('.main')
 		.on('enter', function(){

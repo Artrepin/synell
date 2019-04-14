@@ -43,6 +43,7 @@ function close_modal() {
 			.on(transitionEnd, function(e) {
 				
 				if(e.originalEvent.propertyName == "transform"
+					|| e.originalEvent.propertyName == "-webkit-transform"
 					|| e.originalEvent.propertyName == "clip-path"
 					|| e.originalEvent.propertyName == "-webkit-clip-path"){
 
@@ -93,12 +94,14 @@ function open_modal(popup, polit = false) {
 				.removeClass('modal__item_active')
 				.on(transitionEnd, function(e) {
 					
-					if(e.originalEvent.propertyName == "transform"){
+					if(e.originalEvent.propertyName == "transform"
+						|| e.originalEvent.propertyName == "-webkit-transform"){
 
 						popup
 							.addClass('modal__item_active')		
 							.on(transitionEnd, function(e) {
-								if(e.originalEvent.propertyName == "transform"){
+								if(e.originalEvent.propertyName == "transform"
+									|| e.originalEvent.propertyName == "-webkit-transform"){
 									$(this).off(transitionEnd)
 									$('.js-popup').removeClass('js-lock')
 								}
@@ -119,7 +122,8 @@ function open_modal(popup, polit = false) {
 		popup
 			.addClass('modal__item_active')		
 			.on(transitionEnd, function(e) {
-				if(e.originalEvent.propertyName == "transform"){
+				if(e.originalEvent.propertyName == "transform"
+					|| e.originalEvent.propertyName == "-webkit-transform"){
 					$(this).off(transitionEnd)
 					$('.js-popup').removeClass('js-lock')
 				}
@@ -197,7 +201,8 @@ $(function() {
 					popup
 						.addClass('modal__item_loaded')		
 						.on(transitionEnd, function(e) {
-							if(e.originalEvent.propertyName == "clip-path"){
+							if(e.originalEvent.propertyName == "clip-path" ||
+								e.originalEvent.propertyName == "-webkit-clip-path"){
 								$(this).off(transitionEnd)
 								$('.js-open-image').removeClass('js-lock')
 							}
