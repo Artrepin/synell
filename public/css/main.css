@@ -6131,7 +6131,7 @@ img, svg {
     width: 77.57%; }
 
 .recall-modal {
-  background-color: #101010; }
+  background-color: #000; }
   .recall-modal:before {
     content: '';
     display: block;

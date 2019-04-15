@@ -396,6 +396,7 @@
                 ],
                 "guarantees__title": "100% guarantee <i class=\"br\"></i>for on-time delivery <i class=\"br\"></i>and project free of freeze",
                 "help__text": "Lifetime Product Warranty",
+                "info__content": "If you find a bug in the product, we will immediately fix it.",
                 "list": [
                     "<p class=\"p guarantees__text\"> you are not 100% satisfied <i class=\"br\"></i>with your product, <i class=\"br\"></i>we <span class=\"yellow\">guarantee a full refund</span>",
                     "<p class=\"p guarantees__text\">We provide a detailed <span class=\"yellow\">development plan</span><i class=\"br\"></i> - so you know in advance what will happen <i class=\"br\"></i>and for how long</p>",
