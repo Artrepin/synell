@@ -1097,7 +1097,11 @@ $(function() {
 					$(this)
 						.find('.safari-logo__image')
 						.addClass('js-done')
-						.one(transitionEnd, function() {
+						.find('svg')
+						.on(transitionEnd, function(e) {
+							console.log('Safari End')
+							console.log(e)
+							$('.safari-logo').addClass('js-animation-end')
 							$('.logo_favorite').addClass('logo_safaridone')
 							preloaderEnd = true
 							if(windowLoad){

@@ -1,4 +1,3 @@
-
 @import "_media";
 @import "_keyframes";
 
@@ -888,6 +887,10 @@ a{
 	}
 	&.js-visible{
 		display: block;
+	}
+
+	&.js-animation-end{
+		display: none !important;
 	}
 
 	&__image{
@@ -8305,13 +8308,15 @@ img, svg{
 			width: 100vw;
 			pointer-events: none;
 			background: transparent;
-			clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+			opacity: 0;
+			// clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
 			transform: none;
 		}
 
 		&_loaded{
 			visibility: visible;
-			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+			opacity: 1;
+			// clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 		}
 
 		&_active{

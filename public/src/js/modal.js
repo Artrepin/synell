@@ -44,8 +44,7 @@ function close_modal() {
 				
 				if(e.originalEvent.propertyName == "transform"
 					|| e.originalEvent.propertyName == "-webkit-transform"
-					|| e.originalEvent.propertyName == "clip-path"
-					|| e.originalEvent.propertyName == "-webkit-clip-path"){
+					|| e.originalEvent.propertyName == "visibility"){
 
 					$(this).off(transitionEnd)
 
@@ -201,8 +200,7 @@ $(function() {
 					popup
 						.addClass('modal__item_loaded')		
 						.on(transitionEnd, function(e) {
-							if(e.originalEvent.propertyName == "clip-path" ||
-								e.originalEvent.propertyName == "-webkit-clip-path"){
+							if(e.originalEvent.propertyName == "visibility"){
 								$(this).off(transitionEnd)
 								$('.js-open-image').removeClass('js-lock')
 							}
