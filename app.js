@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const http = require('http').createServer(app)
+// const http = require('http').createServer(app)
 const exphbs  = require('express-handlebars')
 const locale = require('locale')
 const supported = new locale.Locales(["en", "ru"])
@@ -307,9 +307,9 @@ app.post('/admin/ProjectUpdate', async (req, res) => {
     res.json(iProjectID)
 })
 
-http.listen(process.env.PORT, process.env.DNS, () => {
-    console.log("Server is running...")
-})
-// app.listen(process.env.PORT, () => {
-//     console.log('Server is running http://localhost:' + process.env.PORT)
+// http.listen(process.env.PORT, process.env.DNS, () => {
+//     console.log("Server is running...")
 // })
+app.listen(process.env.PORT, () => {
+    console.log('Server is running http://localhost:' + process.env.PORT)
+})
