@@ -321,25 +321,25 @@ app.post('/admin/ProjectUpdate', async (req, res) => {
 // }
 
 
-var https = require('https');
-var fs = require('fs');
-var https_options = {
-  key: fs.readFileSync("encryption/www_synell_com.key"),
-  cert: fs.readFileSync("encryption/www_synell_com.crt"),
-  ca: [
-          fs.readFileSync('encryption/www_synell_com.ca-bundle')
-       ]
-};
+// var https = require('https');
+// var fs = require('fs');
+// var https_options = {
+//   key: fs.readFileSync("encryption/www_synell_com.key"),
+//   cert: fs.readFileSync("encryption/www_synell_com.crt"),
+//   ca: [
+//           fs.readFileSync('encryption/www_synell_com.ca-bundle')
+//        ]
+// };
 
-https.createServer(https_options, function (req, res) {
+// https.createServer(https_options, function (req, res) {
 
-    res.writeHead(200);
+//     res.writeHead(200);
    
-    res.end("Welcome to Node.js HTTPS Servern");
+//     res.end("Welcome to Node.js HTTPS Servern");
    
-   }).listen(8443)
+//    }).listen(8443)
 
 
-// app.listen(process.env.PORT, () => {
-//     console.log('Server is running http://localhost:' + process.env.PORT)
-// })
+app.listen(process.env.PORT, () => {
+    console.log('Server is running http://localhost:' + process.env.PORT)
+})
