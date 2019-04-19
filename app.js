@@ -310,6 +310,36 @@ app.post('/admin/ProjectUpdate', async (req, res) => {
 // http.listen(process.env.PORT, process.env.DNS, () => {
 //     console.log("Server is running...")
 // })
-app.listen(process.env.PORT, () => {
-    console.log('Server is running http://localhost:' + process.env.PORT)
-})
+// if (process.env.NODE_ENV === 'production') {
+//     console.log('production...')
+//     const options = {
+//         key: fs.readFileSync('encryption/privkey1.pem'),
+//         cert: fs.readFileSync('encryption/cert1.pem')
+//     }
+//     const https = require('https').createServer(options, app)
+//     https.listen(443)
+// }
+
+
+var https = require('https');
+var fs = require('fs');
+var https_options = {
+  key: fs.readFileSync("encryption/www_synell_com.key"),
+  cert: fs.readFileSync("encryption/www_synell_com.crt"),
+  ca: [
+          fs.readFileSync('encryption/www_synell_com.ca-bundle')
+       ]
+};
+
+https.createServer(options, function (req, res) {
+
+    res.writeHead(200);
+   
+    res.end("Welcome to Node.js HTTPS Servern");
+   
+   }).listen(8443)
+
+
+// app.listen(process.env.PORT, () => {
+//     console.log('Server is running http://localhost:' + process.env.PORT)
+// })
