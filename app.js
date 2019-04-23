@@ -77,6 +77,10 @@ app.all('*', (req, res, next) => {
     next()
 })
 
+app.get('/en', (req, res) => {
+    res.redirect('/lang/en')
+})
+
 app.get('/lang/:lang', (req, res) => {
     req.session.lang = req.params.lang
     res.redirect('/')
