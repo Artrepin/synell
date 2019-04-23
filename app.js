@@ -44,23 +44,23 @@ function declOfNum(number, titles) {
     return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];  
 }
 
-// if (process.env.NODE_ENV != 'development') {
-//     app.use(function(req, res, next) {
-//         if (req.secure) {
-//             next()
-//         } else {
-//             res.redirect(301, 'https://' + req.headers.host + req.url)
-//         }
-//     })
-// }
+if (process.env.NODE_ENV != 'development') {
+    app.use(function(req, res, next) {
+        if (req.secure) {
+            next()
+        } else {
+            res.redirect(301, 'https://' + req.headers.host + req.url)
+        }
+    })
+}
 
-// app.all('*', (req, res, next) => {
-//     if (req.headers.host.match(/^www/) !== null ) {
-//         res.redirect(301, 'https://' + req.headers.host.replace(/^www\./, '') + req.url)
-//     } else {
-//         next()
-//     }
-// })
+app.all('*', (req, res, next) => {
+    if (req.headers.host.match(/^www/) !== null ) {
+        res.redirect(301, 'https://' + req.headers.host.replace(/^www\./, '') + req.url)
+    } else {
+        next()
+    }
+})
 
 app.all('*', (req, res, next) => {
     var locales = new locale.Locales(req.headers["accept-language"])
