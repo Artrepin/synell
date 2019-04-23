@@ -321,7 +321,7 @@ app.post('/admin/ProjectUpdate', async (req, res) => {
 // }
 
 if (process.env.NODE_ENV != 'development') {
-    var https = require('https')
+    // var https = require('https')
     var fs = require('fs')
     var https_options = {
         key: fs.readFileSync("encryption/www_synell_com.key"),
